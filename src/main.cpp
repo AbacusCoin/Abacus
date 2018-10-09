@@ -80,7 +80,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 60 * 60; // 1 Hour
+unsigned int nStakeMinAge = 180 * 60; // 3 Hour
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
@@ -2130,29 +2130,29 @@ int64_t GetBlockValue(int nHeight)
 
 		else {
             if (nHeight == 0) {
-                nSubsidy = 1600000 * COIN;
+                nSubsidy = 100000 * COIN;
 			} else if (nHeight <= 5 && nHeight > 1) { //First POW phase 
-                nSubsidy = 1600000 * COIN;
+                nSubsidy = 100000 * COIN;
             } else if (nHeight <= 200 && nHeight > 1) { //First POW phase 
                 nSubsidy = 0 * COIN;
-            } else if (nHeight <= 25000 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
-                nSubsidy = 1 * COIN;
-            } else if (nHeight <= 50000 && nHeight > 25000) { //17.36 days            625,000 coins
-                nSubsidy = 25 * COIN;
-            } else if (nHeight <= 75000 && nHeight > 50000) { //17.36 days            1,250,000 coins 
-                nSubsidy = 50 * COIN;
-            } else if (nHeight <= 100000 && nHeight > 75000) { //17.36 days           2,125,000 coins
-                nSubsidy = 85 * COIN;
-            } else if (nHeight <= 125000 && nHeight > 100000) { //17.36 days          1,875,000 coins
-                nSubsidy = 75 * COIN;
-            } else if (nHeight <= 168000 && nHeight > 125000) { //30 days             2,150,000 coins
-                nSubsidy = 50 * COIN;
-            } else if (nHeight <= 297600 && nHeight > 168000) { //90 days             3,240,000 coins
-                nSubsidy = 25 * COIN;
-            } else if (nHeight <= 556800 && nHeight > 297600) { //180 days            2,592,000 coins
+            } else if (nHeight <= 262800 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
                 nSubsidy = 10 * COIN;
-            } else if (nHeight <= 556800) { //Till max supply           Total coins used 17,882,000
-                nSubsidy = 5 * COIN;       //57,026.38 days will max supply is reached
+            } else if (nHeight <= 525600 && nHeight > 262800) { 
+                nSubsidy = 5 * COIN;
+            } else if (nHeight <= 788400 && nHeight > 525600) {  
+                nSubsidy = 2.5 * COIN;
+            } else if (nHeight <= 1051200 && nHeight > 788400) { 
+                nSubsidy = 1.25 * COIN;
+            } else if (nHeight <= 1314000 && nHeight > 1051200) { 
+                nSubsidy = .625 * COIN;
+            } else if (nHeight <= 1576800 && nHeight > 1314000) { 
+                nSubsidy = .3125 * COIN;
+            } else if (nHeight <= 1839600 && nHeight > 1576800) { 
+                nSubsidy = .15625 * COIN;
+            } else if (nHeight <= 2102400 && nHeight > 1839600) { 
+                nSubsidy = .078125 * COIN;
+            } else if (nHeight > 2102400) { //Till max supply           
+                nSubsidy = .0390625 * COIN;
             }
 
             int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
@@ -2163,7 +2163,7 @@ int64_t GetBlockValue(int nHeight)
         }
         return nSubsidy;
     }
-
+/*
 CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 {
     //if a mn count is inserted into the function we are looking for a specific result for a masternode count
@@ -2398,7 +2398,7 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
     }
     return ret;
 }
-
+*/
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
     int64_t ret = 0;
@@ -2408,49 +2408,18 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     //       return 0;
     // }
 
-    // Changes alot and levels out to seesaw at end.
+
     if (nHeight == 0) {
         ret = blockValue * 0;
-    } else if (nHeight <= 25000 && nHeight > 200) {
-        ret = blockValue / 10 * 6; //60%
-    } else if (nHeight <= 60000 && nHeight > 25000) {
-        ret = blockValue / 10 * 6; //60%
-    } else if (nHeight <= 65000 && nHeight > 60000) {
-        ret = blockValue / 10 * 6.5; //65%
-    } else if (nHeight <= 70000 && nHeight > 65000) {
-        ret = blockValue / 10 * 6.6; //66%
-    } else if (nHeight <= 75000 && nHeight > 70000) {
-        ret = blockValue / 10 * 6.7; //67%
-    } else if (nHeight <= 80000 && nHeight > 75000) {
-        ret = blockValue / 10 * 6.8; //68%
-    } else if (nHeight <= 85000 && nHeight > 80000) {
-        ret = blockValue / 10 * 6.9; //69%
-    } else if (nHeight <= 88000 && nHeight > 85000) {
-        ret = blockValue / 10 * 7; //70%
-    } else if (nHeight <= 91000 && nHeight > 88000) {
-        ret = blockValue / 10 * 7.2; //72%
-    } else if (nHeight <= 94000 && nHeight > 91000) {
-        ret = blockValue / 10 * 7.4; //74%
-    } else if (nHeight <= 97000 && nHeight > 94000) {
-        ret = blockValue / 10 * 7.6; //76%
-    } else if (nHeight <= 100000 && nHeight > 97000) {
-        ret = blockValue / 10 * 7.8; //78%
-    } else if (nHeight <= 125000 && nHeight > 100000) {
-        ret = blockValue / 10 * 8; //80%
-    } else if (nHeight < 150000 && nHeight > 125000) {
-        ret = blockValue / 10 * 8.5; //85%
-    } else if (nHeight > 175000 && nHeight <= 150000) {
-        ret = blockValue / 10 * 9; //90%
-    } else {
-        return GetSeeSaw(blockValue, nMasternodeCount, nHeight); // Start of seesaw rewards
-    }
-
+    } else if (nHeight  > 200) {
+        ret = blockValue / 10 * 5; //50%
+	}
     return ret;
 }
 
-//Treasury blocks start from 60,000 and then each block after
-int nStartTreasuryBlock = 60000;
-int nTreasuryBlockStep = 1440;
+//Treasury blocks start from 720 and then each block after
+int nStartTreasuryBlock = 720;
+int nTreasuryBlockStep = 720;
 //Checks to see if block count above is correct if not then no Treasury
 bool IsTreasuryBlock(int nHeight)
 {
@@ -2465,29 +2434,15 @@ bool IsTreasuryBlock(int nHeight)
 int64_t GetTreasuryAward(int nHeight)
 {
     if (IsTreasuryBlock(nHeight)) {
-        return 3600 * COIN; //3,600 on very first block
-    } else if (nHeight < 75000 && nHeight > 60000) {
-        return 3600 * COIN; //3,600 aday at 5% 25 coins per block
-    } else if (nHeight < 100000 && nHeight > 75000) {
-        return 6120 * COIN; //6,120 aday at 5% 42.5 coins per block
-    } else if (nHeight < 125000 && nHeight > 100000) {
-        return 5400 * COIN; //5,400 aday at 5% 37.5 coins per block
-    } else if (nHeight < 168000 && nHeight > 125000) {
-        return 3600 * COIN; //3,600 aday at 5% 25 coins per block
-    } else if (nHeight < 297600 && nHeight > 168000) {
-        return 1800 * COIN; //1,800 aday at 5% 12.5 coins per block
-    } else if (nHeight < 556800 && nHeight > 297600) {
-        return 720 * COIN; //720 aday at 5% 5 coins per block
-    } else if (nHeight < 556800) {
-        return 360 * COIN; //720 aday at 5% 2.5 coins per block
+        return 144 * COIN;
     } else {
     }
     return 0;
 }
 
-//Revive blocks start from 60,001 and then each block after
-int nStartReviveBlock = 60001;
-int nReviveBlockStep = 1440;
+//Revive blocks start from 10,001 and then each block after
+int nStartReviveBlock = 10001;
+int nReviveBlockStep = 10000;
 //Checks to see if block count above is correct if not then no Revive
 bool IsReviveBlock(int nHeight)
 {
@@ -2502,21 +2457,7 @@ bool IsReviveBlock(int nHeight)
 int64_t GetReviveAward(int nHeight)
 {
     if (IsReviveBlock(nHeight)) {
-        return 3600 * COIN; //3,600 on very first block
-    } else if (nHeight < 75000 && nHeight > 60000) {
-        return 3600 * COIN; //3,600 aday at 5% 25 coins per block
-    } else if (nHeight < 100000 && nHeight > 75000) {
-        return 6120 * COIN; //6,120 aday at 5% 42.5 coins per block
-    } else if (nHeight < 125000 && nHeight > 100000) {
-        return 5400 * COIN; //5,400 aday at 5% 37.5 coins per block
-    } else if (nHeight < 168000 && nHeight > 125000) {
-        return 3600 * COIN; //3,600 aday at 5% 25 coins per block
-    } else if (nHeight < 297600 && nHeight > 168000) {
-        return 1800 * COIN; //1,800 aday at 5% 12.5 coins per block
-    } else if (nHeight < 556800 && nHeight > 297600) {
-        return 720 * COIN; //720 aday at 5% 5 coins per block
-    } else if (nHeight < 556800) {
-        return 360 * COIN; //720 aday at 5% 2.5 coins per block
+        return 500 * COIN; 
     } else {
     }
     return 0;
