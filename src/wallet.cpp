@@ -1941,13 +1941,13 @@ bool CWallet::SelectCoins(const CAmount& nTargetValue, set<pair<const CWalletTx*
         return (nValueRet >= nTargetValue);
     }
 
-    //if we're doing only denominated, we need to round up to the nearest .1 CCBC
+    //if we're doing only denominated, we need to round up to the nearest .1 ABA
     if (coin_type == ONLY_DENOMINATED) {
         // Make outputs by looping through denominations, from large to small
         BOOST_FOREACH (CAmount v, obfuScationDenominations) {
             BOOST_FOREACH (const COutput& out, vCoins) {
                 if (out.tx->vout[out.i].nValue == v                                               //make sure it's the denom we're looking for
-                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1 * COIN) + 100 //round the amount up to .1 CCBC over
+                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1 * COIN) + 100 //round the amount up to .1 ABA over
                     ) {
                     CTxIn vin = CTxIn(out.tx->GetHash(), out.i);
                     int rounds = GetInputObfuscationRounds(vin);
@@ -2009,12 +2009,12 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
 
             // Function returns as follows:
             //
-            // bit 0 - 10000 CCBC+1 ( bit on if present )
-            // bit 1 - 1000 CCBC+1
-            // bit 2 - 100 CCBC+1
-            // bit 3 - 10 CCBC+1
-            // bit 4 - 1 CCBC+1
-            // bit 5 - .1 CCBC+1
+            // bit 0 - 10000 ABA+1 ( bit on if present )
+            // bit 1 - 1000 ABA+1
+            // bit 2 - 100 ABA+1
+            // bit 3 - 10 ABA+1
+            // bit 4 - 1 ABA+1
+            // bit 5 - .1 ABA+1
 
             CTxIn vin = CTxIn(out.tx->GetHash(), out.i);
 
@@ -2373,9 +2373,9 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                     if (coin_type == ALL_COINS) {
                         strFailReason = _("Insufficient funds.");
                     } else if (coin_type == ONLY_NOT10000IFMN) {
-                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 10000 CCBC.");
+                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 10000 ABA.");
                     } else if (coin_type == ONLY_NONDENOMINATED_NOT10000IFMN) {
-                        strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCBC.");
+                        strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ABA.");
                     } else {
                         strFailReason = _("Unable to locate enough Obfuscation denominated funds for this transaction.");
                         strFailReason += " " + _("Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.");
@@ -2413,7 +2413,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                 if (nChange > 0) {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-ccbc-address
+                    // change transaction isn't always pay-to-aba-address
                     CScript scriptChange;
 
                     // coin control: send change to custom address
@@ -3552,7 +3552,7 @@ void CWallet::AutoZeromint()
     CAmount nMintAmount = 0;
     CAmount nToMintAmount = 0;
 
-    // zCCBC are integers > 0, so we can't mint 10% of 9 CCBC
+    // zCCBC are integers > 0, so we can't mint 10% of 9 ABA
     if (nBalance < 10){
         LogPrint("zero", "CWallet::AutoZeromint(): available balance (%ld) too small for minting zCCBC\n", nBalance);
         return;
@@ -3577,7 +3577,7 @@ void CWallet::AutoZeromint()
     // Use the biggest denomination smaller than the needed zCCBC We'll only mint exact denomination to make minting faster.
     // Exception: for big amounts use 6666 (6666 = 1*5000 + 1*1000 + 1*500 + 1*100 + 1*50 + 1*10 + 1*5 + 1) to create all
     // possible denominations to avoid having 5000 denominations only.
-    // If a preferred denomination is used (means nPreferredDenom != 0) do nothing until we have enough CCBC to mint this denomination
+    // If a preferred denomination is used (means nPreferredDenom != 0) do nothing until we have enough ABA to mint this denomination
 
     if (nPreferredDenom > 0){
         if (nToMintAmount >= nPreferredDenom)
@@ -4024,7 +4024,7 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
     }
 
     //any change that is less than 0.0100000 will be ignored and given as an extra fee
-    //also assume that a zerocoinspend that is minting the change will not have any change that goes to CCBC
+    //also assume that a zerocoinspend that is minting the change will not have any change that goes to ABA
     CAmount nChange = nValueIn - nTotalValue; // Fee already accounted for in nTotalValue
     if (nChange > 1 * CENT && !isZCSpendChange) {
         // Fill a vout to ourself
@@ -4048,7 +4048,7 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
             reservekey->ReturnKey();
     }
 
-    // Sign if these are ccbc outputs - NOTE that zCCBC outputs are signed later in SoK
+    // Sign if these are aba outputs - NOTE that zCCBC outputs are signed later in SoK
     if (!isZCSpendChange) {
         int nIn = 0;
         for (const std::pair<const CWalletTx*, unsigned int>& coin : setCoins) {
@@ -4107,7 +4107,7 @@ bool CWallet::MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, con
         serializedCoinSpend << spend;
         std::vector<unsigned char> data(serializedCoinSpend.begin(), serializedCoinSpend.end());
 
-        //Add the coin spend into a Ccbc transaction
+        //Add the coin spend into a Aba transaction
         newTxIn.scriptSig = CScript() << OP_ZEROCOINSPEND << data.size();
         newTxIn.scriptSig.insert(newTxIn.scriptSig.end(), data.begin(), data.end());
         newTxIn.prevout.SetNull();
@@ -4308,7 +4308,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
                 }
             }
 
-            //add output to ccbc address to the transaction (the actual primary spend taking place)
+            //add output to aba address to the transaction (the actual primary spend taking place)
             CTxOut txOutZerocoinSpend(nValue, scriptZerocoinSpend);
             txNew.vout.push_back(txOutZerocoinSpend);
 

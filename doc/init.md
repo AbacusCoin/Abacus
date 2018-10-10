@@ -13,7 +13,7 @@ can be found in the contrib/init folder.
 1. Service User
 ---------------------------------
 
-All three startup configurations assume the existence of a "ccbc" user
+All three startup configurations assume the existence of a "aba" user
 and group.  They must be created before attempting to use these scripts.
 
 2. Configuration
@@ -35,10 +35,10 @@ generate one from the shell yourself like this:
 
 bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'
 
-Once you have a password in hand, set rpcpassword= in /etc/ccbc/ccbc.conf
+Once you have a password in hand, set rpcpassword= in /etc/aba/aba.conf
 
 For an example configuration file that describes the configuration settings,
-see contrib/debian/examples/ccbc.conf.
+see contrib/debian/examples/aba.conf.
 
 3. Paths
 ---------------------------------
@@ -46,15 +46,15 @@ see contrib/debian/examples/ccbc.conf.
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              /usr/bin/ccbcd
-Configuration file:  /etc/ccbc/ccbc.conf
+Configuration file:  /etc/aba/aba.conf
 Data directory:      /var/lib/ccbcd
 PID file:            /var/run/ccbcd/ccbcd.pid (OpenRC and Upstart)
                      /var/lib/ccbcd/ccbcd.pid (systemd)
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the ccbc user and group.  It is advised for security
+should all be owned by the aba user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-ccbc user and group.  Access to ccbc-cli and other ccbcd rpc clients
+aba user and group.  Access to aba-cli and other ccbcd rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration

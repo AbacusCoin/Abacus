@@ -1,39 +1,39 @@
-Ccbc Core
+Aba Core
 =====================
 
 Setup
 ---------------------
-[Ccbc Core](http://ccbccoin.com) is the original Ccbc client and it builds the backbone of the network. However, it downloads and stores the entire history of Ccbc transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Aba Core](http://ccbccoin.com) is the original Aba client and it builds the backbone of the network. However, it downloads and stores the entire history of Aba transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Ccbc on your native platform.
+The following are some helpful notes on how to run Aba on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/ccbc-qt (GUI, 32-bit) or bin/32/ccbcd (headless, 32-bit)
-- bin/64/ccbc-qt (GUI, 64-bit) or bin/64/ccbcd (headless, 64-bit)
+- bin/32/aba-qt (GUI, 32-bit) or bin/32/ccbcd (headless, 32-bit)
+- bin/64/aba-qt (GUI, 64-bit) or bin/64/ccbcd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run ccbc-qt.exe.
+Unpack the files into a directory, and then run aba-qt.exe.
 
 ### OSX
 
-Drag Ccbc-Qt to your applications folder, and then run Ccbc-Qt.
+Drag Aba-Qt to your applications folder, and then run Aba-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Ccbc Wiki]() ***TODO***
+* See the documentation at the [Aba Wiki]() ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk]() or on the [Ccbc Forum]().
-* Join one of our Discord groups [Ccbc Discord Groups]().
+* Ask for help on [BitcoinTalk]() or on the [Aba Forum]().
+* Join one of our Discord groups [Aba Discord Groups]().
 
 Building
 ---------------------
-The following are developer notes on how to build Ccbc on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Aba on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build Ccbc on your native platform. 
 
 Development
 ---------------------
-The Ccbc repo's [root README](https://github.com/eastcoastcrypto/Ccbc/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Aba repo's [root README](https://github.com/eastcoastcrypto/Aba/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,7 +56,7 @@ The Ccbc repo's [root README](https://github.com/eastcoastcrypto/Ccbc/blob/maste
 ### Resources
 
 * Discuss on the [BitcoinTalk]() .
-* Join the [Ccbc-Dev] Discord groups [Ccbc Discord Groups]().
+* Join the [Aba-Dev] Discord groups [Aba Discord Groups]().
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

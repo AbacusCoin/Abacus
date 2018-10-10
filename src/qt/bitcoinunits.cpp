@@ -19,7 +19,7 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(CCBC);
+    unitlist.append(ABA);
     unitlist.append(mCCBC);
     unitlist.append(uCCBC);
     return unitlist;
@@ -28,7 +28,7 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case CCBC:
+    case ABA:
     case mCCBC:
     case uCCBC:
         return true;
@@ -40,8 +40,8 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case CCBC:
-        return QString("ccbc");
+    case ABA:
+        return QString("aba");
     case mCCBC:
         return QString("mccbc");
     case uCCBC:
@@ -55,18 +55,18 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case CCBC:
-            return QString("CCBC");
+        case ABA:
+            return QString("ABA");
         case mCCBC:
             return QString("mCCBC");
         case uCCBC:
-            return QString::fromUtf8("μCCBC");
+            return QString::fromUtf8("μABA");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case CCBC:
+        case ABA:
             return QString("tXXX");
         case mCCBC:
             return QString("mtXXX");
@@ -82,18 +82,18 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case CCBC:
-            return QString("CCBC");
+        case ABA:
+            return QString("ABA");
         case mCCBC:
-            return QString("Milli-CCBC (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-ABA (1 / 1" THIN_SP_UTF8 "000)");
         case uCCBC:
-            return QString("Micro-CCBC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-ABA (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case CCBC:
+        case ABA:
             return QString("TestXXXs");
         case mCCBC:
             return QString("Milli-TestXXX (1 / 1" THIN_SP_UTF8 "000)");
@@ -108,7 +108,7 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case CCBC:
+    case ABA:
         return 100000000;
     case mCCBC:
         return 100000;
@@ -122,7 +122,7 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case CCBC:
+    case ABA:
         return 8;
     case mCCBC:
         return 5;

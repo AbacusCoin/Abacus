@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Ccbc developers
+// Copyright (c) 2017-2018 The Aba developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -176,7 +176,7 @@ Value getrawmempool(const Array& params, bool fHelp)
             "{                           (json object)\n"
             "  \"transactionid\" : {       (json object)\n"
             "    \"size\" : n,             (numeric) transaction size in bytes\n"
-            "    \"fee\" : n,              (numeric) transaction fee in ccbc\n"
+            "    \"fee\" : n,              (numeric) transaction fee in aba\n"
             "    \"time\" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT\n"
             "    \"height\" : n,           (numeric) block height when transaction entered pool\n"
             "    \"startingpriority\" : n, (numeric) priority when transaction entered pool\n"
@@ -275,7 +275,7 @@ Value getblock(const Array& params, bool fHelp)
             "  \"time\" : ttt,          (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)\n"
             "  \"nonce\" : n,           (numeric) The nonce\n"
             "  \"bits\" : \"1d00ffff\", (string) The bits\n"
-            "  \"difficulty\" : x.ccbc,  (numeric) The difficulty\n"
+            "  \"difficulty\" : x.aba,  (numeric) The difficulty\n"
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
@@ -388,7 +388,7 @@ Value gettxoutsetinfo(const Array& params, bool fHelp)
             "  \"txouts\": n,            (numeric) The number of output transactions\n"
             "  \"bytes_serialized\": n,  (numeric) The serialized size\n"
             "  \"hash_serialized\": \"hash\",   (string) The serialized hash\n"
-            "  \"total_amount\": x.ccbc          (numeric) The total amount\n"
+            "  \"total_amount\": x.aba          (numeric) The total amount\n"
             "}\n"
             "\nExamples:\n" +
             HelpExampleCli("gettxoutsetinfo", "") + HelpExampleRpc("gettxoutsetinfo", ""));
@@ -423,14 +423,14 @@ Value gettxout(const Array& params, bool fHelp)
             "{\n"
             "  \"bestblock\" : \"hash\",    (string) the block hash\n"
             "  \"confirmations\" : n,       (numeric) The number of confirmations\n"
-            "  \"value\" : x.ccbc,           (numeric) The transaction value in btc\n"
+            "  \"value\" : x.aba,           (numeric) The transaction value in btc\n"
             "  \"scriptPubKey\" : {         (json object)\n"
             "     \"asm\" : \"code\",       (string) \n"
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of ccbc addresses\n"
-            "     \"ccbcaddress\"   	 	(string) ccbc address\n"
+            "     \"addresses\" : [          (array of string) array of aba addresses\n"
+            "     \"ccbcaddress\"   	 	(string) aba address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

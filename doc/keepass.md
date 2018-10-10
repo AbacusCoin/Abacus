@@ -14,7 +14,7 @@ The implementation is dependent on the following:
 What's new
 ----------------
 
-The following new options are available for ccbcd and ccbc-qt:
+The following new options are available for ccbcd and aba-qt:
  - _-keepass_ Use KeePass 2 integration using KeePassHttp plugin (default: 0)
  - _-keepassport=_ Connect to KeePassHttp on port (default: 19455)
  - _-keepasskey=_ KeePassHttp key for AES encrypted communication with KeePass
@@ -35,7 +35,7 @@ Sample initialization flow from _ccbc-qt_ console (this needs to be done only on
  - Have KeePass running with an open database
  - Start _ccbc-qt_
  - Open console
- - Type "_keepass init_" in ccbc-qt console
+ - Type "_keepass init_" in aba-qt console
  - Keepass pops up and asks for an association id, fill that in, for example, "_mydrkwallet_"
  - You should get a response like this "_Association successful. Id: mydrkwalletccbc - Key: AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=_"
  - Edit _ccbc.conf_ and fill in these values

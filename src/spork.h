@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2016-2017 The CCBC developers
+// Copyright (c) 2016-2017 The ABA developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -47,7 +47,7 @@ using namespace boost;
 
 #define SPORK_2_SWIFTTX_DEFAULT 978307200                         //ON 01/01/2001 @ 12:00am (UTC)
 #define SPORK_3_SWIFTTX_BLOCK_FILTERING_DEFAULT 1424217600        //ON 02/18/2015 @ 12:00am (UTC)
-#define SPORK_5_MAX_VALUE_DEFAULT 1000                            //1000 CCBC
+#define SPORK_5_MAX_VALUE_DEFAULT 1000                            //1000 ABA
 #define SPORK_7_MASTERNODE_SCANNING_DEFAULT 978307200             //ON 01/01/2001 @ 12:00am (UTC)
 #define SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT_DEFAULT 4070908800 //OFF 01/01/2099 @ 12:00am (UTC)
 #define SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT_DEFAULT 4070908800  //OFF 01/01/2099 @ 12:00am (UTC)

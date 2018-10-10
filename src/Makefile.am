@@ -70,11 +70,11 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += ccbc-cli ccbc-tx
+  bin_PROGRAMS += aba-cli aba-tx
 endif
 
 .PHONY: FORCE
-# ccbc core #
+# aba core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between ccbcd and ccbc-qt
+# server: shared between ccbcd and aba-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +236,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between ccbcd and ccbc-qt, but only linked
+# wallet: shared between ccbcd and aba-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -356,7 +356,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between ccbcd, and ccbc-qt and non-server tools
+# common: shared between ccbcd, and aba-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -416,7 +416,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between ccbc-cli and ccbc-qt
+# cli: shared between aba-cli and aba-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -456,7 +456,7 @@ ccbcd_CPPFLAGS = $(BITCOIN_INCLUDES)
 ccbcd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# ccbc-cli binary #
+# aba-cli binary #
 ccbc_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
@@ -466,12 +466,12 @@ ccbc_cli_LDADD = \
   $(EVENT_LIBS)
 
 ccbc_cli_SOURCES = \
-  ccbc-cli.cpp
+  aba-cli.cpp
 
 ccbc_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# ccbc-tx binary #
+# aba-tx binary #
 ccbc_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
@@ -482,13 +482,13 @@ ccbc_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-ccbc_tx_SOURCES = ccbc-tx.cpp
+ccbc_tx_SOURCES = aba-tx.cpp
 ccbc_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 ccbc_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-ccbc_cli_SOURCES += ccbc-cli-res.rc
+ccbc_cli_SOURCES += aba-cli-res.rc
 endif
 ccbc_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
