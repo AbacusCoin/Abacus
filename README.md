@@ -21,7 +21,7 @@ ABA Technical Specifications
 <tr><td>Address Prefix</td><td>A</td></tr>
 <tr><td>Block Reward</td><td>10 ABA</td></tr>
 <tr><td>Halving</td><td>12 months</td></tr>
-<tr><td>Ports</td><td>TBD</td></tr>
+<tr><td>Ports</td><td>3355, 33556</td></tr>
 <tr><td>Masternode Collateral</td><td>1000 ABA</td></tr>
 <tr><td>Block Reward Distribution</td><td> 5/5( 50% Staking / 50% Masternode )</td></tr>
 <tr><td>PoW Algorithm</td><td>Quark</td></tr>
