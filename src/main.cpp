@@ -80,7 +80,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 180 * 60; // 3 Hour
+unsigned int nStakeMinAge = 60 * 60; // 1 Hour
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
@@ -2113,56 +2113,68 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight)
 {
-			int64_t nSubsidy = 0;
+	int64_t nSubsidy = 0;
 
-			if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-				if (nHeight <= 200 && nHeight > 0)
-				return 250000 * COIN;
-			}
-			if (IsTreasuryBlock(nHeight)) {
-				LogPrintf("GetBlockValue(): this is a treasury block\n");
-				nSubsidy = GetTreasuryAward(nHeight);
-			}
-			else if (IsReviveBlock(nHeight)) {
-				LogPrintf("GetBlockValue(): this is a revive block\n");
-				nSubsidy = GetReviveAward(nHeight);
-			}
+	if (Params().NetworkID() == CBaseChainParams::TESTNET) {
+		if (nHeight <= 200 && nHeight > 0)
+			return 250000 * COIN;
+	}
+	if (IsTreasuryBlock(nHeight)) {
+		LogPrintf("GetBlockValue(): this is a treasury block\n");
+		nSubsidy = GetTreasuryAward(nHeight);
+	}
+	else if (IsReviveBlock(nHeight)) {
+		LogPrintf("GetBlockValue(): this is a revive block\n");
+		nSubsidy = GetReviveAward(nHeight);
+	}
 
-		else {
-            if (nHeight == 0) {
-                nSubsidy = 100000 * COIN;
-			} else if (nHeight <= 5 && nHeight > 1) { //First POW phase 
-                nSubsidy = 100000 * COIN;
-            } else if (nHeight <= 200 && nHeight > 1) { //First POW phase 
-                nSubsidy = 0 * COIN;
-            } else if (nHeight <= 262800 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
-                nSubsidy = 10 * COIN;
-            } else if (nHeight <= 525600 && nHeight > 262800) { 
-                nSubsidy = 5 * COIN;
-            } else if (nHeight <= 788400 && nHeight > 525600) {  
-                nSubsidy = 2.5 * COIN;
-            } else if (nHeight <= 1051200 && nHeight > 788400) { 
-                nSubsidy = 1.25 * COIN;
-            } else if (nHeight <= 1314000 && nHeight > 1051200) { 
-                nSubsidy = .625 * COIN;
-            } else if (nHeight <= 1576800 && nHeight > 1314000) { 
-                nSubsidy = .3125 * COIN;
-            } else if (nHeight <= 1839600 && nHeight > 1576800) { 
-                nSubsidy = .15625 * COIN;
-            } else if (nHeight <= 2102400 && nHeight > 1839600) { 
-                nSubsidy = .078125 * COIN;
-            } else if (nHeight > 2102400) { //Till max supply           
-                nSubsidy = .0390625 * COIN;
-            }
+	else {
+		if (nHeight == 0) {
+			nSubsidy = 100000 * COIN;
+		}
+		else if (nHeight <= 5 && nHeight > 1) { //First POW phase 
+			nSubsidy = 100000 * COIN;
+		}
+		else if (nHeight <= 200 && nHeight > 1) { //First POW phase 
+			nSubsidy = 0 * COIN;
+		}
+		else if (nHeight <= 262800 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
+			nSubsidy = 10 * COIN;
+		}
+		else if (nHeight <= 525600 && nHeight > 262800) {
+			nSubsidy = 5 * COIN;
+		}
+		else if (nHeight <= 788400 && nHeight > 525600) {
+			nSubsidy = 2.5 * COIN;
+		}
+		else if (nHeight <= 1051200 && nHeight > 788400) {
+			nSubsidy = 1.25 * COIN;
+		}
+		else if (nHeight <= 1314000 && nHeight > 1051200) {
+			nSubsidy = .625 * COIN;
+		}
+		else if (nHeight <= 1576800 && nHeight > 1314000) {
+			nSubsidy = .3125 * COIN;
+		}
+		else if (nHeight <= 1839600 && nHeight > 1576800) {
+			nSubsidy = .15625 * COIN;
+		}
+		else if (nHeight <= 2102400 && nHeight > 1839600) {
+			nSubsidy = .078125 * COIN;
+		}
+		else if (nHeight > 2102400) { //Till max supply           
+			nSubsidy = .0390625 * COIN;
+		}
 
-            int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-			if (nMoneySupply + nSubsidy >= Params().MaxMoneyOut())
-                nSubsidy = Params().MaxMoneyOut() - nMoneySupply;
-            if (nMoneySupply >= Params().MaxMoneyOut())
-                nSubsidy = 0; //Amount each block pays after max supply is reached
-        }
-        return nSubsidy;
-    }
+		int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
+		if (nMoneySupply + nSubsidy >= Params().MaxMoneyOut())
+			nSubsidy = Params().MaxMoneyOut() - nMoneySupply;
+		if (nMoneySupply >= Params().MaxMoneyOut())
+			nSubsidy = 0; //Amount each block pays after max supply is reached
+	}
+	return nSubsidy;
+}
+
 /*
 CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 {
@@ -2399,22 +2411,24 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
     return ret;
 }
 */
+
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
-    int64_t ret = 0;
+	int64_t ret = 0;
 
-    // if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-    //    if (nHeight < 200)
-    //       return 0;
-    // }
+	// if (Params().NetworkID() == CBaseChainParams::TESTNET) {
+	//    if (nHeight < 200)
+	//       return 0;
+	// }
 
 
-    if (nHeight == 0) {
-        ret = blockValue * 0;
-    } else if (nHeight  >= 200) {
-        ret = blockValue / 10 * 5; //50%
+	if (nHeight == 0) {
+		ret = blockValue * 0;
 	}
-    return ret;
+	else if (nHeight >= 200) {
+		ret = blockValue / 10 * 5; //50%
+	}
+	return ret;
 }
 
 //Treasury blocks start from 720 and then each block after
@@ -2423,41 +2437,51 @@ int nTreasuryBlockStep = 720;
 //Checks to see if block count above is correct if not then no Treasury
 bool IsTreasuryBlock(int nHeight)
 {
-    if (nHeight < nStartTreasuryBlock)
-        return false;
-    else if ((nHeight - nStartTreasuryBlock) % nTreasuryBlockStep == 0)
-        return true;
-    else
-        return false;
+	if (nHeight < nStartTreasuryBlock)
+		return false;
+	else if ((nHeight - nStartTreasuryBlock) % nTreasuryBlockStep == 0)
+		return true;
+	else
+		return false;
 }
 
 int64_t GetTreasuryAward(int nHeight)
 {
-    if (IsTreasuryBlock(nHeight)) {
-        return 144 * COIN;
-	}else if (nHeight <= 262800 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
-			return 144 * COIN;
-	}else if (nHeight <= 525600 && nHeight > 262800) {
-			return 72 * COIN;
-	}else if (nHeight <= 788400 && nHeight > 525600) {
-			return 36 * COIN;
-	}else if (nHeight <= 1051200 && nHeight > 788400) {
-			return 18 * COIN;
-	}else if (nHeight <= 1314000 && nHeight > 1051200) {
-			return 9 * COIN;
-	}else if (nHeight <= 1576800 && nHeight > 1314000) {
-			return 4.5 * COIN;
-	}else if (nHeight <= 1839600 && nHeight > 1576800) {
-			return 2.25 * COIN;
-	}else if (nHeight <= 2102400 && nHeight > 1839600) {
-			return 1.125 * COIN;
-	}else if (nHeight > 2102400) { //Till max supply           
-			return .5625 * COIN;
-	}else {
+	if (IsTreasuryBlock(nHeight)) {
+		return 144 * COIN;
+	}
+	else if (nHeight <= 262800 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
+		return 144 * COIN;
+	}
+	else if (nHeight <= 525600 && nHeight > 262800) {
+		return 72 * COIN;
+	}
+	else if (nHeight <= 788400 && nHeight > 525600) {
+		return 36 * COIN;
+	}
+	else if (nHeight <= 1051200 && nHeight > 788400) {
+		return 18 * COIN;
+	}
+	else if (nHeight <= 1314000 && nHeight > 1051200) {
+		return 9 * COIN;
+	}
+	else if (nHeight <= 1576800 && nHeight > 1314000) {
+		return 4.5 * COIN;
+	}
+	else if (nHeight <= 1839600 && nHeight > 1576800) {
+		return 2.25 * COIN;
+	}
+	else if (nHeight <= 2102400 && nHeight > 1839600) {
+		return 1.125 * COIN;
+	}
+	else if (nHeight > 2102400) { //Till max supply           
+		return .5625 * COIN;
+	}
+	else {
 	}
 	return 0;
 }
-    
+
 
 
 //Revive blocks start from 10,001 and then each block after
@@ -2466,21 +2490,22 @@ int nReviveBlockStep = 10000;
 //Checks to see if block count above is correct if not then no Revive
 bool IsReviveBlock(int nHeight)
 {
-    if (nHeight < nStartReviveBlock)
-        return false;
-    else if ((nHeight - nStartReviveBlock) % nReviveBlockStep == 0)
-        return true;
-    else
-        return false;
+	if (nHeight < nStartReviveBlock)
+		return false;
+	else if ((nHeight - nStartReviveBlock) % nReviveBlockStep == 0)
+		return true;
+	else
+		return false;
 }
 
 int64_t GetReviveAward(int nHeight)
 {
-    if (IsReviveBlock(nHeight)) {
-        return 500 * COIN; 
-    } else {
-    }
-    return 0;
+	if (IsReviveBlock(nHeight)) {
+		return 500 * COIN;
+	}
+	else {
+	}
+	return 0;
 }
 
 bool IsInitialBlockDownload()
