@@ -1,2 +1,2 @@
 strip aba{d,-cli}
-tar cvzf ABA-linux.tar.gz ccbcd aba-cli
+tar cvzf ABA-linux.tar.gz abad aba-cli

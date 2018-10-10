@@ -2411,7 +2411,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
     if (nHeight == 0) {
         ret = blockValue * 0;
-    } else if (nHeight  > 200) {
+    } else if (nHeight  >= 200) {
         ret = blockValue / 10 * 5; //50%
 	}
     return ret;
@@ -2435,10 +2435,30 @@ int64_t GetTreasuryAward(int nHeight)
 {
     if (IsTreasuryBlock(nHeight)) {
         return 144 * COIN;
-    } else {
-    }
-    return 0;
+	}else if (nHeight <= 262800 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
+			return 144 * COIN;
+	}else if (nHeight <= 525600 && nHeight > 262800) {
+			return 72 * COIN;
+	}else if (nHeight <= 788400 && nHeight > 525600) {
+			return 36 * COIN;
+	}else if (nHeight <= 1051200 && nHeight > 788400) {
+			return 18 * COIN;
+	}else if (nHeight <= 1314000 && nHeight > 1051200) {
+			return 9 * COIN;
+	}else if (nHeight <= 1576800 && nHeight > 1314000) {
+			return 4.5 * COIN;
+	}else if (nHeight <= 1839600 && nHeight > 1576800) {
+			return 2.25 * COIN;
+	}else if (nHeight <= 2102400 && nHeight > 1839600) {
+			return 1.125 * COIN;
+	}else if (nHeight > 2102400) { //Till max supply           
+			return .5625 * COIN;
+	}else {
+	}
+	return 0;
 }
+    
+
 
 //Revive blocks start from 10,001 and then each block after
 int nStartReviveBlock = 10001;
