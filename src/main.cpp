@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The CCBC developers
+// Copyright (c) 2018 The ABA developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -48,7 +48,7 @@ using namespace std;
 using namespace libzerocoin;
 
 #if defined(NDEBUG)
-#error "Ccbc cannot be compiled without assertions."
+#error "Aba cannot be compiled without assertions."
 #endif
 
 // 6 comes from OPCODE (1) + vch.size() (1) + BIGNUM size (4)
@@ -80,7 +80,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 60 * 60; // 1 Hour
+unsigned int nStakeMinAge = 180 * 60; // 3 Hour
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
@@ -2130,29 +2130,29 @@ int64_t GetBlockValue(int nHeight)
 
 		else {
             if (nHeight == 0) {
-                nSubsidy = 1600000 * COIN;
+                nSubsidy = 100000 * COIN;
 			} else if (nHeight <= 5 && nHeight > 1) { //First POW phase 
-                nSubsidy = 1600000 * COIN;
+                nSubsidy = 100000 * COIN;
             } else if (nHeight <= 200 && nHeight > 1) { //First POW phase 
                 nSubsidy = 0 * COIN;
-            } else if (nHeight <= 25000 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
-                nSubsidy = 1 * COIN;
-            } else if (nHeight <= 50000 && nHeight > 25000) { //17.36 days            625,000 coins
-                nSubsidy = 25 * COIN;
-            } else if (nHeight <= 75000 && nHeight > 50000) { //17.36 days            1,250,000 coins 
-                nSubsidy = 50 * COIN;
-            } else if (nHeight <= 100000 && nHeight > 75000) { //17.36 days           2,125,000 coins
-                nSubsidy = 85 * COIN;
-            } else if (nHeight <= 125000 && nHeight > 100000) { //17.36 days          1,875,000 coins
-                nSubsidy = 75 * COIN;
-            } else if (nHeight <= 168000 && nHeight > 125000) { //30 days             2,150,000 coins
-                nSubsidy = 50 * COIN;
-            } else if (nHeight <= 297600 && nHeight > 168000) { //90 days             3,240,000 coins
-                nSubsidy = 25 * COIN;
-            } else if (nHeight <= 556800 && nHeight > 297600) { //180 days            2,592,000 coins
+            } else if (nHeight <= 262800 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
                 nSubsidy = 10 * COIN;
-            } else if (nHeight <= 556800) { //Till max supply           Total coins used 17,882,000
-                nSubsidy = 5 * COIN;       //57,026.38 days will max supply is reached
+            } else if (nHeight <= 525600 && nHeight > 262800) { 
+                nSubsidy = 5 * COIN;
+            } else if (nHeight <= 788400 && nHeight > 525600) {  
+                nSubsidy = 2.5 * COIN;
+            } else if (nHeight <= 1051200 && nHeight > 788400) { 
+                nSubsidy = 1.25 * COIN;
+            } else if (nHeight <= 1314000 && nHeight > 1051200) { 
+                nSubsidy = .625 * COIN;
+            } else if (nHeight <= 1576800 && nHeight > 1314000) { 
+                nSubsidy = .3125 * COIN;
+            } else if (nHeight <= 1839600 && nHeight > 1576800) { 
+                nSubsidy = .15625 * COIN;
+            } else if (nHeight <= 2102400 && nHeight > 1839600) { 
+                nSubsidy = .078125 * COIN;
+            } else if (nHeight > 2102400) { //Till max supply           
+                nSubsidy = .0390625 * COIN;
             }
 
             int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
@@ -2163,7 +2163,7 @@ int64_t GetBlockValue(int nHeight)
         }
         return nSubsidy;
     }
-
+/*
 CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 {
     //if a mn count is inserted into the function we are looking for a specific result for a masternode count
@@ -2398,7 +2398,7 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
     }
     return ret;
 }
-
+*/
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
     int64_t ret = 0;
@@ -2408,49 +2408,18 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     //       return 0;
     // }
 
-    // Changes alot and levels out to seesaw at end.
+
     if (nHeight == 0) {
         ret = blockValue * 0;
-    } else if (nHeight <= 25000 && nHeight > 200) {
-        ret = blockValue / 10 * 6; //60%
-    } else if (nHeight <= 60000 && nHeight > 25000) {
-        ret = blockValue / 10 * 6; //60%
-    } else if (nHeight <= 65000 && nHeight > 60000) {
-        ret = blockValue / 10 * 6.5; //65%
-    } else if (nHeight <= 70000 && nHeight > 65000) {
-        ret = blockValue / 10 * 6.6; //66%
-    } else if (nHeight <= 75000 && nHeight > 70000) {
-        ret = blockValue / 10 * 6.7; //67%
-    } else if (nHeight <= 80000 && nHeight > 75000) {
-        ret = blockValue / 10 * 6.8; //68%
-    } else if (nHeight <= 85000 && nHeight > 80000) {
-        ret = blockValue / 10 * 6.9; //69%
-    } else if (nHeight <= 88000 && nHeight > 85000) {
-        ret = blockValue / 10 * 7; //70%
-    } else if (nHeight <= 91000 && nHeight > 88000) {
-        ret = blockValue / 10 * 7.2; //72%
-    } else if (nHeight <= 94000 && nHeight > 91000) {
-        ret = blockValue / 10 * 7.4; //74%
-    } else if (nHeight <= 97000 && nHeight > 94000) {
-        ret = blockValue / 10 * 7.6; //76%
-    } else if (nHeight <= 100000 && nHeight > 97000) {
-        ret = blockValue / 10 * 7.8; //78%
-    } else if (nHeight <= 125000 && nHeight > 100000) {
-        ret = blockValue / 10 * 8; //80%
-    } else if (nHeight < 150000 && nHeight > 125000) {
-        ret = blockValue / 10 * 8.5; //85%
-    } else if (nHeight > 175000 && nHeight <= 150000) {
-        ret = blockValue / 10 * 9; //90%
-    } else {
-        return GetSeeSaw(blockValue, nMasternodeCount, nHeight); // Start of seesaw rewards
-    }
-
+    } else if (nHeight  >= 200) {
+        ret = blockValue / 10 * 5; //50%
+	}
     return ret;
 }
 
-//Treasury blocks start from 60,000 and then each block after
-int nStartTreasuryBlock = 60000;
-int nTreasuryBlockStep = 1440;
+//Treasury blocks start from 720 and then each block after
+int nStartTreasuryBlock = 720;
+int nTreasuryBlockStep = 720;
 //Checks to see if block count above is correct if not then no Treasury
 bool IsTreasuryBlock(int nHeight)
 {
@@ -2465,29 +2434,35 @@ bool IsTreasuryBlock(int nHeight)
 int64_t GetTreasuryAward(int nHeight)
 {
     if (IsTreasuryBlock(nHeight)) {
-        return 3600 * COIN; //3,600 on very first block
-    } else if (nHeight < 75000 && nHeight > 60000) {
-        return 3600 * COIN; //3,600 aday at 5% 25 coins per block
-    } else if (nHeight < 100000 && nHeight > 75000) {
-        return 6120 * COIN; //6,120 aday at 5% 42.5 coins per block
-    } else if (nHeight < 125000 && nHeight > 100000) {
-        return 5400 * COIN; //5,400 aday at 5% 37.5 coins per block
-    } else if (nHeight < 168000 && nHeight > 125000) {
-        return 3600 * COIN; //3,600 aday at 5% 25 coins per block
-    } else if (nHeight < 297600 && nHeight > 168000) {
-        return 1800 * COIN; //1,800 aday at 5% 12.5 coins per block
-    } else if (nHeight < 556800 && nHeight > 297600) {
-        return 720 * COIN; //720 aday at 5% 5 coins per block
-    } else if (nHeight < 556800) {
-        return 360 * COIN; //720 aday at 5% 2.5 coins per block
-    } else {
-    }
-    return 0;
+        return 144 * COIN;
+	}else if (nHeight <= 262800 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
+			return 144 * COIN;
+	}else if (nHeight <= 525600 && nHeight > 262800) {
+			return 72 * COIN;
+	}else if (nHeight <= 788400 && nHeight > 525600) {
+			return 36 * COIN;
+	}else if (nHeight <= 1051200 && nHeight > 788400) {
+			return 18 * COIN;
+	}else if (nHeight <= 1314000 && nHeight > 1051200) {
+			return 9 * COIN;
+	}else if (nHeight <= 1576800 && nHeight > 1314000) {
+			return 4.5 * COIN;
+	}else if (nHeight <= 1839600 && nHeight > 1576800) {
+			return 2.25 * COIN;
+	}else if (nHeight <= 2102400 && nHeight > 1839600) {
+			return 1.125 * COIN;
+	}else if (nHeight > 2102400) { //Till max supply           
+			return .5625 * COIN;
+	}else {
+	}
+	return 0;
 }
+    
 
-//Revive blocks start from 60,001 and then each block after
-int nStartReviveBlock = 60001;
-int nReviveBlockStep = 1440;
+
+//Revive blocks start from 10,001 and then each block after
+int nStartReviveBlock = 10001;
+int nReviveBlockStep = 10000;
 //Checks to see if block count above is correct if not then no Revive
 bool IsReviveBlock(int nHeight)
 {
@@ -2502,21 +2477,7 @@ bool IsReviveBlock(int nHeight)
 int64_t GetReviveAward(int nHeight)
 {
     if (IsReviveBlock(nHeight)) {
-        return 3600 * COIN; //3,600 on very first block
-    } else if (nHeight < 75000 && nHeight > 60000) {
-        return 3600 * COIN; //3,600 aday at 5% 25 coins per block
-    } else if (nHeight < 100000 && nHeight > 75000) {
-        return 6120 * COIN; //6,120 aday at 5% 42.5 coins per block
-    } else if (nHeight < 125000 && nHeight > 100000) {
-        return 5400 * COIN; //5,400 aday at 5% 37.5 coins per block
-    } else if (nHeight < 168000 && nHeight > 125000) {
-        return 3600 * COIN; //3,600 aday at 5% 25 coins per block
-    } else if (nHeight < 297600 && nHeight > 168000) {
-        return 1800 * COIN; //1,800 aday at 5% 12.5 coins per block
-    } else if (nHeight < 556800 && nHeight > 297600) {
-        return 720 * COIN; //720 aday at 5% 5 coins per block
-    } else if (nHeight < 556800) {
-        return 360 * COIN; //720 aday at 5% 2.5 coins per block
+        return 500 * COIN; 
     } else {
     }
     return 0;
@@ -2812,7 +2773,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
         const CTransaction& tx = block.vtx[i];
 
         /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from Ccbc
+         * note we only undo zerocoin databasing in the following statement, value to and from Aba
          * addresses should still be handled by the typical bitcoin based undo code
          * */
         if (tx.ContainsZerocoins()) {
@@ -2945,7 +2906,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("ccbc-scriptch");
+    RenameThread("aba-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -3459,7 +3420,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
     chainActive.SetTip(pindexNew);
 
-    // If turned on AutoZeromint will automatically convert CCBC to zCCBC
+    // If turned on AutoZeromint will automatically convert ABA to zCCBC
     if (pwalletMain->isZeromintEnabled())
         pwalletMain->AutoZeromint();
 
@@ -4286,7 +4247,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                     REJECT_INVALID, "block-version");
         }
 
-        // Ccbc
+        // Aba
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -5756,7 +5717,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             return false;
         }
 
-        // Ccbc: We use certain sporks during IBD, so check to see if they are
+        // Aba: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         if (!pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
             !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&

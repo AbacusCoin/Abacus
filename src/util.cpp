@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ccbc-config.h"
+#include "config/aba-config.h"
 #endif
 
 #include "util.h"
@@ -105,7 +105,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// Ccbc only features
+// Aba only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -237,8 +237,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "ccbc" is a composite category enabling all Ccbc-related debug output
-            if (ptrCategory->count(string("ccbc"))) {
+            // "aba" is a composite category enabling all Aba-related debug output
+            if (ptrCategory->count(string("aba"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
                 ptrCategory->insert(string("masternode"));
@@ -403,7 +403,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "ccbc";
+    const char* pszModule = "aba";
 #endif
     if (pex)
         return strprintf(
@@ -424,13 +424,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Ccbc
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Ccbc
-// Mac: ~/Library/Application Support/Ccbc
-// Unix: ~/.ccbc
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Aba
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Aba
+// Mac: ~/Library/Application Support/Aba
+// Unix: ~/.aba
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Ccbc";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Aba";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -442,10 +442,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Ccbc";
+    return pathRet / "Aba";
 #else
     // Unix
-    return pathRet / ".ccbc";
+    return pathRet / ".aba";
 #endif
 #endif
 }
@@ -492,7 +492,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "ccbc.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "aba.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -511,7 +511,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty ccbc.conf if it does not exist
+        // Create empty aba.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -522,7 +522,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override ccbc.conf
+        // Don't overwrite existing settings so command line settings override aba.conf
         string strKey = string("-") + it->string_key;
         string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);
