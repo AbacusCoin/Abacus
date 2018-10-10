@@ -7,6 +7,6 @@ Comment[tr]=Aba, eşten eşe kriptografik sanal para birimi
 Exec=aba-qt %u
 Terminal=false
 Type=Application
-Icon=ccbc128
+Icon=aba128
 MimeType=x-scheme-handler/aba;
 Categories=Office;Finance;

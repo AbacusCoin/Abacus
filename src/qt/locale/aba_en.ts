@@ -5700,7 +5700,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>aba-core</name>
     <message>
-        <location filename="../ccbcstrings.cpp" line="+15"/>
+        <location filename="../abastrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5941,10 +5941,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>To use ccbcd, or the -server option to aba-qt, you must set an rpcpassword in the configuration file:
+        <source>To use abad, or the -server option to aba-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=ccbcrpc
+rpcuser=abarpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

@@ -430,7 +430,7 @@ Value gettxout(const Array& params, bool fHelp)
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
             "     \"addresses\" : [          (array of string) array of aba addresses\n"
-            "     \"ccbcaddress\"   	 	(string) aba address\n"
+            "     \"abaaddress\"   	 	(string) aba address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

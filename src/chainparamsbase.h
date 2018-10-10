@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between aba-cli and ccbcd)
+ * CBaseChainParams defines the base parameters (shared between aba-cli and abad)
  * of a given instance of the Aba system.
  */
 class CBaseChainParams

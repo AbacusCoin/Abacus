@@ -3,7 +3,7 @@ Aba Core
 
 Setup
 ---------------------
-[Aba Core](http://ccbccoin.com) is the original Aba client and it builds the backbone of the network. However, it downloads and stores the entire history of Aba transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Aba Core](http://abacoin.com) is the original Aba client and it builds the backbone of the network. However, it downloads and stores the entire history of Aba transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -13,8 +13,8 @@ The following are some helpful notes on how to run Aba on your native platform.
 
 Unpack the files into a directory and run:
 
-- bin/32/aba-qt (GUI, 32-bit) or bin/32/ccbcd (headless, 32-bit)
-- bin/64/aba-qt (GUI, 64-bit) or bin/64/ccbcd (headless, 64-bit)
+- bin/32/aba-qt (GUI, 32-bit) or bin/32/abad (headless, 32-bit)
+- bin/64/aba-qt (GUI, 64-bit) or bin/64/abad (headless, 64-bit)
 
 ### Windows
 

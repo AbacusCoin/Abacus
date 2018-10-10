@@ -152,7 +152,7 @@ void OptionsModel::Init()
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
     if (settings.contains("nAnonymizeCcbcAmount"))
-        SoftSetArg("-anonymizeccbcamount", settings.value("nAnonymizeCcbcAmount").toString().toStdString());
+        SoftSetArg("-anonymizeabaamount", settings.value("nAnonymizeCcbcAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }

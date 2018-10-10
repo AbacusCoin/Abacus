@@ -5,21 +5,21 @@
 if [ -d "/var/lib/aba/.aba" ]; then
 	BITCOIND_DEFAULT_DATADIR="/var/lib/aba/.aba"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/ccbcd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/abad"
 fi
 
 BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/aba/aba.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/ccbcd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/ccbcd.pid}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/abad}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/abad.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
 BITCOIND_USER=${BITCOIND_USER:-aba}
 BITCOIND_GROUP=${BITCOIND_GROUP:-aba}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/ccbcd}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/abad}
 
 name="Aba Core Daemon"
 description="Aba crypto-currency p2p network daemon"
 
-command="/usr/bin/ccbcd"
+command="/usr/bin/abad"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run ccbcd."
+		eerror "ERROR: You must set a secure rpcpassword to run abad."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "

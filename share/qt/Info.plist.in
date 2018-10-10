@@ -65,7 +65,7 @@
         <string>application/x-aba-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>ccbcpaymentrequest</string>
+          <string>abapaymentrequest</string>
         </array>
       </dict>
     </dict>

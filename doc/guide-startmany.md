@@ -135,9 +135,9 @@ If your remote server is not running, start your remote daemon as you normally w
 
 I usually confirm that remote is on the correct block by issuing:
 
-```ccbcd getinfo```
+```abad getinfo```
 
-And compare with the official explorer at http://ccbccoin.com
+And compare with the official explorer at http://abacoin.com
 
 ### Local
 

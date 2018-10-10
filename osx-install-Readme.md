@@ -66,15 +66,15 @@ Build SmartCloud Core
 Running
 -------
 
-aba Core is now available at `./src/ccbcd`
+aba Core is now available at `./src/abad`
 
 Before running, it's recommended that you create an RPC configuration file.
 
-    echo -e "rpcuser=ccbcrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/aba/aba.conf"
+    echo -e "rpcuser=abarpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/aba/aba.conf"
 
     chmod 600 "/Users/${USER}/Library/Application Support/aba/aba.conf"
 
-The first time you run ccbcd, it will start downloading the blockchain. This process could take several hours.
+The first time you run abad, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
@@ -83,7 +83,7 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/ccbcd -daemon # Starts the aba daemon.
+    ./src/abad -daemon # Starts the aba daemon.
     ./src/aba-cli --help # Outputs a list of command-line options.
     ./src/aba-cli help # Outputs a list of RPC commands when the daemon is running.
 

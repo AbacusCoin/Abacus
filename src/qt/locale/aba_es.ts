@@ -4496,10 +4496,10 @@ Por favor tenga paciencia...</translation>
         <translation>Este producto incluye software desarrollado por el Proyecto OpenSSL para uso en OpenSSL Toolkit &lt;https://www.openssl.org/&gt; y software de cifrado escrito por Eric Young y software de UPnP escrito por Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use ccbcd, or the -server option to aba-qt, you must set an rpcpassword in the configuration file:
+        <source>To use abad, or the -server option to aba-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=ccbcrpc
+rpcuser=abarpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4507,7 +4507,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Aba Alert" admin@foo.com
 </source>
-        <translation>Para usar ccbcd, o la opción -server de aba-qt, debes definir un rpcpassword en el archivo de configuración:
+        <translation>Para usar abad, o la opción -server de aba-qt, debes definir un rpcpassword en el archivo de configuración:
 %s
 Es recomendado que uses la siguiente contraseña aleatoria:
 rpcuser=aba

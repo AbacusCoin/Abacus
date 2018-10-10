@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  ccbcd The Aba core server.
+#  abad The Aba core server.
 #
 #
 # chkconfig: 345 80 20
-# description: ccbcd
-# processname: ccbcd
+# description: abad
+# processname: abad
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/ccbcd, see below
-if [ -f /etc/sysconfig/ccbcd ]; then
-        . /etc/sysconfig/ccbcd
+# you can override defaults in /etc/sysconfig/abad, see below
+if [ -f /etc/sysconfig/abad ]; then
+        . /etc/sysconfig/abad
 fi
 
 RETVAL=0
 
-prog=ccbcd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/ccbcd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/ccbcd}
+prog=abad
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/abad
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/abad}
 
-# ccbcd defaults to /usr/bin/ccbcd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/ccbcd}
+# abad defaults to /usr/bin/abad, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/abad}
 
-# ccbcd opts default to -disablewallet, override with BITCOIND_OPTS
+# abad opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

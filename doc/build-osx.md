@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build ccbcd (headless client) for OSX.
+This guide will show you how to build abad (headless client) for OSX.
 
 Notes
 -----
@@ -40,14 +40,14 @@ Instructions: Homebrew
 
         brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 libzmq
 
-### Building `ccbcd`
+### Building `abad`
 
 1. Clone the github tree to get the source code and go into the directory.
 
         git clone https://github.com/eastcoastcrypto/Aba.git
         cd Aba
 
-2.  Build ccbcd:
+2.  Build abad:
 
         ./autogen.sh
         ./configure --with-gui=qt5
@@ -57,7 +57,7 @@ Instructions: Homebrew
 
         make check
 
-4.  (Optional) You can also install ccbcd to your path:
+4.  (Optional) You can also install abad to your path:
 
         make install
 
@@ -79,11 +79,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `ccbcd` for your own use.
+You can ignore this section if you are building `abad` for your own use.
 
-ccbcd/aba-cli binaries are not included in the aba-Qt.app bundle.
+abad/aba-cli binaries are not included in the aba-Qt.app bundle.
 
-If you are building `ccbcd` or `aba-qt` for others, your build machine should be set up
+If you are building `abad` or `aba-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -98,13 +98,13 @@ bundle is packaged and signed to create the .dmg disk image that is distributed.
 Running
 -------
 
-It's now available at `./ccbcd`, provided that you are still in the `src`
+It's now available at `./abad`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./ccbcd` to get the filename where it should be put, or just try these
+Run `./abad` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=ccbcrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Aba/aba.conf"
+    echo -e "rpcuser=abarpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Aba/aba.conf"
     chmod 600 "/Users/${USER}/Library/Application Support/Aba/aba.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
@@ -116,6 +116,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./ccbcd -daemon # to start the aba daemon.
+    ./abad -daemon # to start the aba daemon.
     ./aba-cli --help  # for a list of command-line options.
     ./aba-cli help    # When the daemon is running, to get a list of RPC commands

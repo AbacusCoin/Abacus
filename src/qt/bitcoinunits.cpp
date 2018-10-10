@@ -43,9 +43,9 @@ QString BitcoinUnits::id(int unit)
     case ABA:
         return QString("aba");
     case mCCBC:
-        return QString("mccbc");
+        return QString("maba");
     case uCCBC:
-        return QString::fromUtf8("uccbc");
+        return QString::fromUtf8("uaba");
     default:
         return QString("???");
     }

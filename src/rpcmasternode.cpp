@@ -57,8 +57,8 @@ Value obfuscation(const Array& params, bool fHelp)
     
     if (fHelp || params.size() == 0)
         throw runtime_error(
-            "obfuscation <ccbcaddress> <amount>\n"
-            "ccbcaddress, reset, or auto (AutoDenominate)"
+            "obfuscation <abaaddress> <amount>\n"
+            "abaaddress, reset, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 
@@ -79,8 +79,8 @@ Value obfuscation(const Array& params, bool fHelp)
 
     if (params.size() != 2)
         throw runtime_error(
-            "obfuscation <ccbcaddress> <amount>\n"
-            "ccbcaddress, denominate, or auto (AutoDenominate)"
+            "obfuscation <abaaddress> <amount>\n"
+            "abaaddress, denominate, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 

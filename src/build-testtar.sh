@@ -1,1 +1,1 @@
-tar cvzf ABA-linux-Testnet.tar.gz ccbcd aba-cli
+tar cvzf ABA-linux-Testnet.tar.gz abad aba-cli

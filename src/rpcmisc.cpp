@@ -302,14 +302,14 @@ Value validateaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress \"ccbcaddress\"\n"
+            "validateaddress \"abaaddress\"\n"
             "\nReturn information about the given aba address.\n"
             "\nArguments:\n"
-            "1. \"ccbcaddress\"     (string, required) The aba address to validate\n"
+            "1. \"abaaddress\"     (string, required) The aba address to validate\n"
             "\nResult:\n"
             "{\n"
             "  \"isvalid\" : true|false,         (boolean) If the address is valid or not. If not, this is the only property returned.\n"
-            "  \"address\" : \"ccbcaddress\", (string) The aba address validated\n"
+            "  \"address\" : \"abaaddress\", (string) The aba address validated\n"
             "  \"ismine\" : true|false,          (boolean) If the address is yours or not\n"
             "  \"isscript\" : true|false,        (boolean) If the key is a script\n"
             "  \"pubkey\" : \"publickeyhex\",    (string) The hex value of the raw public key\n"
@@ -447,10 +447,10 @@ Value verifymessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage \"ccbcaddress\" \"signature\" \"message\"\n"
+            "verifymessage \"abaaddress\" \"signature\" \"message\"\n"
             "\nVerify a signed message\n"
             "\nArguments:\n"
-            "1. \"ccbcaddress\"  (string, required) The aba address to use for the signature.\n"
+            "1. \"abaaddress\"  (string, required) The aba address to use for the signature.\n"
             "2. \"signature\"       (string, required) The signature provided by the signer in base 64 encoding (see signmessage).\n"
             "3. \"message\"         (string, required) The message that was signed.\n"
             "\nResult:\n"
