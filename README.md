@@ -25,8 +25,8 @@ ABA Technical Specifications
 <tr><td>Masternode Collateral</td><td>1000 ABA</td></tr>
 <tr><td>Block Reward Distribution</td><td> 5/5( 50% Staking / 50% Masternode )</td></tr>
 <tr><td>PoW Algorithm</td><td>Quark</td></tr>
-<tr><td>P2P Port</td><td>TBD</td></tr>
-<tr><td>RPC Port</td><td>TBD</td></tr>
+<tr><td>P2P Port</td><td>3355/td></tr>
+<tr><td>RPC Port</td><td>33556</td></tr>
 <tr><td>Max Supply</td><td>10,000,000 ABA</td></tr>
 <tr><td>Premine</td><td>5%</td></tr>
 </table> 
