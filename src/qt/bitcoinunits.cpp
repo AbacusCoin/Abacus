@@ -20,8 +20,8 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
     unitlist.append(ABA);
-    unitlist.append(mCCBC);
-    unitlist.append(uCCBC);
+    unitlist.append(mABA);
+    unitlist.append(uABA);
     return unitlist;
 }
 
@@ -29,8 +29,8 @@ bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
     case ABA:
-    case mCCBC:
-    case uCCBC:
+    case mABA:
+    case uABA:
         return true;
     default:
         return false;
@@ -42,9 +42,9 @@ QString BitcoinUnits::id(int unit)
     switch (unit) {
     case ABA:
         return QString("aba");
-    case mCCBC:
+    case mABA:
         return QString("maba");
-    case uCCBC:
+    case uABA:
         return QString::fromUtf8("uaba");
     default:
         return QString("???");
@@ -57,9 +57,9 @@ QString BitcoinUnits::name(int unit)
         switch (unit) {
         case ABA:
             return QString("ABA");
-        case mCCBC:
-            return QString("mCCBC");
-        case uCCBC:
+        case mABA:
+            return QString("mABA");
+        case uABA:
             return QString::fromUtf8("μABA");
         default:
             return QString("???");
@@ -68,9 +68,9 @@ QString BitcoinUnits::name(int unit)
         switch (unit) {
         case ABA:
             return QString("tXXX");
-        case mCCBC:
+        case mABA:
             return QString("mtXXX");
-        case uCCBC:
+        case uABA:
             return QString::fromUtf8("μtXXX");
         default:
             return QString("???");
@@ -84,9 +84,9 @@ QString BitcoinUnits::description(int unit)
         switch (unit) {
         case ABA:
             return QString("ABA");
-        case mCCBC:
+        case mABA:
             return QString("Milli-ABA (1 / 1" THIN_SP_UTF8 "000)");
-        case uCCBC:
+        case uABA:
             return QString("Micro-ABA (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
@@ -95,9 +95,9 @@ QString BitcoinUnits::description(int unit)
         switch (unit) {
         case ABA:
             return QString("TestXXXs");
-        case mCCBC:
+        case mABA:
             return QString("Milli-TestXXX (1 / 1" THIN_SP_UTF8 "000)");
-        case uCCBC:
+        case uABA:
             return QString("Micro-TestXXX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
@@ -110,9 +110,9 @@ qint64 BitcoinUnits::factor(int unit)
     switch (unit) {
     case ABA:
         return 100000000;
-    case mCCBC:
+    case mABA:
         return 100000;
-    case uCCBC:
+    case uABA:
         return 100;
     default:
         return 100000000;
@@ -124,9 +124,9 @@ int BitcoinUnits::decimals(int unit)
     switch (unit) {
     case ABA:
         return 8;
-    case mCCBC:
+    case mABA:
         return 5;
-    case uCCBC:
+    case uABA:
         return 2;
     default:
         return 0;

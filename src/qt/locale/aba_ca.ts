@@ -1275,8 +1275,8 @@
         <translation>ABA:</translation>
     </message>
     <message>
-        <source>zCCBC:</source>
-        <translation>zCCBC:</translation>
+        <source>zABA:</source>
+        <translation>zABA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1304,16 +1304,16 @@
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>Zerocoin ABA (zCCBC)</source>
-        <translation>Zerocoin ABA (zCCBC)</translation>
+        <source>Zerocoin ABA (zABA)</source>
+        <translation>Zerocoin ABA (zABA)</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCCBC</source>
-        <translation>zCCBC</translation>
+        <source>zABA</source>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>0.000 000 00 ABA</source>
@@ -1332,8 +1332,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zCCBC</source>
-        <translation>0 zCCBC</translation>
+        <source>0 zABA</source>
+        <translation>0 zABA</translation>
     </message>
     <message>
         <source>Alt+A</source>

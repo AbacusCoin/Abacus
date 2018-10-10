@@ -618,8 +618,8 @@
         <translation>&amp;Поверителност</translation>
     </message>
     <message>
-        <source>Privacy Action for zCCBC and Obfuscation</source>
-        <translation>Поверителни действия за zCCBC и Обфускация</translation>
+        <source>Privacy Action for zABA and Obfuscation</source>
+        <translation>Поверителни действия за zABA и Обфускация</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1712,20 +1712,20 @@ https://www.transifex.com/aba-project/aba-project-translations</source>
 https://www.transifex.com/aba-project/aba-project-translations</translation>
     </message>
     <message>
-        <source>Percentage of incoming ABA which get automatically converted to zCCBC via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите ABA, който автоматично да се конвертира в zCCBC посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming ABA which get automatically converted to zABA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите ABA, който автоматично да се конвертира в zABA посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCBC</source>
-        <translation>Процент автоматично сечени zCCBC</translation>
+        <source>Percentage of autominted zABA</source>
+        <translation>Процент автоматично сечени zABA</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough ABA for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zCCBC докато не се съберат достатъчно ABA за тази деноминация</translation>
+        <translation>Не бързай с автоматичното конвертиране в zABA докато не се съберат достатъчно ABA за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCBC Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zCCBC</translation>
+        <source>Preferred Automint zABA Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zABA</translation>
     </message>
     <message>
         <source>Connect to the Aba network through a SOCKS5 proxy.</source>
@@ -1931,8 +1931,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>ABA:</translation>
     </message>
     <message>
-        <source>zCCBC:</source>
-        <translation>zCCBC:</translation>
+        <source>zABA:</source>
+        <translation>zABA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2064,8 +2064,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>ABA скрити посредством Зерокойн протокола</translation>
     </message>
     <message>
-        <source>Zerocoin ABA (zCCBC)</source>
-        <translation>Zerocoin ABA (zCCBC)</translation>
+        <source>Zerocoin ABA (zABA)</source>
+        <translation>Zerocoin ABA (zABA)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2077,7 +2077,7 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Въведете колко ABA  да се конвертират в zCCBC</translation>
+        <translation>Въведете колко ABA  да се конвертират в zABA</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2088,8 +2088,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCCBC</source>
-        <translation>zCCBC</translation>
+        <source>zABA</source>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
@@ -2133,11 +2133,11 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
     </message>
     <message>
         <source>zPhr Control</source>
-        <translation>zCCBC Контрол</translation>
+        <translation>zABA Контрол</translation>
     </message>
     <message>
         <source>zPhr Selected:</source>
-        <translation>Избрани zCCBC:</translation>
+        <translation>Избрани zABA:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2156,8 +2156,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>0 zCCBC</source>
-        <translation>0 zCCBC</translation>
+        <source>0 zABA</source>
+        <translation>0 zABA</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2209,7 +2209,7 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zCCBC от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zABA от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2396,8 +2396,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zCCBC in </source>
-        <translation>zCCBC в</translation>
+        <source> zABA in </source>
+        <translation>zABA в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2475,7 +2475,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Spend #: </source>
-        <translation>zCCBC Похарчени #:</translation>
+        <translation>zABA Похарчени #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2499,7 +2499,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Mint</source>
-        <translation>Сечене на zCCBC</translation>
+        <translation>Сечене на zABA</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3180,11 +3180,11 @@ Please be patient...</source>
     </message>
     <message>
         <source>If the custom fee is set to 1000 uXXXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXXXs in fee,&lt;br /&gt;while "at least" pays 1000 uXXXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uCCBC и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uCCBC входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uCCBC. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <translation>Ако собствената такса е настроена на 1000 uABA и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uABA входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uABA. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 uXXXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXXXs in fee,&lt;br /&gt;while "total at least" pays 1000 uXXXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uCCBC и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uCCBC входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uCCBC. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <translation>Ако собствената такса е настроена на 1000 uABA и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uABA входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uABA. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Aba transactions than the network can process.</source>
@@ -3956,23 +3956,23 @@ Please be patient...</source>
     </message>
     <message>
         <source>Converted Phr to zPhr</source>
-        <translation>Конвертиран ABA във zCCBC</translation>
+        <translation>Конвертиран ABA във zABA</translation>
     </message>
     <message>
         <source>Spent zPhr</source>
-        <translation>Похарчени zCCBC</translation>
+        <translation>Похарчени zABA</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Получен ABA от zCCBC</translation>
+        <translation>Получен ABA от zABA</translation>
     </message>
     <message>
         <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Исечено ресто като zCCBC от похарчените zCCBC</translation>
+        <translation>Исечено ресто като zABA от похарчените zABA</translation>
     </message>
     <message>
         <source>Converted zPhr to Phr</source>
-        <translation>Конвертирани zCCBC в ABA</translation>
+        <translation>Конвертирани zABA в ABA</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3980,7 +3980,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Accumulator</source>
-        <translation>zCCBC Акумулатор</translation>
+        <translation>zABA Акумулатор</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4087,7 +4087,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Получен ABA от zCCBC</translation>
+        <translation>Получен ABA от zABA</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4099,7 +4099,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Харчене на Zerocoin, Ресто в zCCBC</translation>
+        <translation>Харчене на Zerocoin, Ресто в zABA</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4262,7 +4262,7 @@ Please be patient...</source>
     <name>ZPhrControlDialog</name>
     <message>
         <source>Select zPhr to Spend</source>
-        <translation>Изберете zCCBC за Изпращане</translation>
+        <translation>Изберете zABA за Изпращане</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4274,7 +4274,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr</source>
-        <translation>zCCBC</translation>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>

@@ -1,9 +1,9 @@
 /* src/config/aba-config.h.  Generated from aba-config.h.in by configure.  */
 /* src/config/aba-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef CCBC_CONFIG_H
+#ifndef ABA_CONFIG_H
 
-#define CCBC_CONFIG_H
+#define ABA_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -340,4 +340,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //CCBC_CONFIG_H
+#endif //ABA_CONFIG_H

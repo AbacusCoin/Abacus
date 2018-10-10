@@ -58,7 +58,7 @@
           <bool>true</bool>
          </property>
          <property name="text">
-          <string>Zerocoin ABA (zCCBC)</string>
+          <string>Zerocoin ABA (zABA)</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -83,7 +83,7 @@
                   </font>
                  </property>
                  <property name="text">
-                  <string>zCCBC Actions:</string>
+                  <string>zABA Actions:</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -145,10 +145,10 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Enter an amount of ABA to convert (mint) to zCcbc</string>
+                  <string>Enter an amount of ABA to convert (mint) to zAba</string>
                  </property>
                  <property name="text">
-                  <string>Convert ABA to zCCBC</string>
+                  <string>Convert ABA to zABA</string>
                  </property>
                 </widget>
                </item>
@@ -171,7 +171,7 @@
                <item>
                 <widget class="QLabel" name="labelzXXX_2">
                  <property name="text">
-                  <string>zCCBC</string>
+                  <string>zABA</string>
                  </property>
                 </widget>
                </item>
@@ -191,7 +191,7 @@
                <item>
                 <widget class="QLabel" name="labelzXXXAmountValue">
                  <property name="toolTip">
-                  <string>Enter an amount of ABA to convert to zCcbc</string>
+                  <string>Enter an amount of ABA to convert to zAba</string>
                  </property>
                  <property name="text">
                   <string>0.000 000 00 ABA</string>
@@ -223,7 +223,7 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Reset Zerocoin (zCcbc) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
+                  <string>Reset Zerocoin (zAba) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
                  </property>
                  <property name="text">
                   <string>Reset</string>
@@ -476,14 +476,14 @@
                <item>
                 <widget class="QPushButton" name="pushButtonZXxxControl">
                  <property name="text">
-                  <string>zCcbc Control</string>
+                  <string>zAba Control</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QLabel" name="labelzXxxSelected">
                  <property name="text">
-                  <string>zCcbc Selected:</string>
+                  <string>zAba Selected:</string>
                  </property>
                 </widget>
                </item>
@@ -550,17 +550,17 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Send zCCBC. Without 'Pay To:' address creates payments to yourself.</string>
+                  <string>Send zABA. Without 'Pay To:' address creates payments to yourself.</string>
                  </property>
                  <property name="text">
-                  <string>Send zCCBC</string>
+                  <string>Send zABA</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QLabel" name="labelzXXXBalanceText">
                  <property name="toolTip">
-                  <string>Available (mature and spendable) zCCBC for spending</string>
+                  <string>Available (mature and spendable) zABA for spending</string>
                  </property>
                  <property name="text">
                   <string>Available Balance:</string>
@@ -579,12 +579,12 @@
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Available (mature and spendable) zCCBC for spending
+                  <string>Available (mature and spendable) zABA for spending
 
-zCCBC are mature when they have more than 20 confirmations AND more than 1 mints of the same denomination after them were minted</string>
+zABA are mature when they have more than 20 confirmations AND more than 1 mints of the same denomination after them were minted</string>
                  </property>
                  <property name="text">
-                  <string>0 zCCBC</string>
+                  <string>0 zABA</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -607,7 +607,7 @@ zCCBC are mature when they have more than 20 confirmations AND more than 1 mints
                <item>
                 <widget class="QLabel" name="labelSecurityLevel">
                  <property name="toolTip">
-                  <string>Security Level for Zerocoin (zCcbc) Transactions. More is better, but needs more time and resources.</string>
+                  <string>Security Level for Zerocoin (zAba) Transactions. More is better, but needs more time and resources.</string>
                  </property>
                  <property name="frameShape">
                   <enum>QFrame::Box</enum>
@@ -800,7 +800,7 @@ zCCBC are mature when they have more than 20 confirmations AND more than 1 mints
                   </size>
                  </property>
                  <property name="text">
-                  <string>zCCBC</string>
+                  <string>zABA</string>
                  </property>
                 </widget>
                </item>
@@ -833,7 +833,7 @@ zCCBC are mature when they have more than 20 confirmations AND more than 1 mints
                   <enum>Qt::LeftToRight</enum>
                  </property>
                  <property name="text">
-                  <string>Convert Change Back to zCCBC (might cost additional fees)</string>
+                  <string>Convert Change Back to zABA (might cost additional fees)</string>
                  </property>
                 </widget>
                </item>
@@ -895,10 +895,10 @@ zCCBC are mature when they have more than 20 confirmations AND more than 1 mints
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Information about the available zCcbc funds.</string>
+                  <string>Information about the available zAba funds.</string>
                  </property>
                  <property name="text">
-                  <string>zCCBC Stats:</string>
+                  <string>zABA Stats:</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -960,10 +960,10 @@ zCCBC are mature when they have more than 20 confirmations AND more than 1 mints
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Total Balance including unconfirmed and immature zCCBC</string>
+                  <string>Total Balance including unconfirmed and immature zABA</string>
                  </property>
                  <property name="text">
-                  <string>Total zCCBC Balance:</string>
+                  <string>Total zABA Balance:</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -998,10 +998,10 @@ zCCBC are mature when they have more than 20 confirmations AND more than 1 mints
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Total Balance including unconfirmed and immature zCCBC</string>
+                  <string>Total Balance including unconfirmed and immature zABA</string>
                  </property>
                  <property name="text">
-                  <string>0 zCCBC</string>
+                  <string>0 zABA</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

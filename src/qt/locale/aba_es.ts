@@ -618,8 +618,8 @@
         <translation>&amp;Privacidad</translation>
     </message>
     <message>
-        <source>Privacy Action for zCCBC and Obfuscation</source>
-        <translation>Privacidad con zCCBC y Ofuscación</translation>
+        <source>Privacy Action for zABA and Obfuscation</source>
+        <translation>Privacidad con zABA y Ofuscación</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1716,20 +1716,20 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming ABA which get automatically converted to zCCBC via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de XXXs entrantes que serán automáticamente convertidos a zCCBC a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <source>Percentage of incoming ABA which get automatically converted to zABA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Porcentaje de XXXs entrantes que serán automáticamente convertidos a zABA a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCBC</source>
-        <translation>Porcentaje de zCCBC autogenerados</translation>
+        <source>Percentage of autominted zABA</source>
+        <translation>Porcentaje de zABA autogenerados</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough ABA for this denomination is available</source>
         <translation>Retrasar la conversión automática a Zerocoin hasta que hayan suficientes ABA disponibles para este tamaño de billete</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCBC Denomination</source>
-        <translation>Tamaño de billete zCCBC preferido en la creación automática de dinero</translation>
+        <source>Preferred Automint zABA Denomination</source>
+        <translation>Tamaño de billete zABA preferido en la creación automática de dinero</translation>
     </message>
     <message>
         <source>Connect to the Aba network through a SOCKS5 proxy.</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>ABA:</translation>
     </message>
     <message>
-        <source>zCCBC:</source>
-        <translation>zCCBC:</translation>
+        <source>zABA:</source>
+        <translation>zABA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2068,8 +2068,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>ABA que fueron anonimizados mediante Protocolo Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin ABA (zCCBC)</source>
-        <translation>Zerocoin ABA (zCCBC)</translation>
+        <source>Zerocoin ABA (zABA)</source>
+        <translation>Zerocoin ABA (zABA)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2092,8 +2092,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCCBC</source>
-        <translation>zCCBC</translation>
+        <source>zABA</source>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
@@ -2160,8 +2160,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Balance disponible:</translation>
     </message>
     <message>
-        <source>0 zCCBC</source>
-        <translation>0 zCCBC</translation>
+        <source>0 zABA</source>
+        <translation>0 zABA</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2400,8 +2400,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Monedas creadas correctamente</translation>
     </message>
     <message>
-        <source> zCCBC in </source>
-        <translation>zCCBC en</translation>
+        <source> zABA in </source>
+        <translation>zABA en</translation>
     </message>
     <message>
         <source> sec. Used denominations:

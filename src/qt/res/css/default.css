@@ -1048,7 +1048,7 @@ QWidget .QFrame#frame_4 .QLabel#label_5z_3 { /* Zerocoin Balance Label */
     padding-right: 5px;
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceText { /* Available zCCBC Label */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceText { /* Available zABA Label */
     qproperty-alignment: 'AlignVCenter | AlignRight';
     min-width: 160px;
     background-color: #333;
@@ -1060,7 +1060,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceText { /* Available zCCBC Label */
     /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalance { /* Available zCCBC Balance */
+QWidget .QFrame#frame_4 .QLabel#labelzBalance { /* Available zABA Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
@@ -1068,7 +1068,7 @@ color:#fab43b;
 margin-left:0px;
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmedText { /* Unconfirmed zCCBC Label */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmedText { /* Unconfirmed zABA Label */
     qproperty-alignment: 'AlignVCenter | AlignRight';
     min-width: 160px;
     background-color: #333;
@@ -1080,7 +1080,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmedText { /* Unconfirmed zC
     /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmed { /* Unconfirmed zCCBC Balance */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmed { /* Unconfirmed zABA Balance */
     qproperty-alignment: 'AlignVCenter | AlignLeft';
     font-size: 12px;
     font-weight: bold;
@@ -1088,7 +1088,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmed { /* Unconfirmed zCCBC 
     margin-left: 0px;
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceMatureText { /* Mature zCCBC Label */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceMatureText { /* Mature zABA Label */
     qproperty-alignment: 'AlignVCenter | AlignRight';
     min-width: 160px;
     background-color: #333;
@@ -1100,7 +1100,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceMatureText { /* Mature zCCBC Label 
     /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceMature { /* Mature zCCBC Balance */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceMature { /* Mature zABA Balance */
     qproperty-alignment: 'AlignVCenter | AlignLeft';
     font-size: 12px;
     font-weight: bold;
@@ -1108,7 +1108,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceMature { /* Mature zCCBC Balance */
     margin-left: 0px;
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmatureText { /* Immature zCCBC Label */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmatureText { /* Immature zABA Label */
     qproperty-alignment: 'AlignVCenter | AlignRight';
     min-width: 160px;
     background-color: #333;
@@ -1120,7 +1120,7 @@ QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmatureText { /* Immature zCCBC La
     /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmature { /* Immature zCCBC Balance */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmature { /* Immature zABA Balance */
     qproperty-alignment: 'AlignVCenter | AlignLeft';
     font-size: 12px;
     font-weight: bold;
@@ -1159,7 +1159,7 @@ QWidget .QFrame#frame_3 .QLabel#labelBalancez { /* Available ABA Balance */
     margin-left: 0px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz { /* Available zCCBC Label */
+QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz { /* Available zABA Label */
     qproperty-alignment: 'AlignVCenter | AlignRight';
     min-width: 160px;
     background-color: #333;
@@ -1171,7 +1171,7 @@ QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz { /* Available zCCBC Label */
     /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelzBalancez { /* Available zCCBC Balance */
+QWidget .QFrame#frame_3 .QLabel#labelzBalancez { /* Available zABA Balance */
     qproperty-alignment: 'AlignVCenter | AlignLeft';
     font-size: 12px;
     font-weight: bold;
@@ -1179,7 +1179,7 @@ QWidget .QFrame#frame_3 .QLabel#labelzBalancez { /* Available zCCBC Balance */
     margin-left: 0px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zCCBC Label */
+QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zABA Label */
     qproperty-alignment: 'AlignVCenter | AlignRight';
     min-width: 160px;
     background-color: #333;
@@ -1191,7 +1191,7 @@ QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zCCBC Labe
     /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelLockedBalance { /* Available zCCBC Balance */
+QWidget .QFrame#frame_3 .QLabel#labelLockedBalance { /* Available zABA Balance */
     qproperty-alignment: 'AlignVCenter | AlignLeft';
     font-size: 12px;
     font-weight: normal;
@@ -1199,7 +1199,7 @@ QWidget .QFrame#frame_3 .QLabel#labelLockedBalance { /* Available zCCBC Balance 
     margin-left: 0px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText { /* Available zCCBC Label */
+QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText { /* Available zABA Label */
     qproperty-alignment: 'AlignVCenter | AlignRight';
     min-width: 160px;
     background-color: #333;
@@ -1211,7 +1211,7 @@ QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText { /* Available zCCBC La
     /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalance { /* Available zCCBC Balance */
+QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalance { /* Available zABA Balance */
     qproperty-alignment: 'AlignVCenter | AlignLeft';
     font-size: 12px;
     font-weight: normal;

@@ -20,9 +20,9 @@ BITCOIN_TX_NAME=aba-tx
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef CCBC_CONFIG_H])
-AH_TOP([#define CCBC_CONFIG_H])
-AH_BOTTOM([#endif //CCBC_CONFIG_H])
+AH_TOP([#ifndef ABA_CONFIG_H])
+AH_TOP([#define ABA_CONFIG_H])
+AH_BOTTOM([#endif //ABA_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

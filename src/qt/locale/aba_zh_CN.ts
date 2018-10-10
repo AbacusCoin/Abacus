@@ -618,8 +618,8 @@
         <translation>&amp;P隐私</translation>
     </message>
     <message>
-        <source>Privacy Action for zCCBC and Obfuscation</source>
-        <translation>zCCBC和混淆的隐私操作</translation>
+        <source>Privacy Action for zABA and Obfuscation</source>
+        <translation>zABA和混淆的隐私操作</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>

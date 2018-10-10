@@ -610,7 +610,7 @@
         <translation>&amp;Конфиденциальность</translation>
     </message>
     <message>
-        <source>Privacy Action for zCCBC and Obfuscation</source>
+        <source>Privacy Action for zABA and Obfuscation</source>
         <translation>Конфиденциальное действие и обфускация</translation>
     </message>
     <message>
@@ -1684,16 +1684,16 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming ABA which get automatically converted to zCCBC via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих ABA, которые автоматически конвертируются в zCCBC благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming ABA which get automatically converted to zABA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих ABA, которые автоматически конвертируются в zABA благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCBC</source>
-        <translation>Процент  авточеканненых zCCBC</translation>
+        <source>Percentage of autominted zABA</source>
+        <translation>Процент  авточеканненых zABA</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCBC Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zCCBC</translation>
+        <source>Preferred Automint zABA Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zABA</translation>
     </message>
     <message>
         <source>Connect to the Aba network through a SOCKS5 proxy.</source>
@@ -1895,8 +1895,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>ABA:</translation>
     </message>
     <message>
-        <source>zCCBC:</source>
-        <translation>zCCBC:</translation>
+        <source>zABA:</source>
+        <translation>zABA:</translation>
     </message>
     <message>
         <source>0 %</source>

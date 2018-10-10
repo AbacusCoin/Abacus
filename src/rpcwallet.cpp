@@ -2400,13 +2400,13 @@ Value mintzerocoin(const Array& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "mintzerocoin <amount>\n"
-            "Usage: Enter an amount of Aba to convert to zCcbc"
+            "Usage: Enter an amount of Aba to convert to zAba"
             + HelpRequiringPassphrase());
 
     int64_t nTime = GetTimeMillis();
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zCCBC is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zABA is currently disabled due to maintenance.");
 
     if (pwalletMain->IsLocked())
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
@@ -2440,7 +2440,7 @@ Value spendzerocoin(const Array& params, bool fHelp)
     if (fHelp || params.size() > 5 || params.size() < 4)
         throw runtime_error(
             "spendzerocoin <amount> <mintchange [true|false]> <minimizechange [true|false]>  <securitylevel [1-100]> <address>\n"
-            "Overview: Convert zCCBC (zerocoins) into ABA. \n"
+            "Overview: Convert zABA (zerocoins) into ABA. \n"
             "amount: amount to spend\n"
             "mintchange: if there is left over ABA (change), the wallet can convert it automatically back to zerocoins [true]\n"
             "minimizechange: try to minimize the returning change  [false]\n"
@@ -2452,14 +2452,14 @@ Value spendzerocoin(const Array& params, bool fHelp)
             + HelpRequiringPassphrase());
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zCCBC is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zABA is currently disabled due to maintenance.");
 
     int64_t nTimeStart = GetTimeMillis();
     if (pwalletMain->IsLocked())
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
 
     CAmount nAmount = AmountFromValue(params[0]);   // Spending amount
-    bool fMintChange = params[1].get_bool();        // Mint change to zCCBC
+    bool fMintChange = params[1].get_bool();        // Mint change to zABA
     bool fMinimizeChange = params[2].get_bool();    // Minimize change
     int nSecurityLevel = params[3].get_int();       // Security level
 
@@ -2654,7 +2654,7 @@ Value exportzerocoins(const Array& params, bool fHelp)
 
                 "\nArguments:\n"
                 "1. \"include_spent\"        (bool, required) Include mints that have already been spent\n"
-                "2. \"denomination\"         (integer, optional) Export a specific denomination of zCcbc\n"
+                "2. \"denomination\"         (integer, optional) Export a specific denomination of zAba\n"
 
                 "\nResult\n"
                 "[                   (array of json object)\n"
@@ -2718,7 +2718,7 @@ Value importzerocoins(const Array& params, bool fHelp)
 
                 "\nResult:\n"
                 "\"added\"            (int) the quantity of zerocoin mints that were added\n"
-                "\"value\"            (string) the total zCcbc value of zerocoin mints that were added\n"
+                "\"value\"            (string) the total zAba value of zerocoin mints that were added\n"
 
                 "\nExamples\n" +
             HelpExampleCli("importzerocoins", "\'[{\"d\":100,\"p\":\"mypubcoin\",\"s\":\"myserial\",\"r\":\"randomness_hex\",\"t\":\"mytxid\",\"h\":104923, \"u\":false},{\"d\":5,...}]\'") +
@@ -2770,7 +2770,7 @@ Value reconsiderzerocoins(const Array& params, bool fHelp)
     if(fHelp || !params.empty())
         throw runtime_error(
             "reconsiderzerocoins\n"
-                "\nCheck archived zCcbc list to see if any mints were added to the blockchain.\n"
+                "\nCheck archived zAba list to see if any mints were added to the blockchain.\n"
 
                 "\nResult\n"
                 "[                                 (array of json objects)\n"

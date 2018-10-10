@@ -618,8 +618,8 @@
         <translation>&amp;Privatsphäre</translation>
     </message>
     <message>
-        <source>Privacy Action for zCCBC and Obfuscation</source>
-        <translation>Privatsphäre Aktion für zCCBC und Verschleierung</translation>
+        <source>Privacy Action for zABA and Obfuscation</source>
+        <translation>Privatsphäre Aktion für zABA und Verschleierung</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1572,15 +1572,15 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Aba's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den Ccbcs Konfigurationen ändern.</translation>
+        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den Abas Konfigurationen ändern.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Aba's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den Ccbcs Konfigurationen ändern.</translation>
+        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den Abas Konfigurationen ändern.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Aba's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den Ccbcs Konfigurationen ändern.</translation>
+        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den Abas Konfigurationen ändern.</translation>
     </message>
 </context>
 <context>
@@ -1707,20 +1707,20 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Percentage of incoming ABA which get automatically converted to zCCBC via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden ABA, welcher automatisch zu zCCBC via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming ABA which get automatically converted to zABA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden ABA, welcher automatisch zu zABA via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCBC</source>
-        <translation>Prozentsatz der automatisierten zCCBC</translation>
+        <source>Percentage of autominted zABA</source>
+        <translation>Prozentsatz der automatisierten zABA</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough ABA for this denomination is available</source>
         <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend ABA für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCBC Denomination</source>
-        <translation>Bevorzugte automatisierte zCCBC Stückelung </translation>
+        <source>Preferred Automint zABA Denomination</source>
+        <translation>Bevorzugte automatisierte zABA Stückelung </translation>
     </message>
     <message>
         <source>Connect to the Aba network through a SOCKS5 proxy.</source>
@@ -1926,8 +1926,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>ABA:</translation>
     </message>
     <message>
-        <source>zCCBC:</source>
-        <translation>zCCBC:</translation>
+        <source>zABA:</source>
+        <translation>zABA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2059,8 +2059,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>ABA, die über das Zerocoin-Protokoll anonymisiert wurden</translation>
     </message>
     <message>
-        <source>Zerocoin ABA (zCCBC)</source>
-        <translation>Zerocoin ABA (zCCBC)</translation>
+        <source>Zerocoin ABA (zABA)</source>
+        <translation>Zerocoin ABA (zABA)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2083,8 +2083,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCCBC</source>
-        <translation>zCCBC</translation>
+        <source>zABA</source>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
@@ -2151,8 +2151,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Verfügbare Bilanz:</translation>
     </message>
     <message>
-        <source>0 zCCBC</source>
-        <translation>0 zCCBC</translation>
+        <source>0 zABA</source>
+        <translation>0 zABA</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2391,8 +2391,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Erfolgreich geprägt</translation>
     </message>
     <message>
-        <source> zCCBC in </source>
-        <translation> zCCBC in </translation>
+        <source> zABA in </source>
+        <translation> zABA in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2470,7 +2470,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zPhr Spend #: </source>
-        <translation>zCCBC Ausgeben #:</translation>
+        <translation>zABA Ausgeben #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -3951,23 +3951,23 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Converted Phr to zPhr</source>
-        <translation>Umgewandeltes ABA zu zCCBC</translation>
+        <translation>Umgewandeltes ABA zu zABA</translation>
     </message>
     <message>
         <source>Spent zPhr</source>
-        <translation>Ausgeben zCCBC</translation>
+        <translation>Ausgeben zABA</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Empfangene ABA von zCCBC</translation>
+        <translation>Empfangene ABA von zABA</translation>
     </message>
     <message>
         <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Geprägtes Wechselgeld als zCCBC von zCCBC Ausgabe</translation>
+        <translation>Geprägtes Wechselgeld als zABA von zABA Ausgabe</translation>
     </message>
     <message>
         <source>Converted zPhr to Phr</source>
-        <translation>Umgewandeltes zCCBC zu ABA</translation>
+        <translation>Umgewandeltes zABA zu ABA</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3975,7 +3975,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zPhr Accumulator</source>
-        <translation>zCCBC Speicher</translation>
+        <translation>zABA Speicher</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4086,7 +4086,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Empfangene ABA von zCCBC</translation>
+        <translation>Empfangene ABA von zABA</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4098,7 +4098,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Zerocoin Ausgabe, Wechselgeld in zCCBC</translation>
+        <translation>Zerocoin Ausgabe, Wechselgeld in zABA</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4269,7 +4269,7 @@ Bitte haben Sie Geduld...</translation>
     <name>ZPhrControlDialog</name>
     <message>
         <source>Select zPhr to Spend</source>
-        <translation>Auswahl zCCBC als Ausgabe</translation>
+        <translation>Auswahl zABA als Ausgabe</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4281,7 +4281,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zPhr</source>
-        <translation>zCCBC</translation>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>

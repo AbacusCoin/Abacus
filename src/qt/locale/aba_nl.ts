@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Aba addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Ccbcadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <translation>Dit zijn uw Abaadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
     </message>
     <message>
         <source>These are your Aba addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Ccbcadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <translation>Dit zijn uw Abaadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -618,8 +618,8 @@
         <translation>&amp;Privacy</translation>
     </message>
     <message>
-        <source>Privacy Action for zCCBC and Obfuscation</source>
-        <translation>Privacy Actie voor zCCBC en verduistering</translation>
+        <source>Privacy Action for zABA and Obfuscation</source>
+        <translation>Privacy Actie voor zABA en verduistering</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1699,20 +1699,20 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming ABA which get automatically converted to zCCBC via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende ABA die automatisch wordt omgezet naar zCCBC via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming ABA which get automatically converted to zABA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende ABA die automatisch wordt omgezet naar zABA via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCBC</source>
-        <translation>Percentage autominted zCCBC</translation>
+        <source>Percentage of autominted zABA</source>
+        <translation>Percentage autominted zABA</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough ABA for this denomination is available</source>
         <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg ABA voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCBC Denomination</source>
-        <translation>Gewenste Automint zCCBC denominatie</translation>
+        <source>Preferred Automint zABA Denomination</source>
+        <translation>Gewenste Automint zABA denominatie</translation>
     </message>
     <message>
         <source>Connect to the Aba network through a SOCKS5 proxy.</source>
@@ -1918,8 +1918,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>ABA:</translation>
     </message>
     <message>
-        <source>zCCBC:</source>
-        <translation>zCCBC:</translation>
+        <source>zABA:</source>
+        <translation>zABA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2051,8 +2051,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>ABA die via het Zerocin Protocol geanonimiseerd werden</translation>
     </message>
     <message>
-        <source>Zerocoin ABA (zCCBC)</source>
-        <translation>Zerocoin ABA (zCCBC)</translation>
+        <source>Zerocoin ABA (zABA)</source>
+        <translation>Zerocoin ABA (zABA)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2075,8 +2075,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCCBC</source>
-        <translation>zCCBC</translation>
+        <source>zABA</source>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
@@ -2143,8 +2143,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Beschikbaar saldo:</translation>
     </message>
     <message>
-        <source>0 zCCBC</source>
-        <translation>0 zCCBC</translation>
+        <source>0 zABA</source>
+        <translation>0 zABA</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2383,8 +2383,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>Succesvol gemint</translation>
     </message>
     <message>
-        <source> zCCBC in </source>
-        <translation> zCCBC in </translation>
+        <source> zABA in </source>
+        <translation> zABA in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -3168,11 +3168,11 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 uXXXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXXXs in fee,&lt;br /&gt;while "at least" pays 1000 uXXXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uXXXs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uCCBC's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uCCBC's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uXXXs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uABA's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uABA's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 uXXXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXXXs in fee,&lt;br /&gt;while "total at least" pays 1000 uXXXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uXXXs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uCCBC's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uCCBC's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uXXXs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uABA's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uABA's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Aba transactions than the network can process.</source>

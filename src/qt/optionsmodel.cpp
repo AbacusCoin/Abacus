@@ -79,10 +79,10 @@ void OptionsModel::Init()
         settings.setValue("nZeromintPercentage", 10);
     nZeromintPercentage = settings.value("nZeromintPercentage").toLongLong();
 
-    if (!settings.contains("nAnonymizeCcbcAmount"))
-        settings.setValue("nAnonymizeCcbcAmount", 1000);
+    if (!settings.contains("nAnonymizeAbaAmount"))
+        settings.setValue("nAnonymizeAbaAmount", 1000);
 
-    nAnonymizeCcbcAmount = settings.value("nAnonymizeCcbcAmount").toLongLong();
+    nAnonymizeAbaAmount = settings.value("nAnonymizeAbaAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -151,8 +151,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeCcbcAmount"))
-        SoftSetArg("-anonymizeabaamount", settings.value("nAnonymizeCcbcAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeAbaAmount"))
+        SoftSetArg("-anonymizeabaamount", settings.value("nAnonymizeAbaAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -234,8 +234,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeCcbcAmount:
-            return QVariant(nAnonymizeCcbcAmount);
+        case AnonymizeAbaAmount:
+            return QVariant(nAnonymizeAbaAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -350,10 +350,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit preferredDenomChanged(nPreferredDenom);
             break;
 
-        case AnonymizeCcbcAmount:
-            nAnonymizeCcbcAmount = value.toInt();
-            settings.setValue("nAnonymizeCcbcAmount", nAnonymizeCcbcAmount);
-            emit anonymizeCcbcAmountChanged(nAnonymizeCcbcAmount);
+        case AnonymizeAbaAmount:
+            nAnonymizeAbaAmount = value.toInt();
+            settings.setValue("nAnonymizeAbaAmount", nAnonymizeAbaAmount);
+            emit anonymizeAbaAmountChanged(nAnonymizeAbaAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

@@ -89,7 +89,7 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 Copy abad.init to /etc/init.d/abad. Test by running "service abad start".
 
 Using this script, you can adjust the path and flags to the abad program by
-setting the CCBCD and FLAGS environment variables in the file
+setting the ABAD and FLAGS environment variables in the file
 /etc/sysconfig/abad. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn

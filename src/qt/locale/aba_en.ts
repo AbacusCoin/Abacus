@@ -546,7 +546,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for zCCBC</source>
+        <source>Privacy Actions for zABA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2162,12 +2162,12 @@ https://www.transifex.com/aba-project/aba-project-translations</source>
     </message>
     <message>
         <location line="-133"/>
-        <source>Percentage of incoming ABA which get automatically converted to zCCBC via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming ABA which get automatically converted to zABA via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zCCBC</source>
+        <source>Percentage of autominted zABA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2178,7 +2178,7 @@ https://www.transifex.com/aba-project/aba-project-translations</source>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zCCBC Denomination</source>
+        <source>Preferred Automint zABA Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2454,12 +2454,12 @@ https://www.transifex.com/aba-project/aba-project-translations</source>
     </message>
     <message>
         <location line="+35"/>
-        <source>zCCBC:</source>
+        <source>zABA:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Current percentage of zCCBC.
+        <source>Current percentage of zABA.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2472,7 +2472,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="-46"/>
         <location line="+13"/>
-        <source>Locked ABA or Masternode collaterals. These are excluded from zCCBC minting.</source>
+        <source>Locked ABA or Masternode collaterals. These are excluded from zABA minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2492,7 +2492,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="+7"/>
         <location line="+10"/>
-        <source>Unlocked XXXs. These can be used for zCCBC minting.</source>
+        <source>Unlocked XXXs. These can be used for zABA minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2509,7 +2509,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <location line="+14"/>
         <location line="+104"/>
         <source>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zCCBC are spendable.</source>
+These zABA are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2520,7 +2520,7 @@ These zCCBC are spendable.</source>
     <message>
         <location line="+23"/>
         <location line="+35"/>
-        <source>All available zCCBC, unconfirmed and immature zCCBC included.</source>
+        <source>All available zABA, unconfirmed and immature zABA included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2550,7 +2550,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
     </message>
     <message>
         <location line="+93"/>
-        <source>Current percentage of zCCBC.
+        <source>Current percentage of zABA.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
         <translation type="unfinished"></translation>
@@ -2721,7 +2721,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+6"/>
-        <source>Zerocoin ABA (zCCBC)</source>
+        <source>Zerocoin ABA (zABA)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2756,7 +2756,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="-349"/>
         <location line="+629"/>
-        <source>zCCBC</source>
+        <source>zABA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2847,7 +2847,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) zCCBC for spending</source>
+        <source>Available (mature and spendable) zABA for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2857,15 +2857,15 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) zCCBC for spending
+        <source>Available (mature and spendable) zABA for spending
 
-zCCBC are mature when they have more than 20 confirmations AND more than 3 mints of the same denomination after them were minted</source>
+zABA are mature when they have more than 20 confirmations AND more than 3 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
         <location line="+417"/>
-        <source>0 zCCBC</source>
+        <source>0 zABA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2956,7 +2956,7 @@ zCCBC are mature when they have more than 20 confirmations AND more than 3 mints
     <message>
         <location line="+62"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zCCBC</source>
+        <source>Total Balance including unconfirmed and immature zABA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3192,7 +3192,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
     </message>
     <message>
         <location line="+0"/>
-        <source> zCCBC in </source>
+        <source> zABA in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>

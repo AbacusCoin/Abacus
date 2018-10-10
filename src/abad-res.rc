@@ -19,7 +19,7 @@ BEGIN
             VALUE "CompanyName",        "ABA" 
 	    VALUE "Programmer",		"TFinch" 
 	    VALUE "RevivedBy",		"ABA Team"
-            VALUE "FileDescription",    "ABA (OSS daemon/client for ABA) In partnership with CCBCX Team"
+            VALUE "FileDescription",    "ABA (OSS daemon/client for ABA) In partnership with MotoAcidic, TFinch"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "abad"
             VALUE "LegalCopyright",     COPYRIGHT_STR

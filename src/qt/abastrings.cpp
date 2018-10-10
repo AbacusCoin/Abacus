@@ -56,7 +56,7 @@ QT_TRANSLATE_NOOP("aba-core", ""
 "Distributed under the MIT software license, see the accompanying file "
 "COPYING or <http://www.opensource.org/licenses/mit-license.php>."),
 QT_TRANSLATE_NOOP("aba-core", ""
-"Enable automatic wallet backups triggered after each zCcbc minting (0-1, "
+"Enable automatic wallet backups triggered after each zAba minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("aba-core", ""
 "Enable spork administration functionality with the appropriate private key."),

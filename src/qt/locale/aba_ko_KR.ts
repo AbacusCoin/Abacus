@@ -618,8 +618,8 @@
         <translation>&amp;프라이버시</translation>
     </message>
     <message>
-        <source>Privacy Action for zCCBC and Obfuscation</source>
-        <translation>zCCBC와 난독화를 위한 프라이버스 작업</translation>
+        <source>Privacy Action for zABA and Obfuscation</source>
+        <translation>zABA와 난독화를 위한 프라이버스 작업</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1716,20 +1716,20 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Percentage of incoming ABA which get automatically converted to zCCBC via Zerocoin Protocol (min: 10%)</source>
-        <translation>ABA수신시 자동변환 zCCBC 퍼센트 (최소값:10%)</translation>
+        <source>Percentage of incoming ABA which get automatically converted to zABA via Zerocoin Protocol (min: 10%)</source>
+        <translation>ABA수신시 자동변환 zABA 퍼센트 (최소값:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCBC</source>
-        <translation>자동 변환되는 zCCBC 퍼센트</translation>
+        <source>Percentage of autominted zABA</source>
+        <translation>자동 변환되는 zABA 퍼센트</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough ABA for this denomination is available</source>
         <translation>이 디노미네이션의 ABA가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCBC Denomination</source>
-        <translation>선호하는 자동생성 zCCBC 디노미네이션 </translation>
+        <source>Preferred Automint zABA Denomination</source>
+        <translation>선호하는 자동생성 zABA 디노미네이션 </translation>
     </message>
     <message>
         <source>Connect to the Aba network through a SOCKS5 proxy.</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>ABA:</translation>
     </message>
     <message>
-        <source>zCCBC:</source>
-        <translation>zCCBC:</translation>
+        <source>zABA:</source>
+        <translation>zABA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2068,8 +2068,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>제로코인 프로토콜을 통해 익명화된 ABA</translation>
     </message>
     <message>
-        <source>Zerocoin ABA (zCCBC)</source>
-        <translation>제로코인 ABA (zCCBC)</translation>
+        <source>Zerocoin ABA (zABA)</source>
+        <translation>제로코인 ABA (zABA)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2081,7 +2081,7 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>zCCBC로 변환할 ABA 수량을 입력하세요.</translation>
+        <translation>zABA로 변환할 ABA 수량을 입력하세요.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2092,8 +2092,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCCBC</source>
-        <translation>zCCBC</translation>
+        <source>zABA</source>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
@@ -2137,11 +2137,11 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
     </message>
     <message>
         <source>zPhr Control</source>
-        <translation>zCCBC 설정</translation>
+        <translation>zABA 설정</translation>
     </message>
     <message>
         <source>zPhr Selected:</source>
-        <translation>선택한 zCCBC : </translation>
+        <translation>선택한 zABA : </translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2160,8 +2160,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>가능한 잔액:</translation>
     </message>
     <message>
-        <source>0 zCCBC</source>
-        <translation>0 zCCBC</translation>
+        <source>0 zABA</source>
+        <translation>0 zABA</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2400,8 +2400,8 @@ https://www.transifex.com/aba-project/aba-project-translations</translation>
         <translation>성공적으로 발행됨</translation>
     </message>
     <message>
-        <source> zCCBC in </source>
-        <translation> zCCBC in </translation>
+        <source> zABA in </source>
+        <translation> zABA in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2503,7 +2503,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Mint</source>
-        <translation>zCCBC 생성</translation>
+        <translation>zABA 생성</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3962,19 +3962,19 @@ Please be patient...</source>
     </message>
     <message>
         <source>Converted Phr to zPhr</source>
-        <translation>zCCBC로 변환된 ABA</translation>
+        <translation>zABA로 변환된 ABA</translation>
     </message>
     <message>
         <source>Spent zPhr</source>
-        <translation>전송된 zCCBC</translation>
+        <translation>전송된 zABA</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>zCCBC로 전송받은 ABA</translation>
+        <translation>zABA로 전송받은 ABA</translation>
     </message>
     <message>
         <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>zCCBC 전송후 남은 잔돈 zCCBC 생성됨</translation>
+        <translation>zABA 전송후 남은 잔돈 zABA 생성됨</translation>
     </message>
     <message>
         <source>Converted zPhr to Phr</source>
@@ -4097,7 +4097,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>zCCBC로 전송받은 ABA</translation>
+        <translation>zABA로 전송받은 ABA</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4109,7 +4109,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>제로코인 전송, 잔돈은 zCCBC</translation>
+        <translation>제로코인 전송, 잔돈은 zABA</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4280,7 +4280,7 @@ Please be patient...</source>
     <name>ZPhrControlDialog</name>
     <message>
         <source>Select zPhr to Spend</source>
-        <translation>전송할 zCCBC 선택</translation>
+        <translation>전송할 zABA 선택</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4505,10 +4505,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Aba Alert" admin@foo.com
 </source>
-        <translation>Ccbcd 또는 Aba-qt에 대한 -server 옵션 파일을 사용하려면 configuration 파일에서 rpcpassword를 설정해야 합니다:
+        <translation>Abad 또는 Aba-qt에 대한 -server 옵션 파일을 사용하려면 configuration 파일에서 rpcpassword를 설정해야 합니다:
 %s
 다음 무작위 암호를 사용하는 것을 추천합니다:
-rpcuser=Ccbcpc
+rpcuser=Abapc
 rpcpassword=%s
 (이 비밀번호는 기억할 필요가 없습니다)
 유저 이름과 비밀번호는 반드시 달라야 합니다.

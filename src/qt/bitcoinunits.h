@@ -59,8 +59,8 @@ public:
      */
     enum Unit {
         ABA,
-        mCCBC,
-        uCCBC
+        mABA,
+        uABA
     };
 
     enum SeparatorStyle {

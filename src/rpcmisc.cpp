@@ -66,17 +66,17 @@ Value getinfo(const Array& params, bool fHelp)
             "  \"difficulty\": xxxxxx,       (numeric) the current difficulty\n"
             "  \"testnet\": true|false,      (boolean) if the server is using testnet or not\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zCCBCsupply\" :\n"
+            "  \"zABAsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zCCBC denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zCCBC denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zCCBC denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zCCBC denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zCCBC denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zCCBC denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zCCBC denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zCCBC denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zCCBC denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zABA denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zABA denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zABA denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zABA denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zABA denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zABA denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zABA denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zABA denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zABA denominations\n"
             "  }\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
@@ -109,12 +109,12 @@ Value getinfo(const Array& params, bool fHelp)
     obj.push_back(Pair("difficulty", (double)GetDifficulty()));
     obj.push_back(Pair("testnet", Params().TestnetToBeDeprecatedFieldRPC()));
     obj.push_back(Pair("moneysupply",ValueFromAmount(chainActive.Tip()->nMoneySupply)));
-    Object zCCBCObj;
+    Object zABAObj;
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zCCBCObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom * COIN))));
+        zABAObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom * COIN))));
     }
-    zCCBCObj.emplace_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
-    obj.emplace_back(Pair("zCCBCsupply", zCCBCObj));
+    zABAObj.emplace_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
+    obj.emplace_back(Pair("zABAsupply", zABAObj));
     
 #ifdef ENABLE_WALLET
     if (pwalletMain) {
