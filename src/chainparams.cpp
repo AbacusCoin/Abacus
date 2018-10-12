@@ -57,7 +57,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
 boost::assign::map_list_of
 
-(0, uint256("0x0x000002d8e8f636fb260b94587949eccc716109364aefc5820a7722d5814cb60a"));
+(0, uint256("0x08199e3aaf29c5a4dad59f44e473e8734fb04b680d277eed01660e300f2d548d"));
 
 static const Checkpoints::CCheckpointData data = {
 	&mapCheckpoints,
@@ -69,7 +69,7 @@ static const Checkpoints::CCheckpointData data = {
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
 boost::assign::map_list_of
-(0, uint256("0x0x000002d8e8f636fb260b94587949eccc716109364aefc5820a7722d5814cb60a"));
+(0, uint256("0x08199e3aaf29c5a4dad59f44e473e8734fb04b680d277eed01660e300f2d548d"));
 static const Checkpoints::CCheckpointData dataTestnet = {
 	&mapCheckpointsTestnet,
 	1539355914,
@@ -79,7 +79,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
 boost::assign::map_list_of
-(0, uint256("0x0x000002d8e8f636fb260b94587949eccc716109364aefc5820a7722d5814cb60a"));
+(0, uint256("0x08199e3aaf29c5a4dad59f44e473e8734fb04b680d277eed01660e300f2d548d"));
 static const Checkpoints::CCheckpointData dataRegtest = {
 	&mapCheckpointsRegtest,
 	1539355914,
@@ -160,10 +160,10 @@ public:
 
 		hashGenesisBlock = genesis.GetHash();
 
-		printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-		printf("genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
-		assert(hashGenesisBlock == uint256("0x0x000002d8e8f636fb260b94587949eccc716109364aefc5820a7722d5814cb60a"));
-		assert(genesis.hashMerkleRoot == uint256("0xd221389ecf5beac0188a4f959e1f0c9b6b180ec09db6fe488e2e65a36d4071c0"));
+		//printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+		//printf("genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
+		assert(hashGenesisBlock == uint256("0x08199e3aaf29c5a4dad59f44e473e8734fb04b680d277eed01660e300f2d548d"));
+		assert(genesis.hashMerkleRoot == uint256("0x598ffdff99e67551b7a05dc08dfafcf2e7a6ecea89f9b369bf830f4b21ff160f"));
 
 		//Teams Seeder
 		//vSeeds.push_back(CDNSSeedData("seeder.abaoin.club", "seeder.abaoin.club"));
@@ -275,8 +275,8 @@ public:
 
 		hashGenesisBlock = genesis.GetHash();
 		//printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-		assert(hashGenesisBlock == uint256("0x0x000002d8e8f636fb260b94587949eccc716109364aefc5820a7722d5814cb60a"));
-		assert(genesis.hashMerkleRoot == uint256("0xd221389ecf5beac0188a4f959e1f0c9b6b180ec09db6fe488e2e65a36d4071c0"));
+		assert(hashGenesisBlock == uint256("0x08199e3aaf29c5a4dad59f44e473e8734fb04b680d277eed01660e300f2d548d"));
+		assert(genesis.hashMerkleRoot == uint256("0x598ffdff99e67551b7a05dc08dfafcf2e7a6ecea89f9b369bf830f4b21ff160f"));
 
 		vFixedSeeds.clear();
 		vSeeds.clear();
@@ -345,8 +345,8 @@ public:
 		nDefaultPort = 15222;
 		//printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 		//printf("%s\n", hashGenesisBlock.ToString().c_str());
-		assert(hashGenesisBlock == uint256("0x0x000002d8e8f636fb260b94587949eccc716109364aefc5820a7722d5814cb60a"));
-		assert(genesis.hashMerkleRoot == uint256("0xd221389ecf5beac0188a4f959e1f0c9b6b180ec09db6fe488e2e65a36d4071c0"));
+		assert(hashGenesisBlock == uint256("0x08199e3aaf29c5a4dad59f44e473e8734fb04b680d277eed01660e300f2d548d"));
+		assert(genesis.hashMerkleRoot == uint256("0x598ffdff99e67551b7a05dc08dfafcf2e7a6ecea89f9b369bf830f4b21ff160f"));
 
 		vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
 		vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
