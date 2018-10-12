@@ -191,7 +191,7 @@ public:
 		nPoolMaxTransactions = 3;
 		strSporkKey = "030262a2a0679d01ab026d375c42b0a4122477123631b870e09665526c322c8899";
 		strObfuscationPoolDummyAddress = "XCNAsFGy8k7amqRG26ikKyfVDwK8585Z6b";
-		nStartMasternodePayments = 1534438799;
+        nStartMasternodePayments = 1539185872;
 
 		/** Zerocoin */
 		zerocoinModulus = "0xc95577b6dce0049b0a20c779af38079355abadde1a1d80c353f6cb697a7ae5a087bad39caa5798478551d0f9d91e6267716506f32412de1d19d17588765eb9502b85c6a18abdb05791cfd8b734e960281193705eeece210920cc922b3af3ceb178bf12c22eb565d5767fbf19545639be8953c2c38ffad41f3371e4aac750ac2d7bd614b3faabb453081d5d88fdbb803657a980bc93707e4b14233a2358c97763bf28f7c933206071477e8b371f229bc9ce7d6ef0ed7163aa5dfe13bc15f7816348b328fa2c1e69d5c88f7b94cee7829d56d1842d77d7bb8692e9fc7b7db059836500de8d57eb43c345feb58671503b932829112941367996b03871300f25efb5";
@@ -263,14 +263,14 @@ public:
 		nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
 		nMaxMoneyOut = 100000000 * COIN;
 		nZerocoinStartHeight = 201;
-		nZerocoinStartTime = 1539185872;
+        nZerocoinStartTime = 1539185872;
 		nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
 		nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
 		nBlockFirstFraudulent = 9891737; //First block that bad serials emerged
 		nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
 
 											//! Modify the testnet genesis block so the timestamp is valid for a later start.
-		genesis.nTime = 1539185872;
+        genesis.nTime = 1539185872;
 		genesis.nNonce = 647688;
 
 		hashGenesisBlock = genesis.GetHash();
@@ -306,7 +306,7 @@ public:
 		nPoolMaxTransactions = 2;
 		strSporkKey = "030262a2a0679d01ab026d375c42b0a4122477123631b870e09665526c322c8899";
 		strObfuscationPoolDummyAddress = "XCNAsFGy8k7amqRG26ikKyfVDwK8585Z6b";
-		nStartMasternodePayments = 1534438799;
+        nStartMasternodePayments = 1539185872;
 		nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
 									   // here because we only have a 8 block finalization window on testnet
 	}
