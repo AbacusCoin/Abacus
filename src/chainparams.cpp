@@ -103,8 +103,8 @@ public:
 	CMainParams()
 	{
 		networkID = CBaseChainParams::MAIN;
-		vReviveRewardAddress = "SgMdQaxB7woK4dtudTCWcVizCYhBjzcfuv";   //Fill in address once wallet generated for AQX Revive Team
-		vTreasuryRewardAddress = "SdkfmdG4b3uUt6cFZhXvbyPyAVM6GGmxr9"; //Fill in address once wallet generated
+		vReviveRewardAddress = "";   //Fill in address once wallet generated for AQX Revive Team
+		vTreasuryRewardAddress = ""; //Fill in address once wallet generated
 		strNetworkID = "main";
 		/**
 		* The message start string is designed to be unlikely to occur in normal data.
@@ -189,7 +189,7 @@ public:
 		fHeadersFirstSyncingActive = false;
 
 		nPoolMaxTransactions = 3;
-		strSporkKey = "030262a2a0679d01ab026d375c42b0a4122477123631b870e09665526c322c8899";
+		strSporkKey = "03c7e21a90238f2179622466693dc9b9df1d2e59a0d3af23ae8904f29220a61d72";
 		strObfuscationPoolDummyAddress = "XCNAsFGy8k7amqRG26ikKyfVDwK8585Z6b";
         	nStartMasternodePayments = 1539355914;
 
