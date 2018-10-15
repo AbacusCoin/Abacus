@@ -1361,10 +1361,10 @@ bool AppInit2(boost::thread_group& threadGroup)
                 // Recalculate money supply for blocks that are impacted by accounting issue after zerocoin activation
                 if (GetBoolArg("-reindexmoneysupply", false)) {
                     if (chainActive.Height() >= Params().Zerocoin_AccumulatorStartHeight()) {
-                        RecalculateZXXXMinted();
-                        RecalculateZXXXSpent();
+                        RecalculateZABAMinted();
+                        RecalculateZABASpent();
                     }
-                    RecalculateXXXSupply(1);
+                    RecalculateABASupply(1);
                 }
 
                 // Force recalculation of accumulators.
@@ -1793,8 +1793,8 @@ bool AppInit2(boost::thread_group& threadGroup)
        is convertable to another.
 
        For example:
-       1XXX+1000 == (.1XXX+100)*10
-       10XXX+10000 == (1XXX+1000)*10
+       1ABA+1000 == (.1ABA+100)*10
+       10ABA+10000 == (1ABA+1000)*10
     */
     obfuScationDenominations.push_back((10000 * COIN) + 10000000);
     obfuScationDenominations.push_back((1000 * COIN) + 1000000);

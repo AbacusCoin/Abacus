@@ -373,9 +373,9 @@ bool RemoveSerialFromDB(const CBigNum& bnSerial);
 int GetZerocoinStartHeight();
 bool IsTransactionInChain(uint256 txId, int& nHeightTx);
 bool IsBlockHashInChain(const uint256& hashBlock);
-void RecalculateZXXXSpent();
-void RecalculateZXXXMinted();
-bool RecalculateXXXSupply(int nHeightStart);
+void RecalculateZABASpent();
+void RecalculateZABAMinted();
+bool RecalculateABASupply(int nHeightStart);
 
 
 /**
