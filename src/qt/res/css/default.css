@@ -728,13 +728,13 @@ QWidget#PrivacyDialog QLabel {
 border:0px solid #000;
 }
 
-QWidget#PrivacyDialog QLabel#zXXXLabel {
+QWidget#PrivacyDialog QLabel#zABALabel {
 font-size:14px;
 color:#ffffff;
 background-color: #63ffcc;
 }
 
-QWidget#PrivacyDialog QLabel#oXXXLabel {
+QWidget#PrivacyDialog QLabel#oABALabel {
 font-size:14px;
 color:#ffffff;
 background-color: #63ffcc;

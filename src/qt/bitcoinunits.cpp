@@ -67,11 +67,11 @@ QString BitcoinUnits::name(int unit)
     } else {
         switch (unit) {
         case ABA:
-            return QString("tXXX");
+            return QString("tABA");
         case mABA:
-            return QString("mtXXX");
+            return QString("mtABA");
         case uABA:
-            return QString::fromUtf8("μtXXX");
+            return QString::fromUtf8("μtABA");
         default:
             return QString("???");
         }
@@ -94,11 +94,11 @@ QString BitcoinUnits::description(int unit)
     } else {
         switch (unit) {
         case ABA:
-            return QString("TestXXXs");
+            return QString("TestABAs");
         case mABA:
-            return QString("Milli-TestXXX (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-TestABA (1 / 1" THIN_SP_UTF8 "000)");
         case uABA:
-            return QString("Micro-TestXXX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-TestABA (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }

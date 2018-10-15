@@ -129,11 +129,11 @@ public:
 		nMaturity = 10;                   // 10 Conf to mature coins
 		nMasternodeCountDrift = 20;       //Was 20
 		nMasternodeCollateralAmt = 1000; //masternode collateral 1K
-		nMaxMoneyOut = 10000000 * COIN;  //100m coins minted
+		nMaxMoneyOut = 10000000 * COIN;  //10m coins minted
 
 										 /** Height or Time Based Activations **/
 		nLastPOWBlock = 200;
-		nModifierUpdateBlock = 1; //Was 999999999
+		nModifierUpdateBlock = 1; 
 		nZerocoinStartHeight = 201;
 		nAccumulatorStartHeight = 1;
 		nZerocoinStartTime = 1539185872;
@@ -165,9 +165,12 @@ public:
 		assert(hashGenesisBlock == uint256("0x08199e3aaf29c5a4dad59f44e473e8734fb04b680d277eed01660e300f2d548d"));
 		assert(genesis.hashMerkleRoot == uint256("0x598ffdff99e67551b7a05dc08dfafcf2e7a6ecea89f9b369bf830f4b21ff160f"));
 
-		//Teams Seeder
-		//vSeeds.push_back(CDNSSeedData("seeder.abaoin.club", "seeder.abaoin.club"));
-
+		//Team Seeds
+		vSeeds.push_back(CDNSSeedData("159.203.18.9", "159.203.18.9"));
+        vSeeds.push_back(CDNSSeedData("198.199.67.219", "198.199.67.219"));
+        vSeeds.push_back(CDNSSeedData("178.62.125.79", "178.62.125.79"));
+        vSeeds.push_back(CDNSSeedData("178.128.241.112", "178.128.241.112"));
+       
 		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23); //A
 		base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 25); //B
 		base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);

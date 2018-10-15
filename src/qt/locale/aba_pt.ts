@@ -176,8 +176,8 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>Aba will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XXXs from being stolen by malware infecting your computer.</source>
-        <translation>Aba encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas XXXs contra roubo por malware infectando seu computador.</translation>
+        <source>Aba will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ABAs from being stolen by malware infecting your computer.</source>
+        <translation>Aba encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas ABAs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>

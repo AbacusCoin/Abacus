@@ -2448,38 +2448,36 @@ bool IsTreasuryBlock(int nHeight)
 int64_t GetTreasuryAward(int nHeight)
 {
 	if (IsTreasuryBlock(nHeight)) {
-		return 144 * COIN;
-	}
-	else if (nHeight <= 262800 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
-		return 144 * COIN;
-	}
-	else if (nHeight <= 525600 && nHeight > 262800) {
-		return 72 * COIN;
-	}
-	else if (nHeight <= 788400 && nHeight > 525600) {
-		return 36 * COIN;
-	}
-	else if (nHeight <= 1051200 && nHeight > 788400) {
-		return 18 * COIN;
-	}
-	else if (nHeight <= 1314000 && nHeight > 1051200) {
-		return 9 * COIN;
-	}
-	else if (nHeight <= 1576800 && nHeight > 1314000) {
-		return 4.5 * COIN;
-	}
-	else if (nHeight <= 1839600 && nHeight > 1576800) {
-		return 2.25 * COIN;
-	}
-	else if (nHeight <= 2102400 && nHeight > 1839600) {
-		return 1.125 * COIN;
-	}
-	else if (nHeight > 2102400) { //Till max supply           
-		return .5625 * COIN;
-	}
-	else {
-	}
-	return 0;
+		 if (nHeight <= 262800 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
+			return 144 * COIN;
+		 }
+		 else if (nHeight <= 525600 && nHeight > 262800) {
+			return 72 * COIN;
+		 }
+		 else if (nHeight <= 788400 && nHeight > 525600) {
+			return 36 * COIN;
+		 }
+		 else if (nHeight <= 1051200 && nHeight > 788400) {
+			return 18 * COIN;
+		 }
+		 else if (nHeight <= 1314000 && nHeight > 1051200) {
+			return 9 * COIN;
+		 }
+		 else if (nHeight <= 1576800 && nHeight > 1314000) {
+			return 4.5 * COIN;
+		 }
+		 else if (nHeight <= 1839600 && nHeight > 1576800) {
+			return 2.25 * COIN;
+		 }
+		 else if (nHeight <= 2102400 && nHeight > 1839600) {
+			return 1.125 * COIN;
+		 }
+		 else if (nHeight > 2102400) { //Till max supply           
+			return .5625 * COIN;
+         } else {
+            return 144;
+         }
+    } else return 0;
 }
 
 
@@ -2935,7 +2933,7 @@ void ThreadScriptCheck()
     scriptcheckqueue.Thread();
 }
 
-void RecalculateZXXXMinted()
+void RecalculateZABAMinted()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_AccumulatorStartHeight()];
     int nHeightEnd = chainActive.Height();
@@ -2967,7 +2965,7 @@ void RecalculateZXXXMinted()
     pblocktree->Flush();
 }
 
-void RecalculateZXXXSpent()
+void RecalculateZABASpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_AccumulatorStartHeight()];
     while (true) {
@@ -3004,7 +3002,7 @@ void RecalculateZXXXSpent()
     pblocktree->Flush();
 }
 
-bool RecalculateXXXSupply(int nHeightStart)
+bool RecalculateABASupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -3240,9 +3238,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     std::list<libzerocoin::CoinDenomination> listSpends = ZerocoinSpendListFromBlock(block);
 
     if (!fVerifyingBlocks && pindex->nHeight == Params().Zerocoin_StartHeight() + 1) {
-        RecalculateZXXXMinted();
-        RecalculateZXXXSpent();
-        RecalculateXXXSupply(1);
+        RecalculateZABAMinted();
+        RecalculateZABASpent();
+        RecalculateABASupply(1);
     }
 
     // Initialize zerocoin supply to the supply from previous block
@@ -3283,7 +3281,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
-    //    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zXxxSpent: %s\n",
+    //    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zAbaSpent: %s\n",
     //              FormatMoney(nValueOut), FormatMoney(nValueIn),
     //              FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nAmountZerocoinSpent));
 
