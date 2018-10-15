@@ -176,8 +176,8 @@
         <translation>确认钱包加密</translation>
     </message>
     <message>
-        <source>Aba will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XXXs from being stolen by malware infecting your computer.</source>
-        <translation>Aba将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取XXXs。</translation>
+        <source>Aba will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ABAs from being stolen by malware infecting your computer.</source>
+        <translation>Aba将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取ABAs。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>

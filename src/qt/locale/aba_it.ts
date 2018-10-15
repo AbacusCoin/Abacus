@@ -176,7 +176,7 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>Aba will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XXXs from being stolen by malware infecting your computer.</source>
+        <source>Aba will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ABAs from being stolen by malware infecting your computer.</source>
         <translation>Aba verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi ABA dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>

@@ -172,8 +172,8 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Aba will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XXXs from being stolen by malware infecting your computer.</source>
-        <translation>Aba sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella XXXien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Aba will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ABAs from being stolen by malware infecting your computer.</source>
+        <translation>Aba sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella ABAien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -181,7 +181,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ABA&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki XXXisi&lt;/b&gt;</translation>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki ABAisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1148,7 +1148,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>This option is the quickest and will cost about ~0.025 ABA to anonymize 10000 ABA</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 XXX anonymoidaksesi 10000 Aba</translation>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 ABA anonymoidaksesi 10000 Aba</translation>
     </message>
     <message>
         <source>This option is moderately fast and will cost about 0.05 ABA to anonymize 10000 ABA</source>
