@@ -37,7 +37,7 @@ Build SmartCloud Core
 
 1. Clone the SmartCloud Core source code and cd into `aba`
 
-        git clone https://github.com/SMRT-Cloud/aba.git
+        git clone https://github.com/AbacusCoin/Abacus.git
         cd aba
 
 2.  Build aba Core:
