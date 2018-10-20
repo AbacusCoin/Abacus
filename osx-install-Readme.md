@@ -32,15 +32,15 @@ If you want to build the disk image with `make deploy` (.dmg / optional), you ne
 
     brew install librsvg
 
-Build SmartCloud Core
+Build Abacus Core
 ------------------------
 
-1. Clone the SmartCloud Core source code and cd into `aba`
+1. Clone the Abacus Core source code and cd into `aba`
 
         git clone https://github.com/AbacusCoin/Abacus.git
         cd Abacus
 
-2.  Build aba Core:
+2.  Build Abacus Core:
 
     Configure and build the headless aba Core binaries as well as the GUI (if Qt is found).
 
