@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCBC&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE CCBC!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ABA&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE ABA!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CCBC address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres CCBC jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this ABA address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres ABA jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>&amp;Rdzeń CCBC</translation>
+        <source>ABA Core</source>
+        <translation>&amp;Rdzeń ABA</translation>
     </message>
     <message>
-        <source>Send coins to a CCBC address</source>
-        <translation>Wyślij monety do adresu CCBC</translation>
+        <source>Send coins to a ABA address</source>
+        <translation>Wyślij monety do adresu ABA</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ccbc: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i ccbc:URI)</translation>
+        <source>Request payments (generates QR codes and aba: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i aba:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About CCBC Core</source>
+        <source>&amp;About ABA Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about CCBC Core</source>
+        <source>Show information about ABA Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for CCBC</source>
-        <translation>Modyfikuj opcje konfiguracji CCBC</translation>
+        <source>Modify configuration options for ABA</source>
+        <translation>Modyfikuj opcje konfiguracji ABA</translation>
     </message>
     <message>
-        <source>Sign messages with your CCBC addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami CCBC, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your ABA addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami ABA, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified CCBC addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu CCBC</translation>
+        <source>Verify messages to ensure they were signed with specified ABA addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu ABA</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a CCBC: URI or payment request</source>
-        <translation>OtwórzCCBCX: URI i żądanie zapłaty</translation>
+        <source>Open a ABA: URI or payment request</source>
+        <translation>OtwórzABAX: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the CCBC Core help message to get a list with possible CCBC command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia CCBC, aby dostać listę możliwych opcji CCBC command-line</translation>
+        <source>Show the ABA Core help message to get a list with possible ABA command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia ABA, aby dostać listę możliwych opcji ABA command-line</translation>
     </message>
     <message>
-        <source>CCBC Core client</source>
-        <translation>Rdzeń CCBC klient</translation>
+        <source>ABA Core client</source>
+        <translation>Rdzeń ABA klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -660,7 +660,7 @@ Type: %3
 Address: %4
 </source>
         <translation>Data: %1
-Licccbc: %2
+Licaba: %2
 Typ: %3
 Adres: %4
 </translation>
@@ -724,7 +724,7 @@ MultiWysyłlka: %1</translation>
     <name>CoinControlDialog</name>
     <message>
         <source>Amount:</source>
-        <translation>Licccbc:</translation>
+        <translation>Licaba:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -764,7 +764,7 @@ MultiWysyłlka: %1</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Licccbc</translation>
+        <translation>Licaba</translation>
     </message>
     <message>
         <source>Received with label</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>CCBC Core</source>
-        <translation>&amp;Rdzeń CCBC</translation>
+        <source>ABA Core</source>
+        <translation>&amp;Rdzeń ABA</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>&amp;Rdzeń CCBC</translation>
+        <source>ABA Core</source>
+        <translation>&amp;Rdzeń ABA</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start CCBC after logging in to the system.</source>
-        <translation>Automatycznie uruchom CCBC po zalogowaniu do systemu</translation>
+        <source>Automatically start ABA after logging in to the system.</source>
+        <translation>Automatycznie uruchom ABA po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start CCBC on system login</source>
-        <translation>&amp;Uruchom CCBC podczas logowania do systemu</translation>
+        <source>&amp;Start ABA on system login</source>
+        <translation>&amp;Uruchom ABA podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting CCBC.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie CCBC</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting ABA.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie ABA</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ccbc-project/ccbc-project-translations</source>
+https://www.transifex.com/aba-project/aba-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
+https://www.transifex.com/aba-project/aba-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the CCBC network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią CCBC poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the ABA network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią ABA poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1403,7 +1403,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Licccbc:</translation>
+        <translation>Licaba:</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1458,11 +1458,11 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     <name>QObject</name>
     <message>
         <source>Amount</source>
-        <translation>Licccbc</translation>
+        <translation>Licaba</translation>
     </message>
     <message>
-        <source>Enter a CCBC address (e.g. %1)</source>
-        <translation>Wprowadź adres CCBC (np. %1)</translation>
+        <source>Enter a ABA address (e.g. %1)</source>
+        <translation>Wprowadź adres ABA (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1544,7 +1544,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     </message>
     <message>
         <source>Number of connections</source>
-        <translation>Licccbc połączeń</translation>
+        <translation>Licaba połączeń</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1576,7 +1576,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     </message>
     <message>
         <source>Current number of blocks</source>
-        <translation>Bieżąca licccbc bloków</translation>
+        <translation>Bieżąca licaba bloków</translation>
     </message>
     <message>
         <source>Client version</source>
@@ -1592,7 +1592,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
-        <translation>Licccbc Masternode</translation>
+        <translation>Licaba Masternode</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -1770,7 +1770,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Licccbc</translation>
+        <translation>Licaba</translation>
     </message>
     <message>
         <source>Label</source>
@@ -1789,7 +1789,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Licccbc</translation>
+        <translation>Licaba</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1800,7 +1800,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Amount:</source>
-        <translation>Licccbc:</translation>
+        <translation>Licaba:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CCBC address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres CCBC jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this ABA address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres ABA jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>CCBC Core</source>
-        <translation>&amp;Rdzeń CCBC</translation>
+        <source>ABA Core</source>
+        <translation>&amp;Rdzeń ABA</translation>
     </message>
     </context>
 <context>
@@ -1954,7 +1954,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Licccbc</translation>
+        <translation>Licaba</translation>
     </message>
     </context>
 <context>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     </message>
     </context>
 <context>
-    <name>ccbc-core</name>
+    <name>aba-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

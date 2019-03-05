@@ -47,10 +47,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("CCBC Core ccbc-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("ABA Core aba-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  ccbc-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded ccbc transaction") + "\n" +
-                               "  ccbc-tx [options] -create [commands]   " + _("Create hex-encoded ccbc transaction") + "\n" +
+                               "  aba-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded aba transaction") + "\n" +
+                               "  aba-tx [options] -create [commands]   " + _("Create hex-encoded aba transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -552,7 +552,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw runtime_error("too few parameters");
 
-            // param: hex-encoded ccbc transaction
+            // param: hex-encoded aba transaction
             string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

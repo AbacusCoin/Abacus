@@ -1,44 +1,44 @@
-CCBC Core
+ABA Core
 =====================
 
 Setup
 ---------------------
 
-[Ccbc Wallet](https://github.com/CryptoCashBack-Hub/CCBC/releases) is the original Ccbc client and it builds the backbone of the network. 
-However, it downloads and stores the entire history of Ccbc transactions.
+[ABa Wallet](https://github.com/CryptoCashBack-Hub/ABA/releases) is the original Aba client and it builds the backbone of the network. 
+However, it downloads and stores the entire history of Aba transactions.
 Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a couple of minutes to a few hours.
 
 
 Running
 ---------------------
-The following are some helpful notes on how to run CCBC on your native platform.
+The following are some helpful notes on how to run ABA on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/ccbc-qt (GUI, 32-bit) or bin/32/ccbcd (headless, 32-bit)
-- bin/64/ccbc-qt (GUI, 64-bit) or bin/64/ccbcd (headless, 64-bit)
+- bin/32/aba-qt (GUI, 32-bit) or bin/32/abad (headless, 32-bit)
+- bin/64/aba-qt (GUI, 64-bit) or bin/64/abad (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run ccbc-qt.exe.
+Unpack the files into a directory, and then run aba-qt.exe.
 
 ### OSX
 
-Drag CCBC-Qt to your applications folder, and then run CCBC-Qt.
+Drag ABA-Qt to your applications folder, and then run ABA-Qt.
 
 ### Need Help?
 
 
 for help and more information.
 * Join our forum on [BitcoinTalk](https://bitcointalk.org/index.php?topic=5089897.0).
-* Join our Discord groups [Ccbc Discord Groups](https://discord.gg/mM8mS9V).
+* Join our Discord groups [Aba Discord Groups](https://discord.gg/mM8mS9V).
 
 
 Building
 ---------------------
-The following are developer notes on how to build CCBC on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build ABA on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -47,7 +47,7 @@ The following are developer notes on how to build CCBC on your native platform. 
 Development
 ---------------------
 
-The Ccbc repo's [README](https://github.com/CryptoCashBack-Hub/CCBC/blob/master/doc/README.md) contains relevant information on the development process and automated testing.
+The Aba repo's [README](https://github.com/CryptoCashBack-Hub/ABA/blob/master/doc/README.md) contains relevant information on the development process and automated testing.
 
 
 - [Developer Notes](developer-notes.md)
@@ -64,7 +64,7 @@ The Ccbc repo's [README](https://github.com/CryptoCashBack-Hub/CCBC/blob/master/
 
 
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=5089897.0).
-* Join the Discord groups [Ccbc Discord Groups](https://discord.gg/mM8mS9V).
+* Join the Discord groups [Aba Discord Groups](https://discord.gg/mM8mS9V).
 
 
 ### Miscellaneous

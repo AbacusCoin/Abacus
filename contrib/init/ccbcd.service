@@ -1,19 +1,19 @@
 [Unit]
-Description=CCBC's distributed currency daemon
+Description=ABA's distributed currency daemon
 After=network.target
 
 [Service]
-User=ccbc
-Group=ccbc
+User=aba
+Group=aba
 
 Type=forking
-PIDFile=/var/lib/ccbcd/ccbcd.pid
+PIDFile=/var/lib/abad/abad.pid
 
-ExecStart=/usr/bin/ccbcd -daemon -pid=/var/lib/ccbcd/ccbcd.pid \
-          -conf=/etc/ccbc/ccbc.conf -datadir=/var/lib/ccbcd
+ExecStart=/usr/bin/abad -daemon -pid=/var/lib/abad/abad.pid \
+          -conf=/etc/aba/aba.conf -datadir=/var/lib/abad
 
-ExecStop=-/usr/bin/ccbc-cli -conf=/etc/ccbc/ccbc.conf \
-         -datadir=/var/lib/ccbcd stop
+ExecStop=-/usr/bin/aba-cli -conf=/etc/aba/aba.conf \
+         -datadir=/var/lib/abad stop
 
 Restart=always
 PrivateTmp=true

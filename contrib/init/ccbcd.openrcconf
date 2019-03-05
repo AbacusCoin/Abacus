@@ -1,25 +1,25 @@
-# /etc/conf.d/ccbcd: config file for /etc/init.d/ccbcd
+# /etc/conf.d/abad: config file for /etc/init.d/abad
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/ccbc/ccbc.conf"
+#BITCOIND_CONFIGFILE="/etc/aba/aba.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/ccbcd"
+#BITCOIND_PIDDIR="/var/run/abad"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/ccbcd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/abad.pid"
 
-# Where to write ccbcd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/ccbcd"
+# Where to write abad data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/abad"
 
-# User and group to own ccbcd process
-#BITCOIND_USER="ccbc"
-#BITCOIND_GROUP="ccbc"
+# User and group to own abad process
+#BITCOIND_USER="aba"
+#BITCOIND_GROUP="aba"
 
-# Path to ccbcd executable
-#BITCOIND_BIN="/usr/bin/ccbcd"
+# Path to abad executable
+#BITCOIND_BIN="/usr/bin/abad"
 
-# Nice value to run ccbcd under
+# Nice value to run abad under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

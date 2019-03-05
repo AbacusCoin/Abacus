@@ -1,4 +1,4 @@
 cd ..
 cd src
-strip ccbc{d,-cli}
-tar cvzf CCBC-linux.tar.gz ccbcd ccbc-cli
+strip aba{d,-cli}
+tar cvzf ABA-linux.tar.gz abad aba-cli

@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: ccbcd.service
-Upstart: ccbcd.conf
-OpenRC:  ccbcd.openrc
-         ccbcd.openrcconf
-CentOS:  ccbcd.init
+SystemD: abad.service
+Upstart: abad.conf
+OpenRC:  abad.openrc
+         abad.openrcconf
+CentOS:  abad.init
 
 have been made available to assist packagers in creating node packages here.
 

@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your CCBC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите CCBC адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your ABA addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите ABA адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your CCBC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите CCBC адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your ABA addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите ABA адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>CCBC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCBCs from being stolen by malware infecting your computer.</source>
-        <translation>CCBC сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия CCBC от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>ABA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ABAs from being stolen by malware infecting your computer.</source>
+        <translation>ABA сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия ABA от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCBC&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ CCBC&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ABA&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ ABA&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Шифриране</translation>
     </message>
     <message>
-        <source>Enter a CCBC Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете CCBC адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
+        <source>Enter a ABA Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете ABA адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The CCBC address to sign the message with</source>
-        <translation>CCBC адреса, с който да подпишете съобщението</translation>
+        <source>The ABA address to sign the message with</source>
+        <translation>ABA адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CCBC address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този CCBC адрес</translation>
+        <source>Sign the message to prove you own this ABA address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този ABA адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Въведете личният си BIP 38 ключ. Въведете тайната фраза в средното поле. Избери Дешифриращия Ключ за да изчислим личния ключ. След като ключа се дешифрира, за да добаите ключа към портфейла, кликнете "Импортирай адрес".</translation>
     </message>
     <message>
-        <source>The CCBC address the message was signed with</source>
-        <translation>CCBC адреса, който е подписано съобщението</translation>
+        <source>The ABA address the message was signed with</source>
+        <translation>ABA адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified CCBC address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения CCBC адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified ABA address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения ABA адрес</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,24 +602,24 @@
         <translation>Колан с инструменти</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Ядро</translation>
+        <source>ABA Core</source>
+        <translation>ABA Ядро</translation>
     </message>
     <message>
-        <source>Send coins to a CCBC address</source>
-        <translation>Изпратете монети до CCBC адрес</translation>
+        <source>Send coins to a ABA address</source>
+        <translation>Изпратете монети до ABA адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ccbc: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  CCBC:URI)</translation>
+        <source>Request payments (generates QR codes and aba: URIs)</source>
+        <translation>Поискай плащане (генерира QR кодове и  ABA:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;Поверителност</translation>
     </message>
     <message>
-        <source>Privacy Action for zCCBC and Obfuscation</source>
-        <translation>Поверителни действия за zCCBC и Обфускация</translation>
+        <source>Privacy Action for zABA and Obfuscation</source>
+        <translation>Поверителни действия за zABA и Обфускация</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -630,24 +630,24 @@
         <translation>Разгледай мастърноудове</translation>
     </message>
     <message>
-        <source>&amp;About CCBC Core</source>
-        <translation>&amp;Относно CCBC Ядрото</translation>
+        <source>&amp;About ABA Core</source>
+        <translation>&amp;Относно ABA Ядрото</translation>
     </message>
     <message>
-        <source>Show information about CCBC Core</source>
-        <translation>Информациза за CCBC Ядрото</translation>
+        <source>Show information about ABA Core</source>
+        <translation>Информациза за ABA Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for CCBC</source>
-        <translation>Промени CCBC конфигурацията</translation>
+        <source>Modify configuration options for ABA</source>
+        <translation>Промени ABA конфигурацията</translation>
     </message>
     <message>
-        <source>Sign messages with your CCBC addresses to prove you own them</source>
-        <translation>Подпишете съобщения със своте CCBC адреси, за да докажете че са Ваши</translation>
+        <source>Sign messages with your ABA addresses to prove you own them</source>
+        <translation>Подпишете съобщения със своте ABA адреси, за да докажете че са Ваши</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified CCBC addresses</source>
-        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните CCBC адреси</translation>
+        <source>Verify messages to ensure they were signed with specified ABA addresses</source>
+        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните ABA адреси</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -678,8 +678,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a CCBC: URI or payment request</source>
-        <translation>Отвори CCBC:URI платежно нареждане</translation>
+        <source>Open a ABA: URI or payment request</source>
+        <translation>Отвори ABA:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +690,16 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the CCBC Core help message to get a list with possible CCBC command-line options</source>
-        <translation>Разкрийте Помощ за CCBC Ядрото, за да видите списък с възможни писмени команди.</translation>
+        <source>Show the ABA Core help message to get a list with possible ABA command-line options</source>
+        <translation>Разкрийте Помощ за ABA Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
-        <source>CCBC Core client</source>
-        <translation>Клиент CCBC Ядро</translation>
+        <source>ABA Core client</source>
+        <translation>Клиент ABA Ядро</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to CCBC network</source>
-        <translation><numerusform>%n активни връзки към CCBC мрежата</numerusform><numerusform>%n активни свръзки към CCBC мрежата</numerusform></translation>
+        <source>%n active connection(s) to ABA network</source>
+        <translation><numerusform>%n активни връзки към ABA мрежата</numerusform><numerusform>%n активни свръзки към ABA мрежата</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -853,8 +853,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ccbc.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (ccbc.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aba.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (aba.conf).</translation>
     </message>
 </context>
 <context>
@@ -1142,8 +1142,8 @@ Address: %4
         <translation>Редактирай адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid CCBC address.</source>
-        <translation>Зададения адрес "%1"не е валиден CCBC адрес.</translation>
+        <source>The entered address "%1" is not a valid ABA address.</source>
+        <translation>Зададения адрес "%1"не е валиден ABA адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1188,16 +1188,16 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Ядро</translation>
+        <source>ABA Core</source>
+        <translation>ABA Ядро</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About CCBC Core</source>
-        <translation>Относно CCBC Ядрото</translation>
+        <source>About ABA Core</source>
+        <translation>Относно ABA Ядрото</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1243,16 @@ Address: %4
         <translation>Привет</translation>
     </message>
     <message>
-        <source>Welcome to CCBC Core.</source>
-        <translation>Добре Дошли в CCBC Ядрото</translation>
+        <source>Welcome to ABA Core.</source>
+        <translation>Добре Дошли в ABA Ядрото</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where CCBC Core will store its data.</source>
-        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде CCBC Ядрото ще съхранява своите данни.</translation>
+        <source>As this is the first time the program is launched, you can choose where ABA Core will store its data.</source>
+        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде ABA Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>CCBC Core will download and store a copy of the CCBC block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>CCBC Ядрото ще изтегли и запише копие на целия CCBC блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
+        <source>ABA Core will download and store a copy of the ABA block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>ABA Ядрото ще изтегли и запише копие на целия ABA блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,8 +1263,8 @@ Address: %4
         <translation>Задай своя папка за данни:</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Ядро</translation>
+        <source>ABA Core</source>
+        <translation>ABA Ядро</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1405,12 +1405,12 @@ Address: %4
         <translation>Въведете адреса на Получателя</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CCBC addresses after it matures.
-To Add: enter percentage to give and CCBC address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other ABA addresses after it matures.
+To Add: enter percentage to give and ABA address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други CCBC адреси.
-Да Добавите: въведете процент и задайте CCBC адрес към вектора за МултиИзпращане
+        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други ABA адреси.
+Да Добавите: въведете процент и задайте ABA адрес към вектора за МултиИзпращане
 Да Прамахнете: Въведете адрес за изстриване и натиснете истрий (del).
 МултиИзпращането няма да бъде активирано докато не кликнете "Активирай"</translation>
     </message>
@@ -1548,47 +1548,47 @@ Please check the address and try again.</source>
         <translation>Изберете ниво на поверителност.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CCBC</source>
-        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 CCBC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ABA</source>
+        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 ABA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CCBC</source>
-        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 CCBC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ABA</source>
+        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 ABA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Използвай 16 различни мастърноуда</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CCBC to anonymize 10000 CCBC</source>
-        <translation>Това е най-бързия метод и ще струва около 0.025 CCBC за да скриете 10000 CCBC</translation>
+        <source>This option is the quickest and will cost about ~0.025 ABA to anonymize 10000 ABA</source>
+        <translation>Това е най-бързия метод и ще струва около 0.025 ABA за да скриете 10000 ABA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CCBC to anonymize 10000 CCBC</source>
-        <translation>Тази опция е сравнително бърза и ще струва около 0.05 CCBC за да скриете 10000 CCBC</translation>
+        <source>This option is moderately fast and will cost about 0.05 ABA to anonymize 10000 ABA</source>
+        <translation>Тази опция е сравнително бърза и ще струва около 0.05 ABA за да скриете 10000 ABA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Това е най-бавния и най-сигурен вариант за скриване на CCBC. Използването й ще струва</translation>
+        <translation>Това е най-бавния и най-сигурен вариант за скриване на ABA. Използването й ще струва</translation>
     </message>
     <message>
-        <source>0.1 CCBC per 10000 CCBC you anonymize.</source>
-        <translation>0.1 CCBC за 10000 скрити CCBC</translation>
+        <source>0.1 ABA per 10000 ABA you anonymize.</source>
+        <translation>0.1 ABA за 10000 скрити ABA</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Конфигурация на Обфускацията</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening CCBC's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening ABA's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на елементарно ниво (%1 и 2 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening CCBC's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening ABA's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на високо ниво (%1 и 8 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening CCBC's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening ABA's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на максимално ниво (%1 и 16 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
 </context>
@@ -1650,8 +1650,8 @@ Please check the address and try again.</source>
         <translation>Aко изключите харча на непотвърдено ресто, рестото от превод&lt;br/&gt;не може да се използва, докато превода не получи поне 1 потвърждение. &lt;br/&gt;Това влияе и на начина по който общите Ви средства се преизчисляват.</translation>
     </message>
     <message>
-        <source>Automatically open the CCBC client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отвори CCBC порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
+        <source>Automatically open the ABA client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отвори ABA порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1670,12 +1670,12 @@ Please check the address and try again.</source>
         <translation>Експерт</translation>
     </message>
     <message>
-        <source>Automatically start CCBC after logging in to the system.</source>
-        <translation>Стартирай CCBC автоматично след влизане в системата.</translation>
+        <source>Automatically start ABA after logging in to the system.</source>
+        <translation>Стартирай ABA автоматично след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start CCBC on system login</source>
-        <translation>&amp;Стартирай CCBC заедно с операционната система</translation>
+        <source>&amp;Start ABA on system login</source>
+        <translation>&amp;Стартирай ABA заедно с операционната система</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1702,34 +1702,34 @@ Please check the address and try again.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting CCBC.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting ABA.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ccbc-project/ccbc-project-translations</source>
+https://www.transifex.com/aba-project/aba-project-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
+https://www.transifex.com/aba-project/aba-project-translations</translation>
     </message>
     <message>
-        <source>Percentage of incoming CCBC which get automatically converted to zCCBC via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите CCBC, който автоматично да се конвертира в zCCBC посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming ABA which get automatically converted to zABA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите ABA, който автоматично да се конвертира в zABA посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCBC</source>
-        <translation>Процент автоматично сечени zCCBC</translation>
+        <source>Percentage of autominted zABA</source>
+        <translation>Процент автоматично сечени zABA</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CCBC for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zCCBC докато не се съберат достатъчно CCBC за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough ABA for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zABA докато не се съберат достатъчно ABA за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCBC Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zCCBC</translation>
+        <source>Preferred Automint zABA Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zABA</translation>
     </message>
     <message>
-        <source>Connect to the CCBC network through a SOCKS5 proxy.</source>
-        <translation>Свържи се с CCBC мрежата със SOCKS5 прокси.</translation>
+        <source>Connect to the ABA network through a SOCKS5 proxy.</source>
+        <translation>Свържи се с ABA мрежата със SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1859,8 +1859,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>От</translation>
     </message>
     <message>
-        <source>CCBC Balances</source>
-        <translation>CCBC Баланс</translation>
+        <source>ABA Balances</source>
+        <translation>ABA Баланс</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1887,8 +1887,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Възнаграждение от стейкване или мастърноуд, които все още не са узрели.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CCBC network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с CCBC мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ABA network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с ABA мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1927,12 +1927,12 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Комбиниран общ баланс (само озрелите монети)</translation>
     </message>
     <message>
-        <source>CCBC:</source>
-        <translation>CCBC:</translation>
+        <source>ABA:</source>
+        <translation>ABA:</translation>
     </message>
     <message>
-        <source>zCCBC:</source>
-        <translation>zCCBC:</translation>
+        <source>zABA:</source>
+        <translation>zABA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1974,12 +1974,12 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start ccbc: click-to-pay handler</source>
-        <translation>Провал при стартирането на ccbc: click-to-pay обработвател</translation>
+        <source>Cannot start aba: click-to-pay handler</source>
+        <translation>Провал при стартирането на aba: click-to-pay обработвател</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid CCBC address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден CCBC адрес или зле-форматирани URI Параметри.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid ABA address or malformed URI parameters.</source>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден ABA адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2060,24 +2060,24 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>CCBC which were anonymized via Zerocin Protocol</source>
-        <translation>CCBC скрити посредством Зерокойн протокола</translation>
+        <source>ABA which were anonymized via Zerocin Protocol</source>
+        <translation>ABA скрити посредством Зерокойн протокола</translation>
     </message>
     <message>
-        <source>Zerocoin CCBC (zCCBC)</source>
-        <translation>Zerocoin CCBC (zCCBC)</translation>
+        <source>Zerocoin ABA (zABA)</source>
+        <translation>Zerocoin ABA (zABA)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Zerocoin Действия:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CCBC network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с CCBC мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ABA network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с ABA мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Въведете колко CCBC  да се конвертират в zCCBC</translation>
+        <translation>Въведете колко ABA  да се конвертират в zABA</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2088,16 +2088,16 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCCBC</source>
-        <translation>zCCBC</translation>
+        <source>zABA</source>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Налични за сечене:</translation>
     </message>
     <message>
-        <source>0.000 000 00 CCBC</source>
-        <translation>0.000 000 00 CCBC</translation>
+        <source>0.000 000 00 ABA</source>
+        <translation>0.000 000 00 ABA</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2133,11 +2133,11 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
     </message>
     <message>
         <source>zPhr Control</source>
-        <translation>zCCBC Контрол</translation>
+        <translation>zABA Контрол</translation>
     </message>
     <message>
         <source>zPhr Selected:</source>
-        <translation>Избрани zCCBC:</translation>
+        <translation>Избрани zABA:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2156,8 +2156,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>0 zCCBC</source>
-        <translation>0 zCCBC</translation>
+        <source>0 zABA</source>
+        <translation>0 zABA</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2176,7 +2176,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The CCBC address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The ABA address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Адреса на който да изпратим плащането. Ако е празно - плащането е до себе си.</translation>
     </message>
     <message>
@@ -2209,7 +2209,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zCCBC от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zABA от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2376,8 +2376,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Копирай сумата</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the CCBC network yet.</source>
-        <translation>Zerocoin функцията все още не е активирана в CCBC мрежата.</translation>
+        <source>Zerocoin functionality is not enabled on the ABA network yet.</source>
+        <translation>Zerocoin функцията все още не е активирана в ABA мрежата.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2396,8 +2396,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zCCBC in </source>
-        <translation>zCCBC в</translation>
+        <source> zABA in </source>
+        <translation>zABA в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2430,8 +2430,8 @@ Please be patient...</source>
         <translation>Без 'Плати На' адрес, плащането е локално</translation>
     </message>
     <message>
-        <source>Invalid CCBC Address</source>
-        <translation>Невалиден CCBC адрес</translation>
+        <source>Invalid ABA Address</source>
+        <translation>Невалиден ABA адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2475,7 +2475,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Spend #: </source>
-        <translation>zCCBC Похарчени #:</translation>
+        <translation>zABA Похарчени #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2499,7 +2499,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Mint</source>
-        <translation>Сечене на zCCBC</translation>
+        <translation>Сечене на zABA</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -2521,8 +2521,8 @@ Please be patient...</source>
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a CCBC address (e.g. %1)</source>
-        <translation>Задайте CCBC адрес (например %1)</translation>
+        <source>Enter a ABA address (e.g. %1)</source>
+        <translation>Задайте ABA адрес (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2659,8 +2659,8 @@ Please be patient...</source>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the CCBC debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отвори CCBC дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
+        <source>Open the ABA debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отвори ABA дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2827,8 +2827,8 @@ Please be patient...</source>
         <translation>Изходящи:</translation>
     </message>
     <message>
-        <source>Welcome to the CCBC RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на CCBC.</translation>
+        <source>Welcome to the ABA RPC console.</source>
+        <translation>Добре Дошли в RPC конзолата на ABA.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2898,12 +2898,12 @@ Please be patient...</source>
         <translation>Незадължителен етикет, който да асоциираме с адреса за получаване.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the CCBC network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по CCBC мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ABA network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по ABA мрежата.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the CCBC network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по CCBC мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the ABA network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по ABA мрежата.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3127,8 +3127,8 @@ Please be patient...</source>
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 CCBC</source>
-        <translation>0 CCBC</translation>
+        <source>0 ABA</source>
+        <translation>0 ABA</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3179,15 +3179,15 @@ Please be patient...</source>
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCCBCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCBCs in fee,&lt;br /&gt;while "at least" pays 1000 uCCBCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uCCBC и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uCCBC входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uCCBC. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uABAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uABAs in fee,&lt;br /&gt;while "at least" pays 1000 uABAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uABA и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uABA входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uABA. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCCBCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCBCs in fee,&lt;br /&gt;while "total at least" pays 1000 uCCBCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uCCBC и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uCCBC входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uCCBC. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uABAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uABAs in fee,&lt;br /&gt;while "total at least" pays 1000 uABAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uABA и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uABA входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uABA. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CCBC transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for ABA transactions than the network can process.</source>
         <translation>Няма проблем да платите минималната такса, стига обема преводи да е по-малък от наличното място в блоковете. &lt;br /&gt;Но имайте впредвид, че това може да се окаже в превод, който никога не получава потвърждение ако заявките за преводи са повече от колкото мрежата може да понесе.</translation>
     </message>
     <message>
@@ -3235,8 +3235,8 @@ Please be patient...</source>
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized CCBC</source>
-        <translation>Анонимизиран CCBC</translation>
+        <source>Anonymized ABA</source>
+        <translation>Анонимизиран ABA</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3295,8 +3295,8 @@ Please be patient...</source>
         <translation>анонимни средства</translation>
     </message>
     <message>
-        <source>Warning: Invalid CCBC address</source>
-        <translation>Предупреждение: Невалиден CCBC адрес</translation>
+        <source>Warning: Invalid ABA address</source>
+        <translation>Предупреждение: Невалиден ABA адрес</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3402,8 +3402,8 @@ Please be patient...</source>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The CCBC address to send the payment to</source>
-        <translation>CCBC адреса - получател на плащането</translation>
+        <source>The ABA address to send the payment to</source>
+        <translation>ABA адреса - получател на плащането</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3442,8 +3442,8 @@ Please be patient...</source>
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the CCBC: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the CCBC network.</source>
-        <translation>Съобщение, което е било прикачено към CCBC:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по CCBC мрежата.</translation>
+        <source>A message that was attached to the ABA: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ABA network.</source>
+        <translation>Съобщение, което е било прикачено към ABA:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по ABA мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3469,8 +3469,8 @@ Please be patient...</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>CCBC Core is shutting down...</source>
-        <translation>Изключване на CCBC Ядрото...</translation>
+        <source>ABA Core is shutting down...</source>
+        <translation>Изключване на ABA Ядрото...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3492,8 +3492,8 @@ Please be patient...</source>
         <translation>Може да подписвате съобщения с Вашите адреси, за да докажете че сте техен притежател. Внимавайте да не подписвате нищо съмнително, тъй като има хакерски атаки, които целят да придобият вашата самоличност. Само подписвайте пълен и ясен текст, с който сте напълно съгласни.</translation>
     </message>
     <message>
-        <source>The CCBC address to sign the message with</source>
-        <translation>CCBC адреса, с който да подпишете съобщението</translation>
+        <source>The ABA address to sign the message with</source>
+        <translation>ABA адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3524,16 +3524,16 @@ Please be patient...</source>
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CCBC address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този CCBC адрес</translation>
+        <source>Sign the message to prove you own this ABA address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този ABA адрес</translation>
     </message>
     <message>
-        <source>The CCBC address the message was signed with</source>
-        <translation>CCBC адреса, който е подписано съобщението</translation>
+        <source>The ABA address the message was signed with</source>
+        <translation>ABA адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified CCBC address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения CCBC адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified ABA address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения ABA адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3619,8 +3619,8 @@ Please be patient...</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Ядро</translation>
+        <source>ABA Core</source>
+        <translation>ABA Ядро</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3635,8 +3635,8 @@ Please be patient...</source>
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The CCBC Core developers</source>
-        <translation>CCBC Core разработчици</translation>
+        <source>The ABA Core developers</source>
+        <translation>ABA Core разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3956,23 +3956,23 @@ Please be patient...</source>
     </message>
     <message>
         <source>Converted Phr to zPhr</source>
-        <translation>Конвертиран CCBC във zCCBC</translation>
+        <translation>Конвертиран ABA във zABA</translation>
     </message>
     <message>
         <source>Spent zPhr</source>
-        <translation>Похарчени zCCBC</translation>
+        <translation>Похарчени zABA</translation>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Получен CCBC от zCCBC</translation>
+        <translation>Получен ABA от zABA</translation>
     </message>
     <message>
         <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Исечено ресто като zCCBC от похарчените zCCBC</translation>
+        <translation>Исечено ресто като zABA от похарчените zABA</translation>
     </message>
     <message>
         <source>Converted zPhr to Phr</source>
-        <translation>Конвертирани zCCBC в CCBC</translation>
+        <translation>Конвертирани zABA в ABA</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3980,7 +3980,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr Accumulator</source>
-        <translation>zCCBC Акумулатор</translation>
+        <translation>zABA Акумулатор</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4087,7 +4087,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Received Phr from zPhr</source>
-        <translation>Получен CCBC от zCCBC</translation>
+        <translation>Получен ABA от zABA</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4099,7 +4099,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Харчене на Zerocoin, Ресто в zCCBC</translation>
+        <translation>Харчене на Zerocoin, Ресто в zABA</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4215,8 +4215,8 @@ Please be patient...</source>
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CCBC.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 CCBC.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 ABA.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 ABA.</translation>
     </message>
 </context>
 <context>
@@ -4262,7 +4262,7 @@ Please be patient...</source>
     <name>ZPhrControlDialog</name>
     <message>
         <source>Select zPhr to Spend</source>
-        <translation>Изберете zCCBC за Изпращане</translation>
+        <translation>Изберете zABA за Изпращане</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4274,7 +4274,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPhr</source>
-        <translation>zCCBC</translation>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4286,7 +4286,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>ccbc-core</name>
+    <name>aba-core</name>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
         <translation>Промяна на поведението на автоматично финализираното гласоподаване. mode=auto: Гласувай само за точни финализирани бюджети, които съвпадат с моят генериран бюджет. (string, default:auto)</translation>
@@ -4304,8 +4304,8 @@ Please be patient...</source>
         <translation>Изтрий всички преводи от портфейла и възстанови само тези части от блокчейна - сканира при стартиране.</translation>
     </message>
     <message>
-        <source>Disable all CCBC specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи всякаква CCBC функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
+        <source>Disable all ABA specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи всякаква ABA функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4344,12 +4344,12 @@ Please be patient...</source>
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in CCBC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в CCBC/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in ABA/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в ABA/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CCBC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в CCBC/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in ABA/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в ABA/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

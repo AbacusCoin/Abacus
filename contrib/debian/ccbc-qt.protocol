@@ -1,6 +1,6 @@
 [Protocol]
-exec=ccbc-qt '%u'
-protocol=ccbc
+exec=aba-qt '%u'
+protocol=aba
 input=none
 output=none
 helper=true

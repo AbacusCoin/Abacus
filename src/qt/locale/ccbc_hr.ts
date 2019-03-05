@@ -115,8 +115,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The CCBC address the message was signed with</source>
-        <translation>CCBC adresa s kojom je potpisana poruka</translation>
+        <source>The ABA address the message was signed with</source>
+        <translation>ABA adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -150,8 +150,8 @@
         <translation>Otvori konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -162,8 +162,8 @@
         <translation>&amp;BIP38 alat</translation>
     </message>
     <message>
-        <source>CCBC Core client</source>
-        <translation>CCBC Core klijent</translation>
+        <source>ABA Core client</source>
+        <translation>ABA Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -256,15 +256,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -535,8 +535,8 @@
         <translation>ne</translation>
     </message>
     <message>
-        <source>0 CCBC</source>
-        <translation>0 CCBC</translation>
+        <source>0 ABA</source>
+        <translation>0 ABA</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -597,8 +597,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>CCBC Core is shutting down...</source>
-        <translation>CCBC Core se gasi...</translation>
+        <source>ABA Core is shutting down...</source>
+        <translation>ABA Core se gasi...</translation>
     </message>
     </context>
 <context>
@@ -620,8 +620,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The CCBC address the message was signed with</source>
-        <translation>CCBC adresa s kojom je potpisana poruka</translation>
+        <source>The ABA address the message was signed with</source>
+        <translation>ABA adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -635,8 +635,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -790,7 +790,7 @@
     </message>
     </context>
 <context>
-    <name>ccbc-core</name>
+    <name>aba-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

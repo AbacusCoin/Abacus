@@ -62,12 +62,12 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-        <source>These are your CCBC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones CCBC para realizar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar monedas.</translation>
+        <source>These are your ABA addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones ABA para realizar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar monedas.</translation>
     </message>
     <message>
-        <source>These are your CCBC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones CCBC para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
+        <source>These are your ABA addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son sus direcciones ABA para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirme el cifrado del monedero</translation>
     </message>
     <message>
-        <source>CCBC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCBCs from being stolen by malware infecting your computer.</source>
-        <translation>CCBC se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus CCBCs no sean robados mediante malware de su ordenador.</translation>
+        <source>ABA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ABAs from being stolen by malware infecting your computer.</source>
+        <translation>ABA se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus ABAs no sean robados mediante malware de su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>¿Está seguro de que desea cifrar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCBC&lt;/b&gt;!</source>
-        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS CCBC&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ABA&lt;/b&gt;!</source>
+        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS ABA&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;Cifrado BIP 38</translation>
     </message>
     <message>
-        <source>Enter a CCBC Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Introduzca la dirección CCBC que querría cifrar usando BIP 38. Introduzca una contraseña en el campo central. Haga clic en cifrar para generar la clave privada cifrada.</translation>
+        <source>Enter a ABA Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Introduzca la dirección ABA que querría cifrar usando BIP 38. Introduzca una contraseña en el campo central. Haga clic en cifrar para generar la clave privada cifrada.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Dirección:</translation>
     </message>
     <message>
-        <source>The CCBC address to sign the message with</source>
-        <translation>La dirección CCBC con la que desee firmar el mensaje</translation>
+        <source>The ABA address to sign the message with</source>
+        <translation>La dirección ABA con la que desee firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CCBC address</source>
-        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección CCBC</translation>
+        <source>Sign the message to prove you own this ABA address</source>
+        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección ABA</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Introduzca la clave cifrada privada BIP 38. Introduzca la contraseña en el campo central. Haga clic en descifrar clave para generar la clave privada. Después de que la clave sea descifrada, pulsando en 'Importar dirección' añadirá esta clave privada al monedero.</translation>
     </message>
     <message>
-        <source>The CCBC address the message was signed with</source>
-        <translation>La dirección CCBC con la que se firmó el mensaje</translation>
+        <source>The ABA address the message was signed with</source>
+        <translation>La dirección ABA con la que se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified CCBC address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección CCBC especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified ABA address</source>
+        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección ABA especificada</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,15 +602,15 @@
         <translation>Herramienta de pestañas</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>Núcleo CCBC</translation>
+        <source>ABA Core</source>
+        <translation>Núcleo ABA</translation>
     </message>
     <message>
-        <source>Send coins to a CCBC address</source>
-        <translation>Enviar coins a una dirección CCBC</translation>
+        <source>Send coins to a ABA address</source>
+        <translation>Enviar coins a una dirección ABA</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ccbc: URIs)</source>
+        <source>Request payments (generates QR codes and aba: URIs)</source>
         <translation>Solicitud de pago (genera un código QR y URIs)</translation>
     </message>
     <message>
@@ -618,8 +618,8 @@
         <translation>&amp;Privacidad</translation>
     </message>
     <message>
-        <source>Privacy Action for zCCBC and Obfuscation</source>
-        <translation>Privacidad con zCCBC y Ofuscación</translation>
+        <source>Privacy Action for zABA and Obfuscation</source>
+        <translation>Privacidad con zABA y Ofuscación</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -630,24 +630,24 @@
         <translation>Explorar nodos maestros</translation>
     </message>
     <message>
-        <source>&amp;About CCBC Core</source>
-        <translation>&amp;Sobre el núcleo de CCBC</translation>
+        <source>&amp;About ABA Core</source>
+        <translation>&amp;Sobre el núcleo de ABA</translation>
     </message>
     <message>
-        <source>Show information about CCBC Core</source>
-        <translation>Mostrar información sobre el núcleo de CCBC</translation>
+        <source>Show information about ABA Core</source>
+        <translation>Mostrar información sobre el núcleo de ABA</translation>
     </message>
     <message>
-        <source>Modify configuration options for CCBC</source>
-        <translation>Modificar las opciones de configuración de CCBC</translation>
+        <source>Modify configuration options for ABA</source>
+        <translation>Modificar las opciones de configuración de ABA</translation>
     </message>
     <message>
-        <source>Sign messages with your CCBC addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones CCBC para demostrar que le pertenecen</translation>
+        <source>Sign messages with your ABA addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones ABA para demostrar que le pertenecen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified CCBC addresses</source>
-        <translation>Verificar mensajes para asegurar que están firmados con la dirección CCBC especificada</translation>
+        <source>Verify messages to ensure they were signed with specified ABA addresses</source>
+        <translation>Verificar mensajes para asegurar que están firmados con la dirección ABA especificada</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -678,8 +678,8 @@
         <translation>Abrir Fichero de Configuración de Nodos Maestros</translation>
     </message>
     <message>
-        <source>Open a CCBC: URI or payment request</source>
-        <translation>Abrir un CCBC: URI o solicitud de pago</translation>
+        <source>Open a ABA: URI or payment request</source>
+        <translation>Abrir un ABA: URI o solicitud de pago</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +690,16 @@
         <translation>Ventana del explorador de bloques</translation>
     </message>
     <message>
-        <source>Show the CCBC Core help message to get a list with possible CCBC command-line options</source>
-        <translation>Mostrar la ayuda de CCBC Core para obtener una lista de posibles opciones en línea de comandos</translation>
+        <source>Show the ABA Core help message to get a list with possible ABA command-line options</source>
+        <translation>Mostrar la ayuda de ABA Core para obtener una lista de posibles opciones en línea de comandos</translation>
     </message>
     <message>
-        <source>CCBC Core client</source>
-        <translation>Cliente CCBC Core</translation>
+        <source>ABA Core client</source>
+        <translation>Cliente ABA Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to CCBC network</source>
-        <translation><numerusform>%n conexión(es) activa a la red CCBC</numerusform><numerusform>%n conexion(es) activas a la red CCBC</numerusform></translation>
+        <source>%n active connection(s) to ABA network</source>
+        <translation><numerusform>%n conexión(es) activa a la red ABA</numerusform><numerusform>%n conexion(es) activas a la red ABA</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -853,8 +853,8 @@ MultiEnvío: %1</translation>
         <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ccbc.conf).</source>
-        <translation>No se muestran todas las transacciones. Para ver todas las transacciones introduzca la línea "txindex=1" en el archivo de configuración (ccbc.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aba.conf).</source>
+        <translation>No se muestran todas las transacciones. Para ver todas las transacciones introduzca la línea "txindex=1" en el archivo de configuración (aba.conf).</translation>
     </message>
 </context>
 <context>
@@ -1142,8 +1142,8 @@ MultiEnvío: %1</translation>
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid CCBC address.</source>
-        <translation>La dirección introducida "%1" no es una dirección CCBC válida.</translation>
+        <source>The entered address "%1" is not a valid ABA address.</source>
+        <translation>La dirección introducida "%1" no es una dirección ABA válida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1188,16 +1188,16 @@ MultiEnvío: %1</translation>
         <translation>versión</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>Núcleo CCBC</translation>
+        <source>ABA Core</source>
+        <translation>Núcleo ABA</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About CCBC Core</source>
-        <translation>Acerca de CCBC Core</translation>
+        <source>About ABA Core</source>
+        <translation>Acerca de ABA Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1243,16 @@ MultiEnvío: %1</translation>
         <translation>Bienvenido/a</translation>
     </message>
     <message>
-        <source>Welcome to CCBC Core.</source>
-        <translation>Bienvenido/a a CCBC Core.</translation>
+        <source>Welcome to ABA Core.</source>
+        <translation>Bienvenido/a a ABA Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where CCBC Core will store its data.</source>
-        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará CCBC Core sus datos.</translation>
+        <source>As this is the first time the program is launched, you can choose where ABA Core will store its data.</source>
+        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará ABA Core sus datos.</translation>
     </message>
     <message>
-        <source>CCBC Core will download and store a copy of the CCBC block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>CCBC Core descargará y guardará una copia de la cadena de bloques CCBC. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
+        <source>ABA Core will download and store a copy of the ABA block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>ABA Core descargará y guardará una copia de la cadena de bloques ABA. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,8 +1263,8 @@ MultiEnvío: %1</translation>
         <translation>Usar una carpeta de datos personalizada:</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>Núcleo CCBC</translation>
+        <source>ABA Core</source>
+        <translation>Núcleo ABA</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1405,12 +1405,12 @@ MultiEnvío: %1</translation>
         <translation>Introduzca Dirección a la cual Enviar</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CCBC addresses after it matures.
-To Add: enter percentage to give and CCBC address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other ABA addresses after it matures.
+To Add: enter percentage to give and ABA address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiEnvío le permite enviar automáticamente hasta el 100% de recompensa de participación o de nodo maestro a una lista de otras direcciones CCBC después de su maduración.
-Para Añadir: introduzca porcentaje a enviar y las direcciones CCBC a añadir al vector MultiEnvío.
+        <translation>MultiEnvío le permite enviar automáticamente hasta el 100% de recompensa de participación o de nodo maestro a una lista de otras direcciones ABA después de su maduración.
+Para Añadir: introduzca porcentaje a enviar y las direcciones ABA a añadir al vector MultiEnvío.
 Para Eliminar: Introduzca la dirección a eliminar y pulse la tecla delete.
 MultiEnvío no se activará a menos que haga usted click en Activar</translation>
     </message>
@@ -1548,48 +1548,48 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Por favor selecciones un nivel de privacidad.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CCBC</source>
-        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 10000 CCBC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ABA</source>
+        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 10000 ABA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CCBC</source>
-        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 10000 CCBC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ABA</source>
+        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 10000 ABA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 nodos maestros diferentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CCBC to anonymize 10000 CCBC</source>
-        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 CCBC para anonimizar 10000 CCBC</translation>
+        <source>This option is the quickest and will cost about ~0.025 ABA to anonymize 10000 ABA</source>
+        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 ABA para anonimizar 10000 ABA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CCBC to anonymize 10000 CCBC</source>
-        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 CCBC para anonimizar 10000 CCBC.</translation>
+        <source>This option is moderately fast and will cost about 0.05 ABA to anonymize 10000 ABA</source>
+        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 ABA para anonimizar 10000 ABA.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta es la opción más lenta pero más segura. Usar el máximo anonimato costará</translation>
     </message>
     <message>
-        <source>0.1 CCBC per 10000 CCBC you anonymize.</source>
-        <translation>0.1 CCBC por 10000 CCBC que anonimizas.</translation>
+        <source>0.1 ABA per 10000 ABA you anonymize.</source>
+        <translation>0.1 ABA por 10000 ABA que anonimizas.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Configuración de Ofuscación</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening CCBC's configuration screen.</source>
-        <translation>La Ofuscación se configuró correctamente en modo básico (%1 y 2 rondas). Puedes cambiar esto en cualquier momento accediendo a la ventana de configuración de CCBC.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening ABA's configuration screen.</source>
+        <translation>La Ofuscación se configuró correctamente en modo básico (%1 y 2 rondas). Puedes cambiar esto en cualquier momento accediendo a la ventana de configuración de ABA.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening CCBC's configuration screen.</source>
-        <translation>La Ofuscación se activó correctamente en modo alto (%1 y 8 rondas). Usted puede cambiar esto en cualquier momento abriendo la ventana de configuración de CCBC.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening ABA's configuration screen.</source>
+        <translation>La Ofuscación se activó correctamente en modo alto (%1 y 8 rondas). Usted puede cambiar esto en cualquier momento abriendo la ventana de configuración de ABA.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening CCBC's configuration screen.</source>
-        <translation>La Ofuscación se activó correctamente en su grado máximo (%1 y 16 rondas). Usted puede cambiar ésto en cualquier momento en la ventana de configuración de CCBC.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening ABA's configuration screen.</source>
+        <translation>La Ofuscación se activó correctamente en su grado máximo (%1 y 16 rondas). Usted puede cambiar ésto en cualquier momento en la ventana de configuración de ABA.</translation>
     </message>
 </context>
 <context>
@@ -1650,8 +1650,8 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Si deselecciona el gasto de cambio no confirmado, las entradas de una transacción&lt;br/&gt;no podrán ser usadas hasta que esa transacción tenga al menos una confirmación.&lt;br/&gt;Esto también afecta a cómo se calcula su balance actual.</translation>
     </message>
     <message>
-        <source>Automatically open the CCBC client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente CCBC en el enrutador. Ésto sólo funciona si su enrutador soporta UPnP y esta función está activada.</translation>
+        <source>Automatically open the ABA client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente ABA en el enrutador. Ésto sólo funciona si su enrutador soporta UPnP y esta función está activada.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1670,12 +1670,12 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Experto</translation>
     </message>
     <message>
-        <source>Automatically start CCBC after logging in to the system.</source>
-        <translation>Arrancar CCBC automáticamente después de identificarse en Windows.</translation>
+        <source>Automatically start ABA after logging in to the system.</source>
+        <translation>Arrancar ABA automáticamente después de identificarse en Windows.</translation>
     </message>
     <message>
-        <source>&amp;Start CCBC on system login</source>
-        <translation>&amp;Arrancar CCBC al inicio del sistema</translation>
+        <source>&amp;Start ABA on system login</source>
+        <translation>&amp;Arrancar ABA al inicio del sistema</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1702,38 +1702,38 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>&amp;Red</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting CCBC.</source>
-        <translation>El idioma de interface de usuario puede seleccionarse aquí. Este ajuste tomará efecto después de reiniciar CCBC.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting ABA.</source>
+        <translation>El idioma de interface de usuario puede seleccionarse aquí. Este ajuste tomará efecto después de reiniciar ABA.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ccbc-project/ccbc-project-translations</source>
+https://www.transifex.com/aba-project/aba-project-translations</source>
         <translation>¿Falta su lenguaje o la traducción está incompleta? Contribuya con las traducciones aquí:
-https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
+https://www.transifex.com/aba-project/aba-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming CCBC which get automatically converted to zCCBC via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de CCBCs entrantes que serán automáticamente convertidos a zCCBC a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <source>Percentage of incoming ABA which get automatically converted to zABA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Porcentaje de ABAs entrantes que serán automáticamente convertidos a zABA a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCBC</source>
-        <translation>Porcentaje de zCCBC autogenerados</translation>
+        <source>Percentage of autominted zABA</source>
+        <translation>Porcentaje de zABA autogenerados</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CCBC for this denomination is available</source>
-        <translation>Retrasar la conversión automática a Zerocoin hasta que hayan suficientes CCBC disponibles para este tamaño de billete</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough ABA for this denomination is available</source>
+        <translation>Retrasar la conversión automática a Zerocoin hasta que hayan suficientes ABA disponibles para este tamaño de billete</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCBC Denomination</source>
-        <translation>Tamaño de billete zCCBC preferido en la creación automática de dinero</translation>
+        <source>Preferred Automint zABA Denomination</source>
+        <translation>Tamaño de billete zABA preferido en la creación automática de dinero</translation>
     </message>
     <message>
-        <source>Connect to the CCBC network through a SOCKS5 proxy.</source>
-        <translation>Conectar a la red CCBC mediante un proxy SOCKS5.</translation>
+        <source>Connect to the ABA network through a SOCKS5 proxy.</source>
+        <translation>Conectar a la red ABA mediante un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1863,8 +1863,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>CCBC Balances</source>
-        <translation>Balances CCBC</translation>
+        <source>ABA Balances</source>
+        <translation>Balances ABA</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1891,8 +1891,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Recompensa de participación o de nodo maestro que aún no ha madurado</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CCBC network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red CCBC después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ABA network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red ABA después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1931,12 +1931,12 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Balances Combinados (incluyendo monedas inmaduras)</translation>
     </message>
     <message>
-        <source>CCBC:</source>
-        <translation>CCBC:</translation>
+        <source>ABA:</source>
+        <translation>ABA:</translation>
     </message>
     <message>
-        <source>zCCBC:</source>
-        <translation>zCCBC:</translation>
+        <source>zABA:</source>
+        <translation>zABA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1978,12 +1978,12 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Dirección de pago inválida %1</translation>
     </message>
     <message>
-        <source>Cannot start ccbc: click-to-pay handler</source>
-        <translation>No se puede iniciar ccbc: módulo click-to-pay</translation>
+        <source>Cannot start aba: click-to-pay handler</source>
+        <translation>No se puede iniciar aba: módulo click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid CCBC address or malformed URI parameters.</source>
-        <translation>¡El identificador de la dirección no puede ser analizado! Esto puede ser causado por una dirección CCBC inválida o parámetros del identificador malformados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid ABA address or malformed URI parameters.</source>
+        <translation>¡El identificador de la dirección no puede ser analizado! Esto puede ser causado por una dirección ABA inválida o parámetros del identificador malformados.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2064,20 +2064,20 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>CCBC which were anonymized via Zerocin Protocol</source>
-        <translation>CCBC que fueron anonimizados mediante Protocolo Zerocoin</translation>
+        <source>ABA which were anonymized via Zerocin Protocol</source>
+        <translation>ABA que fueron anonimizados mediante Protocolo Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin CCBC (zCCBC)</source>
-        <translation>Zerocoin CCBC (zCCBC)</translation>
+        <source>Zerocoin ABA (zABA)</source>
+        <translation>Zerocoin ABA (zABA)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Acciones Zerocoin:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CCBC network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red CCBC después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ABA network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red ABA después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
@@ -2092,16 +2092,16 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCCBC</source>
-        <translation>zCCBC</translation>
+        <source>zABA</source>
+        <translation>zABA</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Disponible para Creación de moneda:</translation>
     </message>
     <message>
-        <source>0.000 000 00 CCBC</source>
-        <translation>0.000 000 00 CCBC</translation>
+        <source>0.000 000 00 ABA</source>
+        <translation>0.000 000 00 ABA</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2160,8 +2160,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Balance disponible:</translation>
     </message>
     <message>
-        <source>0 zCCBC</source>
-        <translation>0 zCCBC</translation>
+        <source>0 zABA</source>
+        <translation>0 zABA</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2180,8 +2180,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Pagar &amp;A:</translation>
     </message>
     <message>
-        <source>The CCBC address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>La dirección CCBC a la que enviar el pago. Si se deja en blanco, crea un pago a usted mismo.</translation>
+        <source>The ABA address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>La dirección ABA a la que enviar el pago. Si se deja en blanco, crea un pago a usted mismo.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2380,8 +2380,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Copiar cantidad</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the CCBC network yet.</source>
-        <translation>La funcionalidad Zerocoin todavía no está habilitada en la red CCBC.</translation>
+        <source>Zerocoin functionality is not enabled on the ABA network yet.</source>
+        <translation>La funcionalidad Zerocoin todavía no está habilitada en la red ABA.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2400,8 +2400,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations</translation>
         <translation>Monedas creadas correctamente</translation>
     </message>
     <message>
-        <source> zCCBC in </source>
-        <translation>zCCBC en</translation>
+        <source> zABA in </source>
+        <translation>zABA en</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2434,8 +2434,8 @@ Por favor espere...</translation>
         <translation>No se especificó drección 'Pagar A', por lo que asumimos un pago local</translation>
     </message>
     <message>
-        <source>Invalid CCBC Address</source>
-        <translation>Dirección CCBC Inválida</translation>
+        <source>Invalid ABA Address</source>
+        <translation>Dirección ABA Inválida</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2525,8 +2525,8 @@ Por favor tenga paciencia...</translation>
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Enter a CCBC address (e.g. %1)</source>
-        <translation>Introduzca una dirección CCBC (p.e. %1)</translation>
+        <source>Enter a ABA address (e.g. %1)</source>
+        <translation>Introduzca una dirección ABA (p.e. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2663,8 +2663,8 @@ Por favor tenga paciencia...</translation>
         <translation>Cadena de bloques</translation>
     </message>
     <message>
-        <source>Open the CCBC debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Abrir el fichero de depuración CCBC en el directorio actual de datos. Esto puede llevar unos segundos para ficheros de depuración grandes.</translation>
+        <source>Open the ABA debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Abrir el fichero de depuración ABA en el directorio actual de datos. Esto puede llevar unos segundos para ficheros de depuración grandes.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2831,8 +2831,8 @@ Por favor tenga paciencia...</translation>
         <translation>Fuera:</translation>
     </message>
     <message>
-        <source>Welcome to the CCBC RPC console.</source>
-        <translation>Bienvenido a la consola RPC de CCBC.</translation>
+        <source>Welcome to the ABA RPC console.</source>
+        <translation>Bienvenido a la consola RPC de ABA.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2902,12 +2902,12 @@ Por favor tenga paciencia...</translation>
         <translation>Una etiqueta opcional a asociar con la nueva dirección de recepción.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the CCBC network.</source>
-        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. Nota: El mensaje no se envía junto al pago por la red CCBC.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ABA network.</source>
+        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. Nota: El mensaje no se envía junto al pago por la red ABA.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the CCBC network.</source>
-        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. &lt;br&gt;Nota: El mensaje no se envía junto al pago por la red CCBC.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the ABA network.</source>
+        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. &lt;br&gt;Nota: El mensaje no se envía junto al pago por la red ABA.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3131,8 +3131,8 @@ Por favor tenga paciencia...</translation>
         <translation>Tamaño de UTXO:</translation>
     </message>
     <message>
-        <source>0 CCBC</source>
-        <translation>0 CCBC</translation>
+        <source>0 ABA</source>
+        <translation>0 ABA</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3183,16 +3183,16 @@ Por favor tenga paciencia...</translation>
         <translation>Monedas seleccionadas automáticamente</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCCBCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCBCs in fee,&lt;br /&gt;while "at least" pays 1000 uCCBCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uCCBCs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uCCBCs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uCCBCs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uABAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uABAs in fee,&lt;br /&gt;while "at least" pays 1000 uABAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uABAs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uABAs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uABAs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCCBCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCBCs in fee,&lt;br /&gt;while "total at least" pays 1000 uCCBCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uCCBCs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uCCBCs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uCCBCs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uABAs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uABAs in fee,&lt;br /&gt;while "total at least" pays 1000 uABAs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uABAs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uABAs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uABAs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CCBC transactions than the network can process.</source>
-        <translation>Pagar sólo la comisión mínima está bien mientras haya menos volumen de transacciones que espacio en los bloques.&lt;br/&gt;Pero tenga en cuenta que esto podría acabar en una transacción que nunca se confirme si hay más demanda de transacciones CCBC de las que la red puede procesar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for ABA transactions than the network can process.</source>
+        <translation>Pagar sólo la comisión mínima está bien mientras haya menos volumen de transacciones que espacio en los bloques.&lt;br/&gt;Pero tenga en cuenta que esto podría acabar en una transacción que nunca se confirme si hay más demanda de transacciones ABA de las que la red puede procesar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3239,8 +3239,8 @@ Por favor tenga paciencia...</translation>
         <translation>Añadir Destinata&amp;rio</translation>
     </message>
     <message>
-        <source>Anonymized CCBC</source>
-        <translation>CCBC anonimizados</translation>
+        <source>Anonymized ABA</source>
+        <translation>ABA anonimizados</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3299,8 +3299,8 @@ Por favor tenga paciencia...</translation>
         <translation>fondos anónimos</translation>
     </message>
     <message>
-        <source>Warning: Invalid CCBC address</source>
-        <translation>Advertencia: Direcciones CCBC inválidas</translation>
+        <source>Warning: Invalid ABA address</source>
+        <translation>Advertencia: Direcciones ABA inválidas</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3406,8 +3406,8 @@ Por favor tenga paciencia...</translation>
         <translation>Pagar &amp;A:</translation>
     </message>
     <message>
-        <source>The CCBC address to send the payment to</source>
-        <translation>La dirección CCBC a la cual enviar el pago</translation>
+        <source>The ABA address to send the payment to</source>
+        <translation>La dirección ABA a la cual enviar el pago</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3446,8 +3446,8 @@ Por favor tenga paciencia...</translation>
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>A message that was attached to the CCBC: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the CCBC network.</source>
-        <translation>Un mensaje adjunto al CCBC: En recurso web especificado será guardado junto a la transacción para su referencia. Nota: Este mensaje no se enviará por la red CCBC.</translation>
+        <source>A message that was attached to the ABA: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ABA network.</source>
+        <translation>Un mensaje adjunto al ABA: En recurso web especificado será guardado junto a la transacción para su referencia. Nota: Este mensaje no se enviará por la red ABA.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3473,8 +3473,8 @@ Por favor tenga paciencia...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>CCBC Core is shutting down...</source>
-        <translation>El programa CCBC se está cerrando...</translation>
+        <source>ABA Core is shutting down...</source>
+        <translation>El programa ABA se está cerrando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3496,8 +3496,8 @@ Por favor tenga paciencia...</translation>
         <translation>Usted puede firmar mensajes con su dirección para probar que son auténticos. Tenga cuidado con firmar algo corto o vago como "hola", pues los ataques de phising pueden engañarle para que firme su identidad para ellos. Sólo firme textos detallados con los que esté de acuerdo.</translation>
     </message>
     <message>
-        <source>The CCBC address to sign the message with</source>
-        <translation>La dirección CCBC con la que desee firmar el mensaje</translation>
+        <source>The ABA address to sign the message with</source>
+        <translation>La dirección ABA con la que desee firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3528,16 +3528,16 @@ Por favor tenga paciencia...</translation>
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CCBC address</source>
-        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección CCBC</translation>
+        <source>Sign the message to prove you own this ABA address</source>
+        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección ABA</translation>
     </message>
     <message>
-        <source>The CCBC address the message was signed with</source>
-        <translation>La dirección CCBC con la que se firmó el mensaje</translation>
+        <source>The ABA address the message was signed with</source>
+        <translation>La dirección ABA con la que se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified CCBC address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección CCBC especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified ABA address</source>
+        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección ABA especificada</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3623,8 +3623,8 @@ Por favor tenga paciencia...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>CCBC Core</source>
-        <translation>Núcleo CCBC</translation>
+        <source>ABA Core</source>
+        <translation>Núcleo ABA</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3639,8 +3639,8 @@ Por favor tenga paciencia...</translation>
         <translation>Los desarrolladores de Dash Core</translation>
     </message>
     <message>
-        <source>The CCBC Core developers</source>
-        <translation>Los desarrolladores de CCBC Core</translation>
+        <source>The ABA Core developers</source>
+        <translation>Los desarrolladores de ABA Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4231,8 +4231,8 @@ Por favor tenga paciencia...</translation>
         <translation>Enviar Monedas</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CCBC.</source>
-        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 CCBC.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 ABA.</source>
+        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 ABA.</translation>
     </message>
 </context>
 <context>
@@ -4302,7 +4302,7 @@ Por favor tenga paciencia...</translation>
     </message>
 </context>
 <context>
-    <name>ccbc-core</name>
+    <name>aba-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1= mantener los metadatos tx p.e. dueño de la cuenta e información de la solicitud de pago, 2 = ignorar metadatos tx)</translation>
@@ -4332,8 +4332,8 @@ Por favor tenga paciencia...</translation>
         <translation>El punto de chequeo del acumulador que hemos calculado no coincide con lo guardado en el índice de bloques</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. CCBC Core is probably already running.</source>
-        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. CCBC Core esta probablemente en ejecución.</translation>
+        <source>Cannot obtain a lock on data directory %s. ABA Core is probably already running.</source>
+        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. ABA Core esta probablemente en ejecución.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4352,8 +4352,8 @@ Por favor tenga paciencia...</translation>
         <translation>Borrar todas las transacciones del monedero y solo recuperar partes de la cadena de bloque a traves de -rescan al inicio.</translation>
     </message>
     <message>
-        <source>Disable all CCBC specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar toda la funcionalidad especifica CCBC (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, predeterminado: %u)</translation>
+        <source>Disable all ABA specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar toda la funcionalidad especifica ABA (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4392,12 +4392,12 @@ Por favor tenga paciencia...</translation>
         <translation>Ejecutar comando cuando el mejor bloque cambie (%s en cmd es reemplazado por el block hash)</translation>
     </message>
     <message>
-        <source>Fees (in CCBC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Comisiones (en CCBC/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
+        <source>Fees (in ABA/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Comisiones (en ABA/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CCBC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Comisiones (en CCBC/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
+        <source>Fees (in ABA/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Comisiones (en ABA/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4496,44 +4496,44 @@ Por favor tenga paciencia...</translation>
         <translation>Este producto incluye software desarrollado por el Proyecto OpenSSL para uso en OpenSSL Toolkit &lt;https://www.openssl.org/&gt; y software de cifrado escrito por Eric Young y software de UPnP escrito por Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use ccbcd, or the -server option to ccbc-qt, you must set an rpcpassword in the configuration file:
+        <source>To use abad, or the -server option to aba-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=ccbcrpc
+rpcuser=abarpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "CCBC Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "ABA Alert" admin@foo.com
 </source>
-        <translation>Para usar ccbcd, o la opción -server de ccbc-qt, debes definir un rpcpassword en el archivo de configuración:
+        <translation>Para usar abad, o la opción -server de aba-qt, debes definir un rpcpassword en el archivo de configuración:
 %s
 Es recomendado que uses la siguiente contraseña aleatoria:
-rpcuser=ccbc
+rpcuser=aba
 rpcrpcpassword=%s
 (No necesitas recordar esta contraseña)
 El nombre de usuario y contraseña NO DEBEN ser los mismos.
 Si el archivo no existe, crearlo con permisos de solo lectura para el propietario.
 También es recomendado definir alertnotify de manera que seas notificado de problemas;
-por ejemplo: alertnotify=echo %%s | mail -s "CCBC Alert" admin@foo.com
+por ejemplo: alertnotify=echo %%s | mail -s "ABA Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. CCBC Core is probably already running.</source>
-        <translation>Imposible conectar a %s en esta computadora. Es probable que CCBC Core ya este corriendo.</translation>
+        <source>Unable to bind to %s on this computer. ABA Core is probably already running.</source>
+        <translation>Imposible conectar a %s en esta computadora. Es probable que ABA Core ya este corriendo.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Imposible localizar suficientes fondos denominados de Ofuscación para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCBC.</source>
-        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 CCBC.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ABA.</source>
+        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 ABA.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCBC.</source>
-        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 CCBC.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 ABA.</source>
+        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 ABA.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4548,8 +4548,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "CCBC Alert" admin@foo.com
         <translation>Advertencia: -paytxfee esta muy alta! Esta es la comisión de transacción que pagarás si envías una transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CCBC Core will not work properly.</source>
-        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora CCBC Core no funcionará adecuadamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong ABA Core will not work properly.</source>
+        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora ABA Core no funcionará adecuadamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4704,8 +4704,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "CCBC Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The CCBC Core Developers</source>
-        <translation>Copyright (C) 2015-%i The CCBC Core Developers</translation>
+        <source>Copyright (C) 2015-%i The ABA Core Developers</source>
+        <translation>Copyright (C) 2015-%i The ABA Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4784,8 +4784,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "CCBC Alert" admin@foo.com
         <translation>Error al cargar wallet.dat: Billetera dañada</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of CCBC Core</source>
-        <translation>Error al cargar wallet.dat: La Billetera requiere una nueva versión del Núcleo CCBC</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of ABA Core</source>
+        <translation>Error al cargar wallet.dat: La Billetera requiere una nueva versión del Núcleo ABA</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4836,8 +4836,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "CCBC Alert" admin@foo.com
         <translation>Falló al leer el bloque</translation>
     </message>
     <message>
-        <source>Fee (in CCBC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comisión (en CCBC/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
+        <source>Fee (in ABA/kB) to add to transactions you send (default: %s)</source>
+        <translation>Comisión (en ABA/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4896,8 +4896,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "CCBC Alert" admin@foo.com
         <translation>Información</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. CCBC Core is shutting down.</source>
-        <translation>La prueba de salud de inicialización ha fallado. CCBC Core se cerrará.</translation>
+        <source>Initialization sanity check failed. ABA Core is shutting down.</source>
+        <translation>La prueba de salud de inicialización ha fallado. ABA Core se cerrará.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5572,8 +5572,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "CCBC Alert" admin@foo.com
         <translation>Monedero bloqueado.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart CCBC Core to complete</source>
-        <translation>Monedero necesita ser reescrito: reinicie CCBC Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart ABA Core to complete</source>
+        <translation>Monedero necesita ser reescrito: reinicie ABA Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

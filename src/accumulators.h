@@ -1,10 +1,10 @@
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2019 The CCBC developers
+// Copyright (c) 2018-2019 The ABA developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CCBC_ACCUMULATORS_H
-#define CCBC_ACCUMULATORS_H
+#ifndef ABA_ACCUMULATORS_H
+#define ABA_ACCUMULATORS_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Denominations.h"
@@ -23,4 +23,4 @@ uint32_t ParseChecksum(uint256 nChecksum, libzerocoin::CoinDenomination denomina
 uint32_t GetChecksum(const CBigNum &bnValue);
 bool InvalidCheckpointRange(int nHeight);
 
-#endif //CCBC_ACCUMULATORS_H
+#endif //ABA_ACCUMULATORS_H

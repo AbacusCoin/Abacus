@@ -2,7 +2,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2019 The CCBC developers
+// Copyright (c) 2018-2019 The ABA developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop CCBC server.");
+            "\nStop ABA server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "CCBC server stopping";
+    return "ABA server stopping";
 }
 
 
@@ -322,36 +322,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* CCBC features */
-        {"ccbc", "masternode", &masternode, true, true, false},
-        {"ccbc", "listmasternodes", &listmasternodes, true, true, false},
-        {"ccbc", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"ccbc", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"ccbc", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"ccbc", "masternodedebug", &masternodedebug, true, true, false},
-        {"ccbc", "startmasternode", &startmasternode, true, true, false},
-        {"ccbc", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"ccbc", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"ccbc", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"ccbc", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"ccbc", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"ccbc", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"ccbc", "mnbudget", &mnbudget, true, true, false},
-        {"ccbc", "preparebudget", &preparebudget, true, true, false},
-        {"ccbc", "submitbudget", &submitbudget, true, true, false},
-        {"ccbc", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"ccbc", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"ccbc", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"ccbc", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"ccbc", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"ccbc", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"ccbc", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"ccbc", "checkbudgets", &checkbudgets, true, true, false},
-        {"ccbc", "mnsync", &mnsync, true, true, false},
-        {"ccbc", "spork", &spork, true, true, false},
-        {"ccbc", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* ABA features */
+        {"aba", "masternode", &masternode, true, true, false},
+        {"aba", "listmasternodes", &listmasternodes, true, true, false},
+        {"aba", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"aba", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"aba", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"aba", "masternodedebug", &masternodedebug, true, true, false},
+        {"aba", "startmasternode", &startmasternode, true, true, false},
+        {"aba", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"aba", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"aba", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"aba", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"aba", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"aba", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"aba", "mnbudget", &mnbudget, true, true, false},
+        {"aba", "preparebudget", &preparebudget, true, true, false},
+        {"aba", "submitbudget", &submitbudget, true, true, false},
+        {"aba", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"aba", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"aba", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"aba", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"aba", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"aba", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"aba", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"aba", "checkbudgets", &checkbudgets, true, true, false},
+        {"aba", "mnsync", &mnsync, true, true, false},
+        {"aba", "spork", &spork, true, true, false},
+        {"aba", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"ccbc", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"aba", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -630,16 +630,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use ccbcd, or the -server option to ccbc-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use abad, or the -server option to aba-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=ccbcrpc\n"
+                                               "rpcuser=abarpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"CCBC Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"ABA Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1090,7 +1090,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> ccbc-cli " + methodname + " " + args + "\n";
+    return "> aba-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

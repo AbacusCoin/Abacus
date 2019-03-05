@@ -1,10 +1,10 @@
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2019 The CCBC developers
+// Copyright (c) 2018-2019 The ABA developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CCBC_CSPORKDB_H
-#define CCBC_CSPORKDB_H
+#ifndef ABA_CSPORKDB_H
+#define ABA_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -26,4 +26,4 @@ public:
 };
 
 
-#endif //CCBC_CSPORKDB_H
+#endif //ABA_CSPORKDB_H

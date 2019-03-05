@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2019 The CCBC developers
+// Copyright (c) 2018-2019 The ABA developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -121,17 +121,17 @@ public:
         pchMessageStart[3] = 0x45;
         vAlertPubKey = ParseHex("0427032f4aea9ade6b709caa6f302c0850e1ecdc9f4cd2619ef28dcd560afcc65bcd7a97bf58523a450a7c8e6e178c9ced2ed5ff96afd8e88284332a87f18af63f");
         nDefaultPort = 5520;
-        bnProofOfWorkLimit = ~uint256(0) >> 1; //CCBC starting difficulty is 1 / 2^1
-        bnPOSWorkLimit = ~uint256(0) >> 24;    // CCBC max POS difficulty is 1 / 2^24
+        bnProofOfWorkLimit = ~uint256(0) >> 1; //ABA starting difficulty is 1 / 2^1
+        bnPOSWorkLimit = ~uint256(0) >> 24;    // ABA max POS difficulty is 1 / 2^24
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60;         // CCCBC: 1 day
-        nTargetSpacing = 1 * 60;          // CCBC: 1 minute PoW time
-        nPOSTargetSpacing = 1 * 60;       // CCBC: 1 minute PoS time
+        nTargetTimespan = 1 * 60;         // CABA: 1 day
+        nTargetSpacing = 1 * 60;          // ABA: 1 minute PoW time
+        nPOSTargetSpacing = 1 * 60;       // ABA: 1 minute PoS time
         nPOSDGWForkBlock = 190000;        // Block where Dark Gravity Wave is enabled for POS 190k
         nEndOfReviveFailSafe = 190000;    // Block where revive address changes.
         nMaturity = 10;                   // 10 Confirmations to mature coins
@@ -177,14 +177,14 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x598ffdff99e67551b7a05dc08dfafcf2e7a6ecea89f9b369bf830f4b21ff160f"));
 
         //Teams Seeder
-        vSeeds.push_back(CDNSSeedData("seeder.ccbcoin.club", "seeder.ccbcoin.club"));
-        vSeeds.push_back(CDNSSeedData("s01.ccbcoin.club", "s01.ccbcoin.club"));
-        vSeeds.push_back(CDNSSeedData("s02.ccbcoin.club", "s02.ccbcoin.club"));
-        vSeeds.push_back(CDNSSeedData("s03.ccbcoin.club", "s03.ccbcoin.club"));
-        vSeeds.push_back(CDNSSeedData("s04.ccbcoin.club", "s04.ccbcoin.club"));
-        vSeeds.push_back(CDNSSeedData("s05.ccbcoin.club", "s05.ccbcoin.club"));
-        vSeeds.push_back(CDNSSeedData("s06.ccbcoin.club", "s06.ccbcoin.club"));
-        vSeeds.push_back(CDNSSeedData("s07.ccbcoin.club", "s07.ccbcoin.club"));
+        vSeeds.push_back(CDNSSeedData("seeder.abaoin.club", "seeder.abaoin.club"));
+        vSeeds.push_back(CDNSSeedData("s01.abaoin.club", "s01.abaoin.club"));
+        vSeeds.push_back(CDNSSeedData("s02.abaoin.club", "s02.abaoin.club"));
+        vSeeds.push_back(CDNSSeedData("s03.abaoin.club", "s03.abaoin.club"));
+        vSeeds.push_back(CDNSSeedData("s04.abaoin.club", "s04.abaoin.club"));
+        vSeeds.push_back(CDNSSeedData("s05.abaoin.club", "s05.abaoin.club"));
+        vSeeds.push_back(CDNSSeedData("s06.abaoin.club", "s06.abaoin.club"));
+        vSeeds.push_back(CDNSSeedData("s07.abaoin.club", "s07.abaoin.club"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63); //S
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 68); //C
@@ -282,8 +282,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Ccbc: 1 day
-        nTargetSpacing = 1 * 30;  // Ccbc: 30 sec
+        nTargetTimespan = 1 * 60; // Aba: 1 day
+        nTargetSpacing = 1 * 30;  // Aba: 30 sec
         nLastPOWBlock = 200;
         nMaturity = 10;
         nMasternodeCountDrift = 4;
@@ -309,14 +309,14 @@ public:
         vSeeds.clear();
 
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet ccbc addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet ccbc script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet aba addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet aba script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-                                                                             // Testnet ccbc BIP32 pubkeys start with 'DRKV'
+                                                                             // Testnet aba BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet ccbc BIP32 prvkeys start with 'DRKP'
+        // Testnet aba BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet ccbc BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet aba BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -357,8 +357,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 1 * 60; // Ccbc: 1 day
-        nTargetSpacing = 1 * 60;  // Ccbc: 1 minutes
+        nTargetTimespan = 1 * 60; // Aba: 1 day
+        nTargetSpacing = 1 * 60;  // Aba: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1534438799;
         genesis.nBits = 504365040;

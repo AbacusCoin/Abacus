@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both ccbcd and ccbc-qt, to make it harder for attackers to
+ * for both abad and aba-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("CCBC Core");
+const std::string CLIENT_NAME("ABA Core");
 
 /**
  * Client version number

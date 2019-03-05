@@ -1,9 +1,9 @@
-/* src/config/ccbc-config.h.  Generated from ccbc-config.h.in by configure.  */
-/* src/config/ccbc-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/aba-config.h.  Generated from aba-config.h.in by configure.  */
+/* src/config/aba-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef CCBC_CONFIG_H
+#ifndef ABA_CONFIG_H
 
-#define CCBC_CONFIG_H
+#define ABA_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -268,16 +268,16 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.ccbc.org"
+#define PACKAGE_BUGREPORT "www.aba.org"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "CCBC Core"
+#define PACKAGE_NAME "ABA Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "CCBC Core 1.0.0"
+#define PACKAGE_STRING "ABA Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "ccbc"
+#define PACKAGE_TARNAME "aba"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
@@ -340,4 +340,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //CCBC_CONFIG_H
+#endif //ABA_CONFIG_H

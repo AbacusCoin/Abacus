@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build ccbcd (headless client) for OSX.
+This guide will show you how to build abad (headless client) for OSX.
 
 Notes
 -----
@@ -40,19 +40,19 @@ Instructions: Homebrew
 
         brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 libevent
 
-### Building `ccbcd`
+### Building `abad`
 
 1. Clone the github tree to get the source code and go into the directory.
 
 
-        git clone https://github.com/CryptoCashBack-Hub/CCBC.git
-        cd Ccbc
+        git clone https://github.com/CryptoCashBack-Hub/ABA.git
+        cd ABa
 2.
         brew uninstall boost
         brew install boost@1.57
         brew link boost@1.57 --force
 
-3.  Build ccbcd:
+3.  Build abad:
 
         ./autogen.sh
         ./configure --with-gui=qt5
@@ -62,7 +62,7 @@ Instructions: Homebrew
 
         make check
 
-5.  (Optional) You can also install ccbcd to your path:
+5.  (Optional) You can also install abad to your path:
 
         make install
 
@@ -74,7 +74,7 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "ccbc-qt" as project name, enter src/qt as location
+4. Enter "aba-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -84,11 +84,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `ccbcd` for your own use.
+You can ignore this section if you are building `abad` for your own use.
 
-ccbcd/ccbc-cli binaries are not included in the ccbc-Qt.app bundle.
+abad/aba-cli binaries are not included in the aba-Qt.app bundle.
 
-If you are building `ccbcd` or `ccbc-qt` for others, your build machine should be set up
+If you are building `abad` or `aba-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -97,30 +97,30 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the CCBC-Qt.app
+Once dependencies are compiled, see release-process.md for how the ABA-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
 -------
 
-It's now available at `./ccbcd`, provided that you are still in the `src`
+It's now available at `./abad`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./ccbcd` to get the filename where it should be put, or just try these
+Run `./abad` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=ccbcrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/CCBC/ccbc.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/CCBC/ccbc.conf"
+    echo -e "rpcuser=abarpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/ABA/aba.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/ABA/aba.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/CCBC/debug.log
+    tail -f $HOME/Library/Application\ Support/ABA/debug.log
 
 Other commands:
 -------
 
-    ./ccbcd -daemon # to start the ccbc daemon.
-    ./ccbc-cli --help  # for a list of command-line options.
-    ./ccbc-cli help    # When the daemon is running, to get a list of RPC commands
+    ./abad -daemon # to start the aba daemon.
+    ./aba-cli --help  # for a list of command-line options.
+    ./aba-cli help    # When the daemon is running, to get a list of RPC commands

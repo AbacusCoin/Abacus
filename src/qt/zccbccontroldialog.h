@@ -1,9 +1,9 @@
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2019 The CCBC developers
+// Copyright (c) 2018-2019 The ABA developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef ZCCBCCONTROLDIALOG_H
-#define ZCCBCCONTROLDIALOG_H
+#ifndef ZABACONTROLDIALOG_H
+#define ZABACONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -14,16 +14,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZCCBCControlDialog;
+class ZABAControlDialog;
 }
 
-class ZCCBCControlDialog : public QDialog
+class ZABAControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZCCBCControlDialog(QWidget *parent);
-    ~ZCCBCControlDialog();
+    explicit ZABAControlDialog(QWidget *parent);
+    ~ZABAControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -32,7 +32,7 @@ public:
     static std::vector<CZerocoinMint> GetSelectedMints();
 
 private:
-    Ui::ZCCBCControlDialog *ui;
+    Ui::ZABAControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 
@@ -52,4 +52,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZCCBCCONTROLDIALOG_H
+#endif // ZABACONTROLDIALOG_H

@@ -1,12 +1,12 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018-2019 The CCBC developers
+// Copyright (c) 2018-2019 The ABA developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ccbc-config.h"
+#include "config/aba-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -62,7 +62,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::CCBC);
+        settings.setValue("nDisplayUnit", BitcoinUnits::ABA);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -89,10 +89,10 @@ void OptionsModel::Init()
         settings.setValue("nPreferredDenom", 0);
     nPreferredDenom = settings.value("nPreferredDenom", "0").toLongLong();
 
-    if (!settings.contains("nAnonymizeCCBCAmount"))
-        settings.setValue("nAnonymizeCCBCAmount", 1000);
+    if (!settings.contains("nAnonymizeABAAmount"))
+        settings.setValue("nAnonymizeABAAmount", 1000);
 
-    nAnonymizeCCBCAmount = settings.value("nAnonymizeCCBCAmount").toLongLong();
+    nAnonymizeABAAmount = settings.value("nAnonymizeABAAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -165,8 +165,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeCCBCAmount"))
-        SoftSetArg("-anonymizeccbcamount", settings.value("nAnonymizeCCBCAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeABAAmount"))
+        SoftSetArg("-anonymizeabaamount", settings.value("nAnonymizeABAAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -177,7 +177,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in ccbc.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in aba.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -257,8 +257,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeCCBCAmount:
-            return QVariant(nAnonymizeCCBCAmount);
+        case AnonymizeABAAmount:
+            return QVariant(nAnonymizeABAAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -388,10 +388,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit hideZeroBalancesChanged(fHideZeroBalances);
             break;
 
-        case AnonymizeCCBCAmount:
-            nAnonymizeCCBCAmount = value.toInt();
-            settings.setValue("nAnonymizeCCBCAmount", nAnonymizeCCBCAmount);
-            emit anonymizeCCBCAmountChanged(nAnonymizeCCBCAmount);
+        case AnonymizeABAAmount:
+            nAnonymizeABAAmount = value.toInt();
+            settings.setValue("nAnonymizeABAAmount", nAnonymizeABAAmount);
+            emit anonymizeABAAmountChanged(nAnonymizeABAAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

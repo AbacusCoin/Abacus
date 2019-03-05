@@ -186,6 +186,6 @@
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>ccbc-core</name>
+    <name>aba-core</name>
     </context>
 </TS>

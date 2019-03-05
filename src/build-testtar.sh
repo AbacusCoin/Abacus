@@ -1,1 +1,1 @@
-tar cvzf CCBC-linux-Testnet.tar.gz ccbcd ccbc-cli
+tar cvzf ABA-linux-Testnet.tar.gz abad aba-cli

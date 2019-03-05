@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your CCBC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces CCBC per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your ABA addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces ABA per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your CCBC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces CCBC per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your ABA addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces ABA per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>CCBC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCBCs from being stolen by malware infecting your computer.</source>
-        <translation>CCBC es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus CCBC de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>ABA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ABAs from being stolen by malware infecting your computer.</source>
+        <translation>ABA es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus ABA de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCBC&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES CCBCS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ABA&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES ABAS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -418,12 +418,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     <message>
-        <source>Send coins to a CCBC address</source>
-        <translation>Envia monedes a una adreça CCBC</translation>
+        <source>Send coins to a ABA address</source>
+        <translation>Envia monedes a una adreça ABA</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -434,8 +434,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About CCBC Core</source>
-        <translation>&amp;Sobre CCBC Core</translation>
+        <source>&amp;About ABA Core</source>
+        <translation>&amp;Sobre ABA Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -458,12 +458,12 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>CCBC Core client</source>
-        <translation>Client CCBC core</translation>
+        <source>ABA Core client</source>
+        <translation>Client ABA core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to CCBC network</source>
-        <translation><numerusform>%n connexió activa a la xarxa CCBC</numerusform><numerusform>%n connexions actives a la xarxa CCBC</numerusform></translation>
+        <source>%n active connection(s) to ABA network</source>
+        <translation><numerusform>%n connexió activa a la xarxa ABA</numerusform><numerusform>%n connexions actives a la xarxa ABA</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -814,8 +814,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid CCBC address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça CCBC vàlida.</translation>
+        <source>The entered address "%1" is not a valid ABA address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça ABA vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -860,16 +860,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About CCBC Core</source>
-        <translation>Sobre CCBC Core</translation>
+        <source>About ABA Core</source>
+        <translation>Sobre ABA Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,12 +915,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to CCBC Core.</source>
-        <translation>Benvingut a CCBC Core.</translation>
+        <source>Welcome to ABA Core.</source>
+        <translation>Benvingut a ABA Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where CCBC Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del CCBC Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where ABA Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del ABA Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -931,8 +931,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1142,24 +1142,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CCBC</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 CCBC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ABA</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 ABA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CCBC</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 CCBC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 ABA</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 ABA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CCBC to anonymize 10000 CCBC</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 CCBC per anonimitzar 10000 CCBC</translation>
+        <source>This option is the quickest and will cost about ~0.025 ABA to anonymize 10000 ABA</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 ABA per anonimitzar 10000 ABA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CCBC to anonymize 10000 CCBC</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 CCBC per anonimitzar 10000 CCBC</translation>
+        <source>This option is moderately fast and will cost about 0.05 ABA to anonymize 10000 ABA</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 ABA per anonimitzar 10000 ABA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1208,8 +1208,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start CCBC after logging in to the system.</source>
-        <translation>Inicia CCBC automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start ABA after logging in to the system.</source>
+        <translation>Inicia ABA automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1271,12 +1271,12 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>CCBC:</source>
-        <translation>CCBC:</translation>
+        <source>ABA:</source>
+        <translation>ABA:</translation>
     </message>
     <message>
-        <source>zCCBC:</source>
-        <translation>zCCBC:</translation>
+        <source>zABA:</source>
+        <translation>zABA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1304,20 +1304,20 @@
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>Zerocoin CCBC (zCCBC)</source>
-        <translation>Zerocoin CCBC (zCCBC)</translation>
+        <source>Zerocoin ABA (zABA)</source>
+        <translation>Zerocoin ABA (zABA)</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCCBC</source>
-        <translation>zCCBC</translation>
+        <source>zABA</source>
+        <translation>zABA</translation>
     </message>
     <message>
-        <source>0.000 000 00 CCBC</source>
-        <translation>0.000 000 00 CCBC</translation>
+        <source>0.000 000 00 ABA</source>
+        <translation>0.000 000 00 ABA</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1332,8 +1332,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zCCBC</source>
-        <translation>0 zCCBC</translation>
+        <source>0 zABA</source>
+        <translation>0 zABA</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1719,8 +1719,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>CCBC Core is shutting down...</source>
-        <translation>CCBC Core s'està tancant...</translation>
+        <source>ABA Core is shutting down...</source>
+        <translation>ABA Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1785,8 +1785,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1984,7 +1984,7 @@
     </message>
     </context>
 <context>
-    <name>ccbc-core</name>
+    <name>aba-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

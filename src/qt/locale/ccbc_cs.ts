@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your CCBC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše CCBC adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your ABA addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše ABA adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your CCBC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše CCBC adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your ABA addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše ABA adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>CCBC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCBCs from being stolen by malware infecting your computer.</source>
-        <translation>CCBC se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše CCBCy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>ABA will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ABAs from being stolen by malware infecting your computer.</source>
+        <translation>ABA se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše ABAy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCBC&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE CCBCy&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ABA&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE ABAy&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a CCBC Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte CCBC adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <source>Enter a ABA Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadejte ABA adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The CCBC address to sign the message with</source>
-        <translation>CCBC adresa pro podepsání zprávy</translation>
+        <source>The ABA address to sign the message with</source>
+        <translation>ABA adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CCBC address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto CCBC adresu</translation>
+        <source>Sign the message to prove you own this ABA address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto ABA adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The CCBC address the message was signed with</source>
-        <translation>CCBC adresa zprávy byla podpsána</translation>
+        <source>The ABA address the message was signed with</source>
+        <translation>ABA adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified CCBC address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou CCBC adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified ABA address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou ABA adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     <message>
-        <source>Send coins to a CCBC address</source>
-        <translation>Odeslat platbuna CCBC adresu</translation>
+        <source>Send coins to a ABA address</source>
+        <translation>Odeslat platbuna ABA adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ccbc: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a ccbc: URIs)</translation>
+        <source>Request payments (generates QR codes and aba: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a aba: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About CCBC Core</source>
-        <translation>&amp;O CCBC Core</translation>
+        <source>&amp;About ABA Core</source>
+        <translation>&amp;O ABA Core</translation>
     </message>
     <message>
-        <source>Show information about CCBC Core</source>
-        <translation>Zobraz informace o CCBC Core</translation>
+        <source>Show information about ABA Core</source>
+        <translation>Zobraz informace o ABA Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for CCBC</source>
-        <translation>Upravit možnosti konfigurace pro CCBC</translation>
+        <source>Modify configuration options for ABA</source>
+        <translation>Upravit možnosti konfigurace pro ABA</translation>
     </message>
     <message>
-        <source>Sign messages with your CCBC addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší CCBC adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your ABA addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší ABA adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified CCBC addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými CCBC adresami</translation>
+        <source>Verify messages to ensure they were signed with specified ABA addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými ABA adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a CCBC: URI or payment request</source>
-        <translation>Otevřít CCBC: URI nebo platební žádost</translation>
+        <source>Open a ABA: URI or payment request</source>
+        <translation>Otevřít ABA: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the CCBC Core help message to get a list with possible CCBC command-line options</source>
-        <translation>Zobrazit CCBC Core pomocnou zpráv pro získání seznamu možných parametrů CCBC pro příkazy do příkazové řádky</translation>
+        <source>Show the ABA Core help message to get a list with possible ABA command-line options</source>
+        <translation>Zobrazit ABA Core pomocnou zpráv pro získání seznamu možných parametrů ABA pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>CCBC Core client</source>
-        <translation>CCBC Core klient</translation>
+        <source>ABA Core client</source>
+        <translation>ABA Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -809,8 +809,8 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ccbc.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (ccbc.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aba.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (aba.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
@@ -1066,8 +1066,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid CCBC address.</source>
-        <translation>Zadaná adresa "%1" není validní CCBC adresa.</translation>
+        <source>The entered address "%1" is not a valid ABA address.</source>
+        <translation>Zadaná adresa "%1" není validní ABA adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1112,12 +1112,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     <message>
-        <source>About CCBC Core</source>
-        <translation>O CCBC Core</translation>
+        <source>About ABA Core</source>
+        <translation>O ABA Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1151,16 +1151,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to CCBC Core.</source>
-        <translation>Vítejte v CCBC Core.</translation>
+        <source>Welcome to ABA Core.</source>
+        <translation>Vítejte v ABA Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where CCBC Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude CCBC Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where ABA Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude ABA Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>CCBC Core will download and store a copy of the CCBC block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>CCBC Core stáhne a uloží kopii CCBC blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>ABA Core will download and store a copy of the ABA block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>ABA Core stáhne a uloží kopii ABA blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1171,8 +1171,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1438,24 +1438,24 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CCBC</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 CCBC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 ABA</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 ABA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CCBC to anonymize 10000 CCBC</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 CCBC pro anonymizaci 10000 CCBC</translation>
+        <source>This option is the quickest and will cost about ~0.025 ABA to anonymize 10000 ABA</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 ABA pro anonymizaci 10000 ABA</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 CCBC per 10000 CCBC you anonymize.</source>
-        <translation>0.1 CCBC za 10000 CCBC anonymizujete.</translation>
+        <source>0.1 ABA per 10000 ABA you anonymize.</source>
+        <translation>0.1 ABA za 10000 ABA anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1520,12 +1520,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start CCBC after logging in to the system.</source>
-        <translation>Automaticky spustit CCBC po přihlášení do systému</translation>
+        <source>Automatically start ABA after logging in to the system.</source>
+        <translation>Automaticky spustit ABA po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start CCBC on system login</source>
-        <translation>&amp;Spusti CCBC při přihlášení do systému</translation>
+        <source>&amp;Start ABA on system login</source>
+        <translation>&amp;Spusti ABA při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2057,8 +2057,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 CCBC</source>
-        <translation>0 CCBC</translation>
+        <source>0 ABA</source>
+        <translation>0 ABA</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2186,8 +2186,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The CCBC address to sign the message with</source>
-        <translation>CCBC adresa pro podepsání zprávy</translation>
+        <source>The ABA address to sign the message with</source>
+        <translation>ABA adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2214,16 +2214,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CCBC address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto CCBC adresu</translation>
+        <source>Sign the message to prove you own this ABA address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto ABA adresu</translation>
     </message>
     <message>
-        <source>The CCBC address the message was signed with</source>
-        <translation>CCBC adresa zprávy byla podpsána</translation>
+        <source>The ABA address the message was signed with</source>
+        <translation>ABA adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified CCBC address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou CCBC adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified ABA address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou ABA adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2265,8 +2265,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>CCBC Core</source>
-        <translation>CCBC Core</translation>
+        <source>ABA Core</source>
+        <translation>ABA Core</translation>
     </message>
     </context>
 <context>
@@ -2376,7 +2376,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>ccbc-core</name>
+    <name>aba-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>
